@@ -64,7 +64,8 @@ class Trainer:
         print(f"\n[+] Loading datasets from {config['processed_dir']}...")
         self.dataloaders = load_datasets(
             config['processed_dir'],
-            batch_size=config['batch_size']
+            batch_size=config['batch_size'],
+            num_workers=config.get('num_workers', 0)
         )
         
         if 'train' not in self.dataloaders:

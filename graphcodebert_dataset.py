@@ -136,13 +136,14 @@ def create_dataloader(data_file: str, batch_size: int = 32, shuffle: bool = True
     return dataloader
 
 
-def load_datasets(processed_dir: str, batch_size: int = 32):
+def load_datasets(processed_dir: str, batch_size: int = 32, num_workers: int = 0):
     """
     Load train/val/test datasets
     
     Args:
         processed_dir: Directory chứa train.pkl, val.pkl, test.pkl
         batch_size: Batch size
+        num_workers: Số workers cho parallel data loading
     
     Returns:
         dict với keys: 'train', 'val', 'test' dataloaders
@@ -160,7 +161,7 @@ def load_datasets(processed_dir: str, batch_size: int = 32):
                 data_file,
                 batch_size=batch_size,
                 shuffle=shuffle,
-                num_workers=0
+                num_workers=num_workers
             )
             print(f"[+] Created {split} dataloader")
         else:
