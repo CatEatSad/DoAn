@@ -48,6 +48,11 @@ class GraphCodeBERTDataset(Dataset):
         """
         sample = self.samples[idx]
         
+        # Handle vuln_type - convert None to -1
+        vuln_type = sample.get('vuln_type', -1)
+        if vuln_type is None:
+            vuln_type = -1
+        
         return {
             'input_ids': torch.tensor(sample['input_ids'], dtype=torch.long),
             'attention_mask': torch.tensor(sample['attention_mask'], dtype=torch.long),
@@ -55,7 +60,7 @@ class GraphCodeBERTDataset(Dataset):
             'dfg_matrix': torch.tensor(sample['dfg_matrix'], dtype=torch.float32),
             'edge_index': torch.tensor(sample['edge_index'], dtype=torch.long),
             'label': torch.tensor(sample['label'], dtype=torch.long),
-            'vuln_type': torch.tensor(sample.get('vuln_type', -1), dtype=torch.long),
+            'vuln_type': torch.tensor(vuln_type, dtype=torch.long),
             'num_nodes': sample['num_nodes'],
             'num_edges': sample['num_edges']
         }
