@@ -1,0 +1,2977 @@
+{"functions": [{
+      "function": "SQLInjectionVulnerable.main:<unresolvedSignature>(1)",
+      "file": "",
+      "id": "107374182400",
+      "AST": [{
+    "id": "111669149696",
+    "label": "METHOD_PARAMETER_IN",
+    "properties": {"NAME": "args", "COLUMN_NUMBER": "29", "ORDER": "1", "INDEX": "1", "CODE": "String[] args", "LINE_NUMBER": "3", "EVALUATION_STRATEGY": "BY_SHARING", "TYPE_FULL_NAME": "java.sql.String[]"},
+    "edges": [{
+      "id": "107374182400-AST-111669149696",
+      "edgeType": "AST",
+      "in": "111669149696",
+      "out": "107374182400"
+    }]
+  }, {
+    "id": "25769803776",
+    "label": "BLOCK",
+    "properties": {"ORDER": "2", "COLUMN_NUMBER": "44", "LINE_NUMBER": "3"},
+    "edges": [{
+      "id": "25769803776-AST-94489280512",
+      "edgeType": "AST",
+      "in": "94489280512",
+      "out": "25769803776"
+    }, {
+      "id": "25769803776-AST-30064771072",
+      "edgeType": "AST",
+      "in": "30064771072",
+      "out": "25769803776"
+    }, {
+      "id": "25769803776-AST-94489280513",
+      "edgeType": "AST",
+      "in": "94489280513",
+      "out": "25769803776"
+    }, {
+      "id": "25769803776-AST-30064771073",
+      "edgeType": "AST",
+      "in": "30064771073",
+      "out": "25769803776"
+    }, {
+      "id": "25769803776-AST-47244640256",
+      "edgeType": "AST",
+      "in": "47244640256",
+      "out": "25769803776"
+    }, {
+      "id": "107374182400-AST-25769803776",
+      "edgeType": "AST",
+      "in": "25769803776",
+      "out": "107374182400"
+    }]
+  }, {
+    "id": "94489280512",
+    "label": "LOCAL",
+    "properties": {"NAME": "userInput", "TYPE_FULL_NAME": "ANY", "COLUMN_NUMBER": "9", "GENERIC_SIGNATURE": "LString;", "ORDER": "1", "CODE": "String userInput", "LINE_NUMBER": "4"},
+    "edges": [{
+      "id": "25769803776-AST-94489280512",
+      "edgeType": "AST",
+      "in": "94489280512",
+      "out": "25769803776"
+    }]
+  }, {
+    "id": "30064771072",
+    "label": "CALL",
+    "properties": {"DISPATCH_TYPE": "STATIC_DISPATCH", "NAME": "<operator>.assignment", "METHOD_FULL_NAME": "<operator>.assignment", "TYPE_FULL_NAME": "ANY", "COLUMN_NUMBER": "16", "ORDER": "2", "CODE": "String userInput = \"'; DROP TABLE users; --\"", "LINE_NUMBER": "4"},
+    "edges": [{
+      "id": "30064771072-AST-68719476736",
+      "edgeType": "AST",
+      "in": "68719476736",
+      "out": "30064771072"
+    }, {
+      "id": "30064771072-AST-90194313216",
+      "edgeType": "AST",
+      "in": "90194313216",
+      "out": "30064771072"
+    }, {
+      "id": "25769803776-AST-30064771072",
+      "edgeType": "AST",
+      "in": "30064771072",
+      "out": "25769803776"
+    }]
+  }, {
+    "id": "68719476736",
+    "label": "IDENTIFIER",
+    "properties": {"NAME": "userInput", "TYPE_FULL_NAME": "ANY", "COLUMN_NUMBER": "16", "ARGUMENT_INDEX": "1", "ORDER": "1", "CODE": "userInput", "LINE_NUMBER": "4"},
+    "edges": [{
+      "id": "30064771072-AST-68719476736",
+      "edgeType": "AST",
+      "in": "68719476736",
+      "out": "30064771072"
+    }]
+  }, {
+    "id": "90194313216",
+    "label": "LITERAL",
+    "properties": {"TYPE_FULL_NAME": "java.lang.String", "COLUMN_NUMBER": "28", "ARGUMENT_INDEX": "2", "ORDER": "2", "CODE": "\"'; DROP TABLE users; --\"", "LINE_NUMBER": "4"},
+    "edges": [{
+      "id": "30064771072-AST-90194313216",
+      "edgeType": "AST",
+      "in": "90194313216",
+      "out": "30064771072"
+    }]
+  }, {
+    "id": "94489280513",
+    "label": "LOCAL",
+    "properties": {"NAME": "query", "TYPE_FULL_NAME": "ANY", "COLUMN_NUMBER": "9", "GENERIC_SIGNATURE": "LString;", "ORDER": "3", "CODE": "String query", "LINE_NUMBER": "5"},
+    "edges": [{
+      "id": "25769803776-AST-94489280513",
+      "edgeType": "AST",
+      "in": "94489280513",
+      "out": "25769803776"
+    }]
+  }, {
+    "id": "30064771073",
+    "label": "CALL",
+    "properties": {"DISPATCH_TYPE": "STATIC_DISPATCH", "NAME": "<operator>.assignment", "METHOD_FULL_NAME": "<operator>.assignment", "TYPE_FULL_NAME": "ANY", "COLUMN_NUMBER": "16", "ORDER": "4", "CODE": "String query = \"SELECT * FROM users WHERE username = '\" + userInput + \"'\"", "LINE_NUMBER": "5"},
+    "edges": [{
+      "id": "30064771073-AST-68719476737",
+      "edgeType": "AST",
+      "in": "68719476737",
+      "out": "30064771073"
+    }, {
+      "id": "30064771073-AST-30064771074",
+      "edgeType": "AST",
+      "in": "30064771074",
+      "out": "30064771073"
+    }, {
+      "id": "25769803776-AST-30064771073",
+      "edgeType": "AST",
+      "in": "30064771073",
+      "out": "25769803776"
+    }]
+  }, {
+    "id": "68719476737",
+    "label": "IDENTIFIER",
+    "properties": {"NAME": "query", "TYPE_FULL_NAME": "ANY", "COLUMN_NUMBER": "16", "ARGUMENT_INDEX": "1", "ORDER": "1", "CODE": "query", "LINE_NUMBER": "5"},
+    "edges": [{
+      "id": "30064771073-AST-68719476737",
+      "edgeType": "AST",
+      "in": "68719476737",
+      "out": "30064771073"
+    }]
+  }, {
+    "id": "30064771074",
+    "label": "CALL",
+    "properties": {"DISPATCH_TYPE": "STATIC_DISPATCH", "NAME": "<operator>.addition", "METHOD_FULL_NAME": "<operator>.addition", "TYPE_FULL_NAME": "java.lang.String", "COLUMN_NUMBER": "24", "ARGUMENT_INDEX": "2", "ORDER": "2", "CODE": "\"SELECT * FROM users WHERE username = '\" + userInput + \"'\"", "LINE_NUMBER": "5"},
+    "edges": [{
+      "id": "30064771074-AST-30064771075",
+      "edgeType": "AST",
+      "in": "30064771075",
+      "out": "30064771074"
+    }, {
+      "id": "30064771074-AST-90194313218",
+      "edgeType": "AST",
+      "in": "90194313218",
+      "out": "30064771074"
+    }, {
+      "id": "30064771073-AST-30064771074",
+      "edgeType": "AST",
+      "in": "30064771074",
+      "out": "30064771073"
+    }]
+  }, {
+    "id": "30064771075",
+    "label": "CALL",
+    "properties": {"DISPATCH_TYPE": "STATIC_DISPATCH", "NAME": "<operator>.addition", "METHOD_FULL_NAME": "<operator>.addition", "TYPE_FULL_NAME": "java.lang.String", "COLUMN_NUMBER": "24", "ARGUMENT_INDEX": "1", "ORDER": "1", "CODE": "\"SELECT * FROM users WHERE username = '\" + userInput", "LINE_NUMBER": "5"},
+    "edges": [{
+      "id": "30064771075-AST-90194313217",
+      "edgeType": "AST",
+      "in": "90194313217",
+      "out": "30064771075"
+    }, {
+      "id": "30064771075-AST-68719476738",
+      "edgeType": "AST",
+      "in": "68719476738",
+      "out": "30064771075"
+    }, {
+      "id": "30064771074-AST-30064771075",
+      "edgeType": "AST",
+      "in": "30064771075",
+      "out": "30064771074"
+    }]
+  }, {
+    "id": "90194313217",
+    "label": "LITERAL",
+    "properties": {"TYPE_FULL_NAME": "java.lang.String", "COLUMN_NUMBER": "24", "ARGUMENT_INDEX": "1", "ORDER": "1", "CODE": "\"SELECT * FROM users WHERE username = '\"", "LINE_NUMBER": "5"},
+    "edges": [{
+      "id": "30064771075-AST-90194313217",
+      "edgeType": "AST",
+      "in": "90194313217",
+      "out": "30064771075"
+    }]
+  }, {
+    "id": "68719476738",
+    "label": "IDENTIFIER",
+    "properties": {"NAME": "userInput", "TYPE_FULL_NAME": "ANY", "COLUMN_NUMBER": "67", "ARGUMENT_INDEX": "2", "ORDER": "2", "CODE": "userInput", "LINE_NUMBER": "5"},
+    "edges": [{
+      "id": "30064771075-AST-68719476738",
+      "edgeType": "AST",
+      "in": "68719476738",
+      "out": "30064771075"
+    }]
+  }, {
+    "id": "90194313218",
+    "label": "LITERAL",
+    "properties": {"TYPE_FULL_NAME": "java.lang.String", "COLUMN_NUMBER": "79", "ARGUMENT_INDEX": "2", "ORDER": "2", "CODE": "\"'\"", "LINE_NUMBER": "5"},
+    "edges": [{
+      "id": "30064771074-AST-90194313218",
+      "edgeType": "AST",
+      "in": "90194313218",
+      "out": "30064771074"
+    }]
+  }, {
+    "id": "47244640256",
+    "label": "CONTROL_STRUCTURE",
+    "properties": {"CONTROL_STRUCTURE_TYPE": "TRY", "PARSER_TYPE_NAME": "TryStmt", "COLUMN_NUMBER": "9", "ORDER": "5", "CODE": "try", "LINE_NUMBER": "6"},
+    "edges": [{
+      "id": "47244640256-AST-25769803777",
+      "edgeType": "AST",
+      "in": "25769803777",
+      "out": "47244640256"
+    }, {
+      "id": "47244640256-AST-47244640258",
+      "edgeType": "AST",
+      "in": "47244640258",
+      "out": "47244640256"
+    }, {
+      "id": "25769803776-AST-47244640256",
+      "edgeType": "AST",
+      "in": "47244640256",
+      "out": "25769803776"
+    }]
+  }, {
+    "id": "25769803777",
+    "label": "BLOCK",
+    "properties": {"COLUMN_NUMBER": "13", "ARGUMENT_INDEX": "1", "ORDER": "1", "CODE": "try", "LINE_NUMBER": "6"},
+    "edges": [{
+      "id": "25769803777-AST-94489280514",
+      "edgeType": "AST",
+      "in": "94489280514",
+      "out": "25769803777"
+    }, {
+      "id": "25769803777-AST-30064771076",
+      "edgeType": "AST",
+      "in": "30064771076",
+      "out": "25769803777"
+    }, {
+      "id": "25769803777-AST-94489280515",
+      "edgeType": "AST",
+      "in": "94489280515",
+      "out": "25769803777"
+    }, {
+      "id": "25769803777-AST-30064771078",
+      "edgeType": "AST",
+      "in": "30064771078",
+      "out": "25769803777"
+    }, {
+      "id": "25769803777-AST-94489280516",
+      "edgeType": "AST",
+      "in": "94489280516",
+      "out": "25769803777"
+    }, {
+      "id": "25769803777-AST-30064771080",
+      "edgeType": "AST",
+      "in": "30064771080",
+      "out": "25769803777"
+    }, {
+      "id": "25769803777-AST-47244640257",
+      "edgeType": "AST",
+      "in": "47244640257",
+      "out": "25769803777"
+    }, {
+      "id": "25769803777-AST-30064771091",
+      "edgeType": "AST",
+      "in": "30064771091",
+      "out": "25769803777"
+    }, {
+      "id": "47244640256-AST-25769803777",
+      "edgeType": "AST",
+      "in": "25769803777",
+      "out": "47244640256"
+    }]
+  }, {
+    "id": "94489280514",
+    "label": "LOCAL",
+    "properties": {"NAME": "conn", "TYPE_FULL_NAME": "ANY", "COLUMN_NUMBER": "13", "GENERIC_SIGNATURE": "LConnection;", "ORDER": "1", "CODE": "Connection conn", "LINE_NUMBER": "7"},
+    "edges": [{
+      "id": "25769803777-AST-94489280514",
+      "edgeType": "AST",
+      "in": "94489280514",
+      "out": "25769803777"
+    }]
+  }, {
+    "id": "30064771076",
+    "label": "CALL",
+    "properties": {"DISPATCH_TYPE": "STATIC_DISPATCH", "NAME": "<operator>.assignment", "METHOD_FULL_NAME": "<operator>.assignment", "TYPE_FULL_NAME": "ANY", "COLUMN_NUMBER": "24", "ORDER": "2", "CODE": "Connection conn = DriverManager.getConnection(\"jdbc:mysql://localhost:3306/mydatabase\", \"username\", \"password\")", "LINE_NUMBER": "7"},
+    "edges": [{
+      "id": "30064771076-AST-68719476739",
+      "edgeType": "AST",
+      "in": "68719476739",
+      "out": "30064771076"
+    }, {
+      "id": "30064771076-AST-30064771077",
+      "edgeType": "AST",
+      "in": "30064771077",
+      "out": "30064771076"
+    }, {
+      "id": "25769803777-AST-30064771076",
+      "edgeType": "AST",
+      "in": "30064771076",
+      "out": "25769803777"
+    }]
+  }, {
+    "id": "68719476739",
+    "label": "IDENTIFIER",
+    "properties": {"NAME": "conn", "TYPE_FULL_NAME": "ANY", "COLUMN_NUMBER": "24", "ARGUMENT_INDEX": "1", "ORDER": "1", "CODE": "conn", "LINE_NUMBER": "7"},
+    "edges": [{
+      "id": "30064771076-AST-68719476739",
+      "edgeType": "AST",
+      "in": "68719476739",
+      "out": "30064771076"
+    }]
+  }, {
+    "id": "30064771077",
+    "label": "CALL",
+    "properties": {"DISPATCH_TYPE": "DYNAMIC_DISPATCH", "NAME": "getConnection", "METHOD_FULL_NAME": "<unresolvedNamespace>.getConnection:<unresolvedSignature>(3)", "SIGNATURE": "<unresolvedSignature>(3)", "TYPE_FULL_NAME": "ANY", "COLUMN_NUMBER": "31", "ARGUMENT_INDEX": "2", "ORDER": "2", "CODE": "getConnection(\"jdbc:mysql://localhost:3306/mydatabase\", \"username\", \"password\")", "LINE_NUMBER": "7"},
+    "edges": [{
+      "id": "30064771077-AST-68719476740",
+      "edgeType": "AST",
+      "in": "68719476740",
+      "out": "30064771077"
+    }, {
+      "id": "30064771077-AST-90194313219",
+      "edgeType": "AST",
+      "in": "90194313219",
+      "out": "30064771077"
+    }, {
+      "id": "30064771077-AST-90194313220",
+      "edgeType": "AST",
+      "in": "90194313220",
+      "out": "30064771077"
+    }, {
+      "id": "30064771077-AST-90194313221",
+      "edgeType": "AST",
+      "in": "90194313221",
+      "out": "30064771077"
+    }, {
+      "id": "30064771076-AST-30064771077",
+      "edgeType": "AST",
+      "in": "30064771077",
+      "out": "30064771076"
+    }]
+  }, {
+    "id": "68719476740",
+    "label": "IDENTIFIER",
+    "properties": {"NAME": "DriverManager", "TYPE_FULL_NAME": "ANY", "COLUMN_NUMBER": "31", "ARGUMENT_INDEX": "0", "ORDER": "1", "CODE": "DriverManager", "LINE_NUMBER": "7"},
+    "edges": [{
+      "id": "30064771077-AST-68719476740",
+      "edgeType": "AST",
+      "in": "68719476740",
+      "out": "30064771077"
+    }]
+  }, {
+    "id": "90194313219",
+    "label": "LITERAL",
+    "properties": {"TYPE_FULL_NAME": "java.lang.String", "COLUMN_NUMBER": "59", "ARGUMENT_INDEX": "1", "ORDER": "2", "CODE": "\"jdbc:mysql://localhost:3306/mydatabase\"", "LINE_NUMBER": "7"},
+    "edges": [{
+      "id": "30064771077-AST-90194313219",
+      "edgeType": "AST",
+      "in": "90194313219",
+      "out": "30064771077"
+    }]
+  }, {
+    "id": "90194313220",
+    "label": "LITERAL",
+    "properties": {"TYPE_FULL_NAME": "java.lang.String", "COLUMN_NUMBER": "101", "ARGUMENT_INDEX": "2", "ORDER": "3", "CODE": "\"username\"", "LINE_NUMBER": "7"},
+    "edges": [{
+      "id": "30064771077-AST-90194313220",
+      "edgeType": "AST",
+      "in": "90194313220",
+      "out": "30064771077"
+    }]
+  }, {
+    "id": "90194313221",
+    "label": "LITERAL",
+    "properties": {"TYPE_FULL_NAME": "java.lang.String", "COLUMN_NUMBER": "113", "ARGUMENT_INDEX": "3", "ORDER": "4", "CODE": "\"password\"", "LINE_NUMBER": "7"},
+    "edges": [{
+      "id": "30064771077-AST-90194313221",
+      "edgeType": "AST",
+      "in": "90194313221",
+      "out": "30064771077"
+    }]
+  }, {
+    "id": "94489280515",
+    "label": "LOCAL",
+    "properties": {"NAME": "stmt", "TYPE_FULL_NAME": "ANY", "COLUMN_NUMBER": "13", "GENERIC_SIGNATURE": "LStatement;", "ORDER": "3", "CODE": "Statement stmt", "LINE_NUMBER": "8"},
+    "edges": [{
+      "id": "25769803777-AST-94489280515",
+      "edgeType": "AST",
+      "in": "94489280515",
+      "out": "25769803777"
+    }]
+  }, {
+    "id": "30064771078",
+    "label": "CALL",
+    "properties": {"DISPATCH_TYPE": "STATIC_DISPATCH", "NAME": "<operator>.assignment", "METHOD_FULL_NAME": "<operator>.assignment", "TYPE_FULL_NAME": "ANY", "COLUMN_NUMBER": "23", "ORDER": "4", "CODE": "Statement stmt = conn.createStatement()", "LINE_NUMBER": "8"},
+    "edges": [{
+      "id": "30064771078-AST-68719476741",
+      "edgeType": "AST",
+      "in": "68719476741",
+      "out": "30064771078"
+    }, {
+      "id": "30064771078-AST-30064771079",
+      "edgeType": "AST",
+      "in": "30064771079",
+      "out": "30064771078"
+    }, {
+      "id": "25769803777-AST-30064771078",
+      "edgeType": "AST",
+      "in": "30064771078",
+      "out": "25769803777"
+    }]
+  }, {
+    "id": "68719476741",
+    "label": "IDENTIFIER",
+    "properties": {"NAME": "stmt", "TYPE_FULL_NAME": "ANY", "COLUMN_NUMBER": "23", "ARGUMENT_INDEX": "1", "ORDER": "1", "CODE": "stmt", "LINE_NUMBER": "8"},
+    "edges": [{
+      "id": "30064771078-AST-68719476741",
+      "edgeType": "AST",
+      "in": "68719476741",
+      "out": "30064771078"
+    }]
+  }, {
+    "id": "30064771079",
+    "label": "CALL",
+    "properties": {"DISPATCH_TYPE": "DYNAMIC_DISPATCH", "NAME": "createStatement", "METHOD_FULL_NAME": "<unresolvedNamespace>.createStatement:<unresolvedSignature>(0)", "SIGNATURE": "<unresolvedSignature>(0)", "TYPE_FULL_NAME": "ANY", "COLUMN_NUMBER": "30", "ARGUMENT_INDEX": "2", "ORDER": "2", "CODE": "createStatement()", "LINE_NUMBER": "8"},
+    "edges": [{
+      "id": "30064771079-AST-68719476742",
+      "edgeType": "AST",
+      "in": "68719476742",
+      "out": "30064771079"
+    }, {
+      "id": "30064771078-AST-30064771079",
+      "edgeType": "AST",
+      "in": "30064771079",
+      "out": "30064771078"
+    }]
+  }, {
+    "id": "68719476742",
+    "label": "IDENTIFIER",
+    "properties": {"NAME": "conn", "TYPE_FULL_NAME": "ANY", "COLUMN_NUMBER": "30", "ARGUMENT_INDEX": "0", "ORDER": "1", "CODE": "conn", "LINE_NUMBER": "8"},
+    "edges": [{
+      "id": "30064771079-AST-68719476742",
+      "edgeType": "AST",
+      "in": "68719476742",
+      "out": "30064771079"
+    }]
+  }, {
+    "id": "94489280516",
+    "label": "LOCAL",
+    "properties": {"NAME": "rs", "TYPE_FULL_NAME": "ANY", "COLUMN_NUMBER": "13", "GENERIC_SIGNATURE": "LResultSet;", "ORDER": "5", "CODE": "ResultSet rs", "LINE_NUMBER": "9"},
+    "edges": [{
+      "id": "25769803777-AST-94489280516",
+      "edgeType": "AST",
+      "in": "94489280516",
+      "out": "25769803777"
+    }]
+  }, {
+    "id": "30064771080",
+    "label": "CALL",
+    "properties": {"DISPATCH_TYPE": "STATIC_DISPATCH", "NAME": "<operator>.assignment", "METHOD_FULL_NAME": "<operator>.assignment", "TYPE_FULL_NAME": "ANY", "COLUMN_NUMBER": "23", "ORDER": "6", "CODE": "ResultSet rs = stmt.executeQuery(query)", "LINE_NUMBER": "9"},
+    "edges": [{
+      "id": "30064771080-AST-68719476743",
+      "edgeType": "AST",
+      "in": "68719476743",
+      "out": "30064771080"
+    }, {
+      "id": "30064771080-AST-30064771081",
+      "edgeType": "AST",
+      "in": "30064771081",
+      "out": "30064771080"
+    }, {
+      "id": "25769803777-AST-30064771080",
+      "edgeType": "AST",
+      "in": "30064771080",
+      "out": "25769803777"
+    }]
+  }, {
+    "id": "68719476743",
+    "label": "IDENTIFIER",
+    "properties": {"NAME": "rs", "TYPE_FULL_NAME": "ANY", "COLUMN_NUMBER": "23", "ARGUMENT_INDEX": "1", "ORDER": "1", "CODE": "rs", "LINE_NUMBER": "9"},
+    "edges": [{
+      "id": "30064771080-AST-68719476743",
+      "edgeType": "AST",
+      "in": "68719476743",
+      "out": "30064771080"
+    }]
+  }, {
+    "id": "30064771081",
+    "label": "CALL",
+    "properties": {"DISPATCH_TYPE": "DYNAMIC_DISPATCH", "NAME": "executeQuery", "METHOD_FULL_NAME": "<unresolvedNamespace>.executeQuery:<unresolvedSignature>(1)", "SIGNATURE": "<unresolvedSignature>(1)", "TYPE_FULL_NAME": "ANY", "COLUMN_NUMBER": "28", "ARGUMENT_INDEX": "2", "ORDER": "2", "CODE": "executeQuery(query)", "LINE_NUMBER": "9"},
+    "edges": [{
+      "id": "30064771081-AST-68719476744",
+      "edgeType": "AST",
+      "in": "68719476744",
+      "out": "30064771081"
+    }, {
+      "id": "30064771081-AST-68719476745",
+      "edgeType": "AST",
+      "in": "68719476745",
+      "out": "30064771081"
+    }, {
+      "id": "30064771080-AST-30064771081",
+      "edgeType": "AST",
+      "in": "30064771081",
+      "out": "30064771080"
+    }]
+  }, {
+    "id": "68719476744",
+    "label": "IDENTIFIER",
+    "properties": {"NAME": "stmt", "TYPE_FULL_NAME": "ANY", "COLUMN_NUMBER": "28", "ARGUMENT_INDEX": "0", "ORDER": "1", "CODE": "stmt", "LINE_NUMBER": "9"},
+    "edges": [{
+      "id": "30064771081-AST-68719476744",
+      "edgeType": "AST",
+      "in": "68719476744",
+      "out": "30064771081"
+    }]
+  }, {
+    "id": "68719476745",
+    "label": "IDENTIFIER",
+    "properties": {"NAME": "query", "TYPE_FULL_NAME": "ANY", "COLUMN_NUMBER": "46", "ARGUMENT_INDEX": "1", "ORDER": "2", "CODE": "query", "LINE_NUMBER": "9"},
+    "edges": [{
+      "id": "30064771081-AST-68719476745",
+      "edgeType": "AST",
+      "in": "68719476745",
+      "out": "30064771081"
+    }]
+  }, {
+    "id": "47244640257",
+    "label": "CONTROL_STRUCTURE",
+    "properties": {"CONTROL_STRUCTURE_TYPE": "WHILE", "COLUMN_NUMBER": "13", "ORDER": "7", "CODE": "while (rs.next())", "LINE_NUMBER": "10"},
+    "edges": [{
+      "id": "47244640257-AST-30064771082",
+      "edgeType": "AST",
+      "in": "30064771082",
+      "out": "47244640257"
+    }, {
+      "id": "47244640257-AST-25769803778",
+      "edgeType": "AST",
+      "in": "25769803778",
+      "out": "47244640257"
+    }, {
+      "id": "25769803777-AST-47244640257",
+      "edgeType": "AST",
+      "in": "47244640257",
+      "out": "25769803777"
+    }]
+  }, {
+    "id": "30064771082",
+    "label": "CALL",
+    "properties": {"DISPATCH_TYPE": "DYNAMIC_DISPATCH", "NAME": "next", "METHOD_FULL_NAME": "<unresolvedNamespace>.next:<unresolvedSignature>(0)", "SIGNATURE": "<unresolvedSignature>(0)", "TYPE_FULL_NAME": "boolean", "COLUMN_NUMBER": "20", "ORDER": "1", "CODE": "next()", "LINE_NUMBER": "10"},
+    "edges": [{
+      "id": "30064771082-AST-68719476746",
+      "edgeType": "AST",
+      "in": "68719476746",
+      "out": "30064771082"
+    }, {
+      "id": "47244640257-AST-30064771082",
+      "edgeType": "AST",
+      "in": "30064771082",
+      "out": "47244640257"
+    }]
+  }, {
+    "id": "68719476746",
+    "label": "IDENTIFIER",
+    "properties": {"NAME": "rs", "TYPE_FULL_NAME": "ANY", "COLUMN_NUMBER": "20", "ARGUMENT_INDEX": "0", "ORDER": "1", "CODE": "rs", "LINE_NUMBER": "10"},
+    "edges": [{
+      "id": "30064771082-AST-68719476746",
+      "edgeType": "AST",
+      "in": "68719476746",
+      "out": "30064771082"
+    }]
+  }, {
+    "id": "25769803778",
+    "label": "BLOCK",
+    "properties": {"ORDER": "2", "COLUMN_NUMBER": "31", "LINE_NUMBER": "10"},
+    "edges": [{
+      "id": "25769803778-AST-30064771083",
+      "edgeType": "AST",
+      "in": "30064771083",
+      "out": "25769803778"
+    }, {
+      "id": "25769803778-AST-30064771087",
+      "edgeType": "AST",
+      "in": "30064771087",
+      "out": "25769803778"
+    }, {
+      "id": "47244640257-AST-25769803778",
+      "edgeType": "AST",
+      "in": "25769803778",
+      "out": "47244640257"
+    }]
+  }, {
+    "id": "30064771083",
+    "label": "CALL",
+    "properties": {"DISPATCH_TYPE": "DYNAMIC_DISPATCH", "NAME": "println", "METHOD_FULL_NAME": "<unresolvedNamespace>.println:<unresolvedSignature>(1)", "SIGNATURE": "<unresolvedSignature>(1)", "TYPE_FULL_NAME": "void", "COLUMN_NUMBER": "17", "ORDER": "1", "CODE": "System.out.println(\"Username: \" + rs.getString(\"username\"))", "LINE_NUMBER": "11"},
+    "edges": [{
+      "id": "30064771083-AST-30064771084",
+      "edgeType": "AST",
+      "in": "30064771084",
+      "out": "30064771083"
+    }, {
+      "id": "30064771083-AST-30064771085",
+      "edgeType": "AST",
+      "in": "30064771085",
+      "out": "30064771083"
+    }, {
+      "id": "25769803778-AST-30064771083",
+      "edgeType": "AST",
+      "in": "30064771083",
+      "out": "25769803778"
+    }]
+  }, {
+    "id": "30064771084",
+    "label": "CALL",
+    "properties": {"DISPATCH_TYPE": "STATIC_DISPATCH", "NAME": "<operator>.fieldAccess", "METHOD_FULL_NAME": "<operator>.fieldAccess", "TYPE_FULL_NAME": "ANY", "COLUMN_NUMBER": "17", "ARGUMENT_INDEX": "0", "ORDER": "1", "CODE": "System.out", "LINE_NUMBER": "11"},
+    "edges": [{
+      "id": "30064771084-AST-68719476747",
+      "edgeType": "AST",
+      "in": "68719476747",
+      "out": "30064771084"
+    }, {
+      "id": "30064771084-AST-55834574848",
+      "edgeType": "AST",
+      "in": "55834574848",
+      "out": "30064771084"
+    }, {
+      "id": "30064771083-AST-30064771084",
+      "edgeType": "AST",
+      "in": "30064771084",
+      "out": "30064771083"
+    }]
+  }, {
+    "id": "68719476747",
+    "label": "IDENTIFIER",
+    "properties": {"NAME": "System", "TYPE_FULL_NAME": "ANY", "COLUMN_NUMBER": "17", "ARGUMENT_INDEX": "1", "ORDER": "1", "CODE": "System", "LINE_NUMBER": "11"},
+    "edges": [{
+      "id": "30064771084-AST-68719476747",
+      "edgeType": "AST",
+      "in": "68719476747",
+      "out": "30064771084"
+    }]
+  }, {
+    "id": "55834574848",
+    "label": "FIELD_IDENTIFIER",
+    "properties": {"COLUMN_NUMBER": "24", "ARGUMENT_INDEX": "2", "ORDER": "2", "CODE": "out", "LINE_NUMBER": "11", "CANONICAL_NAME": "out"},
+    "edges": [{
+      "id": "30064771084-AST-55834574848",
+      "edgeType": "AST",
+      "in": "55834574848",
+      "out": "30064771084"
+    }]
+  }, {
+    "id": "30064771085",
+    "label": "CALL",
+    "properties": {"DISPATCH_TYPE": "STATIC_DISPATCH", "NAME": "<operator>.addition", "METHOD_FULL_NAME": "<operator>.addition", "TYPE_FULL_NAME": "java.lang.String", "COLUMN_NUMBER": "36", "ARGUMENT_INDEX": "1", "ORDER": "2", "CODE": "\"Username: \" + rs.getString(\"username\")", "LINE_NUMBER": "11"},
+    "edges": [{
+      "id": "30064771085-AST-90194313222",
+      "edgeType": "AST",
+      "in": "90194313222",
+      "out": "30064771085"
+    }, {
+      "id": "30064771085-AST-30064771086",
+      "edgeType": "AST",
+      "in": "30064771086",
+      "out": "30064771085"
+    }, {
+      "id": "30064771083-AST-30064771085",
+      "edgeType": "AST",
+      "in": "30064771085",
+      "out": "30064771083"
+    }]
+  }, {
+    "id": "90194313222",
+    "label": "LITERAL",
+    "properties": {"TYPE_FULL_NAME": "java.lang.String", "COLUMN_NUMBER": "36", "ARGUMENT_INDEX": "1", "ORDER": "1", "CODE": "\"Username: \"", "LINE_NUMBER": "11"},
+    "edges": [{
+      "id": "30064771085-AST-90194313222",
+      "edgeType": "AST",
+      "in": "90194313222",
+      "out": "30064771085"
+    }]
+  }, {
+    "id": "30064771086",
+    "label": "CALL",
+    "properties": {"DISPATCH_TYPE": "DYNAMIC_DISPATCH", "NAME": "getString", "METHOD_FULL_NAME": "<unresolvedNamespace>.getString:<unresolvedSignature>(1)", "SIGNATURE": "<unresolvedSignature>(1)", "TYPE_FULL_NAME": "ANY", "COLUMN_NUMBER": "51", "ARGUMENT_INDEX": "2", "ORDER": "2", "CODE": "getString(\"username\")", "LINE_NUMBER": "11"},
+    "edges": [{
+      "id": "30064771086-AST-68719476748",
+      "edgeType": "AST",
+      "in": "68719476748",
+      "out": "30064771086"
+    }, {
+      "id": "30064771086-AST-90194313223",
+      "edgeType": "AST",
+      "in": "90194313223",
+      "out": "30064771086"
+    }, {
+      "id": "30064771085-AST-30064771086",
+      "edgeType": "AST",
+      "in": "30064771086",
+      "out": "30064771085"
+    }]
+  }, {
+    "id": "68719476748",
+    "label": "IDENTIFIER",
+    "properties": {"NAME": "rs", "TYPE_FULL_NAME": "ANY", "COLUMN_NUMBER": "51", "ARGUMENT_INDEX": "0", "ORDER": "1", "CODE": "rs", "LINE_NUMBER": "11"},
+    "edges": [{
+      "id": "30064771086-AST-68719476748",
+      "edgeType": "AST",
+      "in": "68719476748",
+      "out": "30064771086"
+    }]
+  }, {
+    "id": "90194313223",
+    "label": "LITERAL",
+    "properties": {"TYPE_FULL_NAME": "java.lang.String", "COLUMN_NUMBER": "64", "ARGUMENT_INDEX": "1", "ORDER": "2", "CODE": "\"username\"", "LINE_NUMBER": "11"},
+    "edges": [{
+      "id": "30064771086-AST-90194313223",
+      "edgeType": "AST",
+      "in": "90194313223",
+      "out": "30064771086"
+    }]
+  }, {
+    "id": "30064771087",
+    "label": "CALL",
+    "properties": {"DISPATCH_TYPE": "DYNAMIC_DISPATCH", "NAME": "println", "METHOD_FULL_NAME": "<unresolvedNamespace>.println:<unresolvedSignature>(1)", "SIGNATURE": "<unresolvedSignature>(1)", "TYPE_FULL_NAME": "void", "COLUMN_NUMBER": "17", "ORDER": "2", "CODE": "System.out.println(\"Email: \" + rs.getString(\"email\"))", "LINE_NUMBER": "12"},
+    "edges": [{
+      "id": "30064771087-AST-30064771088",
+      "edgeType": "AST",
+      "in": "30064771088",
+      "out": "30064771087"
+    }, {
+      "id": "30064771087-AST-30064771089",
+      "edgeType": "AST",
+      "in": "30064771089",
+      "out": "30064771087"
+    }, {
+      "id": "25769803778-AST-30064771087",
+      "edgeType": "AST",
+      "in": "30064771087",
+      "out": "25769803778"
+    }]
+  }, {
+    "id": "30064771088",
+    "label": "CALL",
+    "properties": {"DISPATCH_TYPE": "STATIC_DISPATCH", "NAME": "<operator>.fieldAccess", "METHOD_FULL_NAME": "<operator>.fieldAccess", "TYPE_FULL_NAME": "ANY", "COLUMN_NUMBER": "17", "ARGUMENT_INDEX": "0", "ORDER": "1", "CODE": "System.out", "LINE_NUMBER": "12"},
+    "edges": [{
+      "id": "30064771088-AST-68719476749",
+      "edgeType": "AST",
+      "in": "68719476749",
+      "out": "30064771088"
+    }, {
+      "id": "30064771088-AST-55834574849",
+      "edgeType": "AST",
+      "in": "55834574849",
+      "out": "30064771088"
+    }, {
+      "id": "30064771087-AST-30064771088",
+      "edgeType": "AST",
+      "in": "30064771088",
+      "out": "30064771087"
+    }]
+  }, {
+    "id": "68719476749",
+    "label": "IDENTIFIER",
+    "properties": {"NAME": "System", "TYPE_FULL_NAME": "ANY", "COLUMN_NUMBER": "17", "ARGUMENT_INDEX": "1", "ORDER": "1", "CODE": "System", "LINE_NUMBER": "12"},
+    "edges": [{
+      "id": "30064771088-AST-68719476749",
+      "edgeType": "AST",
+      "in": "68719476749",
+      "out": "30064771088"
+    }]
+  }, {
+    "id": "55834574849",
+    "label": "FIELD_IDENTIFIER",
+    "properties": {"COLUMN_NUMBER": "24", "ARGUMENT_INDEX": "2", "ORDER": "2", "CODE": "out", "LINE_NUMBER": "12", "CANONICAL_NAME": "out"},
+    "edges": [{
+      "id": "30064771088-AST-55834574849",
+      "edgeType": "AST",
+      "in": "55834574849",
+      "out": "30064771088"
+    }]
+  }, {
+    "id": "30064771089",
+    "label": "CALL",
+    "properties": {"DISPATCH_TYPE": "STATIC_DISPATCH", "NAME": "<operator>.addition", "METHOD_FULL_NAME": "<operator>.addition", "TYPE_FULL_NAME": "java.lang.String", "COLUMN_NUMBER": "36", "ARGUMENT_INDEX": "1", "ORDER": "2", "CODE": "\"Email: \" + rs.getString(\"email\")", "LINE_NUMBER": "12"},
+    "edges": [{
+      "id": "30064771089-AST-90194313224",
+      "edgeType": "AST",
+      "in": "90194313224",
+      "out": "30064771089"
+    }, {
+      "id": "30064771089-AST-30064771090",
+      "edgeType": "AST",
+      "in": "30064771090",
+      "out": "30064771089"
+    }, {
+      "id": "30064771087-AST-30064771089",
+      "edgeType": "AST",
+      "in": "30064771089",
+      "out": "30064771087"
+    }]
+  }, {
+    "id": "90194313224",
+    "label": "LITERAL",
+    "properties": {"TYPE_FULL_NAME": "java.lang.String", "COLUMN_NUMBER": "36", "ARGUMENT_INDEX": "1", "ORDER": "1", "CODE": "\"Email: \"", "LINE_NUMBER": "12"},
+    "edges": [{
+      "id": "30064771089-AST-90194313224",
+      "edgeType": "AST",
+      "in": "90194313224",
+      "out": "30064771089"
+    }]
+  }, {
+    "id": "30064771090",
+    "label": "CALL",
+    "properties": {"DISPATCH_TYPE": "DYNAMIC_DISPATCH", "NAME": "getString", "METHOD_FULL_NAME": "<unresolvedNamespace>.getString:<unresolvedSignature>(1)", "SIGNATURE": "<unresolvedSignature>(1)", "TYPE_FULL_NAME": "ANY", "COLUMN_NUMBER": "48", "ARGUMENT_INDEX": "2", "ORDER": "2", "CODE": "getString(\"email\")", "LINE_NUMBER": "12"},
+    "edges": [{
+      "id": "30064771090-AST-68719476750",
+      "edgeType": "AST",
+      "in": "68719476750",
+      "out": "30064771090"
+    }, {
+      "id": "30064771090-AST-90194313225",
+      "edgeType": "AST",
+      "in": "90194313225",
+      "out": "30064771090"
+    }, {
+      "id": "30064771089-AST-30064771090",
+      "edgeType": "AST",
+      "in": "30064771090",
+      "out": "30064771089"
+    }]
+  }, {
+    "id": "68719476750",
+    "label": "IDENTIFIER",
+    "properties": {"NAME": "rs", "TYPE_FULL_NAME": "ANY", "COLUMN_NUMBER": "48", "ARGUMENT_INDEX": "0", "ORDER": "1", "CODE": "rs", "LINE_NUMBER": "12"},
+    "edges": [{
+      "id": "30064771090-AST-68719476750",
+      "edgeType": "AST",
+      "in": "68719476750",
+      "out": "30064771090"
+    }]
+  }, {
+    "id": "90194313225",
+    "label": "LITERAL",
+    "properties": {"TYPE_FULL_NAME": "java.lang.String", "COLUMN_NUMBER": "61", "ARGUMENT_INDEX": "1", "ORDER": "2", "CODE": "\"email\"", "LINE_NUMBER": "12"},
+    "edges": [{
+      "id": "30064771090-AST-90194313225",
+      "edgeType": "AST",
+      "in": "90194313225",
+      "out": "30064771090"
+    }]
+  }, {
+    "id": "30064771091",
+    "label": "CALL",
+    "properties": {"DISPATCH_TYPE": "DYNAMIC_DISPATCH", "NAME": "close", "METHOD_FULL_NAME": "<unresolvedNamespace>.close:<unresolvedSignature>(0)", "SIGNATURE": "<unresolvedSignature>(0)", "TYPE_FULL_NAME": "void", "COLUMN_NUMBER": "13", "ORDER": "8", "CODE": "close()", "LINE_NUMBER": "14"},
+    "edges": [{
+      "id": "30064771091-AST-68719476751",
+      "edgeType": "AST",
+      "in": "68719476751",
+      "out": "30064771091"
+    }, {
+      "id": "25769803777-AST-30064771091",
+      "edgeType": "AST",
+      "in": "30064771091",
+      "out": "25769803777"
+    }]
+  }, {
+    "id": "68719476751",
+    "label": "IDENTIFIER",
+    "properties": {"NAME": "conn", "TYPE_FULL_NAME": "ANY", "COLUMN_NUMBER": "13", "ARGUMENT_INDEX": "0", "ORDER": "1", "CODE": "conn", "LINE_NUMBER": "14"},
+    "edges": [{
+      "id": "30064771091-AST-68719476751",
+      "edgeType": "AST",
+      "in": "68719476751",
+      "out": "30064771091"
+    }]
+  }, {
+    "id": "47244640258",
+    "label": "CONTROL_STRUCTURE",
+    "properties": {"CONTROL_STRUCTURE_TYPE": "CATCH", "PARSER_TYPE_NAME": "CatchClause", "COLUMN_NUMBER": "11", "ARGUMENT_INDEX": "2", "ORDER": "2", "CODE": "catch", "LINE_NUMBER": "15"},
+    "edges": [{
+      "id": "47244640258-AST-25769803779",
+      "edgeType": "AST",
+      "in": "25769803779",
+      "out": "47244640258"
+    }, {
+      "id": "47244640256-AST-47244640258",
+      "edgeType": "AST",
+      "in": "47244640258",
+      "out": "47244640256"
+    }]
+  }, {
+    "id": "25769803779",
+    "label": "BLOCK",
+    "properties": {"ORDER": "1", "COLUMN_NUMBER": "34", "LINE_NUMBER": "15"},
+    "edges": [{
+      "id": "25769803779-AST-30064771092",
+      "edgeType": "AST",
+      "in": "30064771092",
+      "out": "25769803779"
+    }, {
+      "id": "47244640258-AST-25769803779",
+      "edgeType": "AST",
+      "in": "25769803779",
+      "out": "47244640258"
+    }]
+  }, {
+    "id": "30064771092",
+    "label": "CALL",
+    "properties": {"DISPATCH_TYPE": "DYNAMIC_DISPATCH", "NAME": "printStackTrace", "METHOD_FULL_NAME": "<unresolvedNamespace>.printStackTrace:<unresolvedSignature>(0)", "SIGNATURE": "<unresolvedSignature>(0)", "TYPE_FULL_NAME": "void", "COLUMN_NUMBER": "13", "ORDER": "1", "CODE": "printStackTrace()", "LINE_NUMBER": "16"},
+    "edges": [{
+      "id": "30064771092-AST-68719476752",
+      "edgeType": "AST",
+      "in": "68719476752",
+      "out": "30064771092"
+    }, {
+      "id": "25769803779-AST-30064771092",
+      "edgeType": "AST",
+      "in": "30064771092",
+      "out": "25769803779"
+    }]
+  }, {
+    "id": "68719476752",
+    "label": "IDENTIFIER",
+    "properties": {"NAME": "e", "TYPE_FULL_NAME": "ANY", "COLUMN_NUMBER": "13", "ARGUMENT_INDEX": "0", "ORDER": "1", "CODE": "e", "LINE_NUMBER": "16"},
+    "edges": [{
+      "id": "30064771092-AST-68719476752",
+      "edgeType": "AST",
+      "in": "68719476752",
+      "out": "30064771092"
+    }]
+  }, {
+    "id": "128849018880",
+    "label": "MODIFIER",
+    "properties": {"ORDER": "3", "COLUMN_NUMBER": "5", "MODIFIER_TYPE": "PUBLIC", "LINE_NUMBER": "3"},
+    "edges": [{
+      "id": "107374182400-AST-128849018880",
+      "edgeType": "AST",
+      "in": "128849018880",
+      "out": "107374182400"
+    }]
+  }, {
+    "id": "128849018881",
+    "label": "MODIFIER",
+    "properties": {"ORDER": "4", "COLUMN_NUMBER": "5", "MODIFIER_TYPE": "STATIC", "LINE_NUMBER": "3"},
+    "edges": [{
+      "id": "107374182400-AST-128849018881",
+      "edgeType": "AST",
+      "in": "128849018881",
+      "out": "107374182400"
+    }]
+  }, {
+    "id": "124554051584",
+    "label": "METHOD_RETURN",
+    "properties": {"COLUMN_NUMBER": "19", "ORDER": "5", "CODE": "RET", "LINE_NUMBER": "3", "EVALUATION_STRATEGY": "BY_VALUE", "TYPE_FULL_NAME": "void"},
+    "edges": [{
+      "id": "107374182400-AST-124554051584",
+      "edgeType": "AST",
+      "in": "124554051584",
+      "out": "107374182400"
+    }]
+  }, {
+    "id": "115964116992",
+    "label": "METHOD_PARAMETER_OUT",
+    "properties": {"NAME": "args", "COLUMN_NUMBER": "29", "ORDER": "1", "INDEX": "1", "CODE": "String[] args", "LINE_NUMBER": "3", "EVALUATION_STRATEGY": "BY_SHARING", "TYPE_FULL_NAME": "java.sql.String[]"},
+    "edges": [{
+      "id": "107374182400-AST-115964116992",
+      "edgeType": "AST",
+      "in": "115964116992",
+      "out": "107374182400"
+    }]
+  }],
+      "CFG": [{
+    "id": "25769803776",
+    "label": "BLOCK",
+    "properties": {"ORDER": "2", "COLUMN_NUMBER": "44", "LINE_NUMBER": "3"},
+    "edges": []
+  }, {
+    "id": "30064771072",
+    "label": "CALL",
+    "properties": {"DISPATCH_TYPE": "STATIC_DISPATCH", "NAME": "<operator>.assignment", "METHOD_FULL_NAME": "<operator>.assignment", "TYPE_FULL_NAME": "ANY", "COLUMN_NUMBER": "16", "ORDER": "2", "CODE": "String userInput = \"'; DROP TABLE users; --\"", "LINE_NUMBER": "4"},
+    "edges": [{
+      "id": "30064771072-CFG-68719476737",
+      "edgeType": "CFG",
+      "in": "68719476737",
+      "out": "30064771072"
+    }, {
+      "id": "90194313216-CFG-30064771072",
+      "edgeType": "CFG",
+      "in": "30064771072",
+      "out": "90194313216"
+    }]
+  }, {
+    "id": "30064771073",
+    "label": "CALL",
+    "properties": {"DISPATCH_TYPE": "STATIC_DISPATCH", "NAME": "<operator>.assignment", "METHOD_FULL_NAME": "<operator>.assignment", "TYPE_FULL_NAME": "ANY", "COLUMN_NUMBER": "16", "ORDER": "4", "CODE": "String query = \"SELECT * FROM users WHERE username = '\" + userInput + \"'\"", "LINE_NUMBER": "5"},
+    "edges": [{
+      "id": "30064771073-CFG-68719476739",
+      "edgeType": "CFG",
+      "in": "68719476739",
+      "out": "30064771073"
+    }, {
+      "id": "30064771074-CFG-30064771073",
+      "edgeType": "CFG",
+      "in": "30064771073",
+      "out": "30064771074"
+    }]
+  }, {
+    "id": "47244640256",
+    "label": "CONTROL_STRUCTURE",
+    "properties": {"CONTROL_STRUCTURE_TYPE": "TRY", "PARSER_TYPE_NAME": "TryStmt", "COLUMN_NUMBER": "9", "ORDER": "5", "CODE": "try", "LINE_NUMBER": "6"},
+    "edges": []
+  }, {
+    "id": "68719476736",
+    "label": "IDENTIFIER",
+    "properties": {"NAME": "userInput", "TYPE_FULL_NAME": "ANY", "COLUMN_NUMBER": "16", "ARGUMENT_INDEX": "1", "ORDER": "1", "CODE": "userInput", "LINE_NUMBER": "4"},
+    "edges": [{
+      "id": "68719476736-CFG-90194313216",
+      "edgeType": "CFG",
+      "in": "90194313216",
+      "out": "68719476736"
+    }, {
+      "id": "107374182400-CFG-68719476736",
+      "edgeType": "CFG",
+      "in": "68719476736",
+      "out": "107374182400"
+    }]
+  }, {
+    "id": "90194313216",
+    "label": "LITERAL",
+    "properties": {"TYPE_FULL_NAME": "java.lang.String", "COLUMN_NUMBER": "28", "ARGUMENT_INDEX": "2", "ORDER": "2", "CODE": "\"'; DROP TABLE users; --\"", "LINE_NUMBER": "4"},
+    "edges": [{
+      "id": "90194313216-CFG-30064771072",
+      "edgeType": "CFG",
+      "in": "30064771072",
+      "out": "90194313216"
+    }, {
+      "id": "68719476736-CFG-90194313216",
+      "edgeType": "CFG",
+      "in": "90194313216",
+      "out": "68719476736"
+    }]
+  }, {
+    "id": "68719476737",
+    "label": "IDENTIFIER",
+    "properties": {"NAME": "query", "TYPE_FULL_NAME": "ANY", "COLUMN_NUMBER": "16", "ARGUMENT_INDEX": "1", "ORDER": "1", "CODE": "query", "LINE_NUMBER": "5"},
+    "edges": [{
+      "id": "68719476737-CFG-90194313217",
+      "edgeType": "CFG",
+      "in": "90194313217",
+      "out": "68719476737"
+    }, {
+      "id": "30064771072-CFG-68719476737",
+      "edgeType": "CFG",
+      "in": "68719476737",
+      "out": "30064771072"
+    }]
+  }, {
+    "id": "30064771074",
+    "label": "CALL",
+    "properties": {"DISPATCH_TYPE": "STATIC_DISPATCH", "NAME": "<operator>.addition", "METHOD_FULL_NAME": "<operator>.addition", "TYPE_FULL_NAME": "java.lang.String", "COLUMN_NUMBER": "24", "ARGUMENT_INDEX": "2", "ORDER": "2", "CODE": "\"SELECT * FROM users WHERE username = '\" + userInput + \"'\"", "LINE_NUMBER": "5"},
+    "edges": [{
+      "id": "30064771074-CFG-30064771073",
+      "edgeType": "CFG",
+      "in": "30064771073",
+      "out": "30064771074"
+    }, {
+      "id": "90194313218-CFG-30064771074",
+      "edgeType": "CFG",
+      "in": "30064771074",
+      "out": "90194313218"
+    }]
+  }, {
+    "id": "25769803777",
+    "label": "BLOCK",
+    "properties": {"COLUMN_NUMBER": "13", "ARGUMENT_INDEX": "1", "ORDER": "1", "CODE": "try", "LINE_NUMBER": "6"},
+    "edges": []
+  }, {
+    "id": "47244640258",
+    "label": "CONTROL_STRUCTURE",
+    "properties": {"CONTROL_STRUCTURE_TYPE": "CATCH", "PARSER_TYPE_NAME": "CatchClause", "COLUMN_NUMBER": "11", "ARGUMENT_INDEX": "2", "ORDER": "2", "CODE": "catch", "LINE_NUMBER": "15"},
+    "edges": []
+  }, {
+    "id": "30064771075",
+    "label": "CALL",
+    "properties": {"DISPATCH_TYPE": "STATIC_DISPATCH", "NAME": "<operator>.addition", "METHOD_FULL_NAME": "<operator>.addition", "TYPE_FULL_NAME": "java.lang.String", "COLUMN_NUMBER": "24", "ARGUMENT_INDEX": "1", "ORDER": "1", "CODE": "\"SELECT * FROM users WHERE username = '\" + userInput", "LINE_NUMBER": "5"},
+    "edges": [{
+      "id": "30064771075-CFG-90194313218",
+      "edgeType": "CFG",
+      "in": "90194313218",
+      "out": "30064771075"
+    }, {
+      "id": "68719476738-CFG-30064771075",
+      "edgeType": "CFG",
+      "in": "30064771075",
+      "out": "68719476738"
+    }]
+  }, {
+    "id": "90194313218",
+    "label": "LITERAL",
+    "properties": {"TYPE_FULL_NAME": "java.lang.String", "COLUMN_NUMBER": "79", "ARGUMENT_INDEX": "2", "ORDER": "2", "CODE": "\"'\"", "LINE_NUMBER": "5"},
+    "edges": [{
+      "id": "90194313218-CFG-30064771074",
+      "edgeType": "CFG",
+      "in": "30064771074",
+      "out": "90194313218"
+    }, {
+      "id": "30064771075-CFG-90194313218",
+      "edgeType": "CFG",
+      "in": "90194313218",
+      "out": "30064771075"
+    }]
+  }, {
+    "id": "30064771076",
+    "label": "CALL",
+    "properties": {"DISPATCH_TYPE": "STATIC_DISPATCH", "NAME": "<operator>.assignment", "METHOD_FULL_NAME": "<operator>.assignment", "TYPE_FULL_NAME": "ANY", "COLUMN_NUMBER": "24", "ORDER": "2", "CODE": "Connection conn = DriverManager.getConnection(\"jdbc:mysql://localhost:3306/mydatabase\", \"username\", \"password\")", "LINE_NUMBER": "7"},
+    "edges": [{
+      "id": "30064771076-CFG-68719476741",
+      "edgeType": "CFG",
+      "in": "68719476741",
+      "out": "30064771076"
+    }, {
+      "id": "30064771077-CFG-30064771076",
+      "edgeType": "CFG",
+      "in": "30064771076",
+      "out": "30064771077"
+    }]
+  }, {
+    "id": "30064771078",
+    "label": "CALL",
+    "properties": {"DISPATCH_TYPE": "STATIC_DISPATCH", "NAME": "<operator>.assignment", "METHOD_FULL_NAME": "<operator>.assignment", "TYPE_FULL_NAME": "ANY", "COLUMN_NUMBER": "23", "ORDER": "4", "CODE": "Statement stmt = conn.createStatement()", "LINE_NUMBER": "8"},
+    "edges": [{
+      "id": "30064771078-CFG-68719476743",
+      "edgeType": "CFG",
+      "in": "68719476743",
+      "out": "30064771078"
+    }, {
+      "id": "30064771079-CFG-30064771078",
+      "edgeType": "CFG",
+      "in": "30064771078",
+      "out": "30064771079"
+    }]
+  }, {
+    "id": "30064771080",
+    "label": "CALL",
+    "properties": {"DISPATCH_TYPE": "STATIC_DISPATCH", "NAME": "<operator>.assignment", "METHOD_FULL_NAME": "<operator>.assignment", "TYPE_FULL_NAME": "ANY", "COLUMN_NUMBER": "23", "ORDER": "6", "CODE": "ResultSet rs = stmt.executeQuery(query)", "LINE_NUMBER": "9"},
+    "edges": [{
+      "id": "30064771080-CFG-68719476746",
+      "edgeType": "CFG",
+      "in": "68719476746",
+      "out": "30064771080"
+    }, {
+      "id": "30064771081-CFG-30064771080",
+      "edgeType": "CFG",
+      "in": "30064771080",
+      "out": "30064771081"
+    }]
+  }, {
+    "id": "47244640257",
+    "label": "CONTROL_STRUCTURE",
+    "properties": {"CONTROL_STRUCTURE_TYPE": "WHILE", "COLUMN_NUMBER": "13", "ORDER": "7", "CODE": "while (rs.next())", "LINE_NUMBER": "10"},
+    "edges": []
+  }, {
+    "id": "30064771091",
+    "label": "CALL",
+    "properties": {"DISPATCH_TYPE": "DYNAMIC_DISPATCH", "NAME": "close", "METHOD_FULL_NAME": "<unresolvedNamespace>.close:<unresolvedSignature>(0)", "SIGNATURE": "<unresolvedSignature>(0)", "TYPE_FULL_NAME": "void", "COLUMN_NUMBER": "13", "ORDER": "8", "CODE": "close()", "LINE_NUMBER": "14"},
+    "edges": [{
+      "id": "30064771091-CFG-68719476752",
+      "edgeType": "CFG",
+      "in": "68719476752",
+      "out": "30064771091"
+    }, {
+      "id": "30064771091-CFG-124554051584",
+      "edgeType": "CFG",
+      "in": "124554051584",
+      "out": "30064771091"
+    }, {
+      "id": "68719476751-CFG-30064771091",
+      "edgeType": "CFG",
+      "in": "30064771091",
+      "out": "68719476751"
+    }]
+  }, {
+    "id": "25769803779",
+    "label": "BLOCK",
+    "properties": {"ORDER": "1", "COLUMN_NUMBER": "34", "LINE_NUMBER": "15"},
+    "edges": []
+  }, {
+    "id": "90194313217",
+    "label": "LITERAL",
+    "properties": {"TYPE_FULL_NAME": "java.lang.String", "COLUMN_NUMBER": "24", "ARGUMENT_INDEX": "1", "ORDER": "1", "CODE": "\"SELECT * FROM users WHERE username = '\"", "LINE_NUMBER": "5"},
+    "edges": [{
+      "id": "90194313217-CFG-68719476738",
+      "edgeType": "CFG",
+      "in": "68719476738",
+      "out": "90194313217"
+    }, {
+      "id": "68719476737-CFG-90194313217",
+      "edgeType": "CFG",
+      "in": "90194313217",
+      "out": "68719476737"
+    }]
+  }, {
+    "id": "68719476738",
+    "label": "IDENTIFIER",
+    "properties": {"NAME": "userInput", "TYPE_FULL_NAME": "ANY", "COLUMN_NUMBER": "67", "ARGUMENT_INDEX": "2", "ORDER": "2", "CODE": "userInput", "LINE_NUMBER": "5"},
+    "edges": [{
+      "id": "68719476738-CFG-30064771075",
+      "edgeType": "CFG",
+      "in": "30064771075",
+      "out": "68719476738"
+    }, {
+      "id": "90194313217-CFG-68719476738",
+      "edgeType": "CFG",
+      "in": "68719476738",
+      "out": "90194313217"
+    }]
+  }, {
+    "id": "68719476739",
+    "label": "IDENTIFIER",
+    "properties": {"NAME": "conn", "TYPE_FULL_NAME": "ANY", "COLUMN_NUMBER": "24", "ARGUMENT_INDEX": "1", "ORDER": "1", "CODE": "conn", "LINE_NUMBER": "7"},
+    "edges": [{
+      "id": "68719476739-CFG-68719476740",
+      "edgeType": "CFG",
+      "in": "68719476740",
+      "out": "68719476739"
+    }, {
+      "id": "30064771073-CFG-68719476739",
+      "edgeType": "CFG",
+      "in": "68719476739",
+      "out": "30064771073"
+    }]
+  }, {
+    "id": "30064771077",
+    "label": "CALL",
+    "properties": {"DISPATCH_TYPE": "DYNAMIC_DISPATCH", "NAME": "getConnection", "METHOD_FULL_NAME": "<unresolvedNamespace>.getConnection:<unresolvedSignature>(3)", "SIGNATURE": "<unresolvedSignature>(3)", "TYPE_FULL_NAME": "ANY", "COLUMN_NUMBER": "31", "ARGUMENT_INDEX": "2", "ORDER": "2", "CODE": "getConnection(\"jdbc:mysql://localhost:3306/mydatabase\", \"username\", \"password\")", "LINE_NUMBER": "7"},
+    "edges": [{
+      "id": "30064771077-CFG-30064771076",
+      "edgeType": "CFG",
+      "in": "30064771076",
+      "out": "30064771077"
+    }, {
+      "id": "90194313221-CFG-30064771077",
+      "edgeType": "CFG",
+      "in": "30064771077",
+      "out": "90194313221"
+    }]
+  }, {
+    "id": "68719476741",
+    "label": "IDENTIFIER",
+    "properties": {"NAME": "stmt", "TYPE_FULL_NAME": "ANY", "COLUMN_NUMBER": "23", "ARGUMENT_INDEX": "1", "ORDER": "1", "CODE": "stmt", "LINE_NUMBER": "8"},
+    "edges": [{
+      "id": "68719476741-CFG-68719476742",
+      "edgeType": "CFG",
+      "in": "68719476742",
+      "out": "68719476741"
+    }, {
+      "id": "30064771076-CFG-68719476741",
+      "edgeType": "CFG",
+      "in": "68719476741",
+      "out": "30064771076"
+    }]
+  }, {
+    "id": "30064771079",
+    "label": "CALL",
+    "properties": {"DISPATCH_TYPE": "DYNAMIC_DISPATCH", "NAME": "createStatement", "METHOD_FULL_NAME": "<unresolvedNamespace>.createStatement:<unresolvedSignature>(0)", "SIGNATURE": "<unresolvedSignature>(0)", "TYPE_FULL_NAME": "ANY", "COLUMN_NUMBER": "30", "ARGUMENT_INDEX": "2", "ORDER": "2", "CODE": "createStatement()", "LINE_NUMBER": "8"},
+    "edges": [{
+      "id": "30064771079-CFG-30064771078",
+      "edgeType": "CFG",
+      "in": "30064771078",
+      "out": "30064771079"
+    }, {
+      "id": "68719476742-CFG-30064771079",
+      "edgeType": "CFG",
+      "in": "30064771079",
+      "out": "68719476742"
+    }]
+  }, {
+    "id": "68719476743",
+    "label": "IDENTIFIER",
+    "properties": {"NAME": "rs", "TYPE_FULL_NAME": "ANY", "COLUMN_NUMBER": "23", "ARGUMENT_INDEX": "1", "ORDER": "1", "CODE": "rs", "LINE_NUMBER": "9"},
+    "edges": [{
+      "id": "68719476743-CFG-68719476744",
+      "edgeType": "CFG",
+      "in": "68719476744",
+      "out": "68719476743"
+    }, {
+      "id": "30064771078-CFG-68719476743",
+      "edgeType": "CFG",
+      "in": "68719476743",
+      "out": "30064771078"
+    }]
+  }, {
+    "id": "30064771081",
+    "label": "CALL",
+    "properties": {"DISPATCH_TYPE": "DYNAMIC_DISPATCH", "NAME": "executeQuery", "METHOD_FULL_NAME": "<unresolvedNamespace>.executeQuery:<unresolvedSignature>(1)", "SIGNATURE": "<unresolvedSignature>(1)", "TYPE_FULL_NAME": "ANY", "COLUMN_NUMBER": "28", "ARGUMENT_INDEX": "2", "ORDER": "2", "CODE": "executeQuery(query)", "LINE_NUMBER": "9"},
+    "edges": [{
+      "id": "30064771081-CFG-30064771080",
+      "edgeType": "CFG",
+      "in": "30064771080",
+      "out": "30064771081"
+    }, {
+      "id": "68719476745-CFG-30064771081",
+      "edgeType": "CFG",
+      "in": "30064771081",
+      "out": "68719476745"
+    }]
+  }, {
+    "id": "30064771082",
+    "label": "CALL",
+    "properties": {"DISPATCH_TYPE": "DYNAMIC_DISPATCH", "NAME": "next", "METHOD_FULL_NAME": "<unresolvedNamespace>.next:<unresolvedSignature>(0)", "SIGNATURE": "<unresolvedSignature>(0)", "TYPE_FULL_NAME": "boolean", "COLUMN_NUMBER": "20", "ORDER": "1", "CODE": "next()", "LINE_NUMBER": "10"},
+    "edges": [{
+      "id": "30064771082-CFG-68719476747",
+      "edgeType": "CFG",
+      "in": "68719476747",
+      "out": "30064771082"
+    }, {
+      "id": "30064771082-CFG-68719476751",
+      "edgeType": "CFG",
+      "in": "68719476751",
+      "out": "30064771082"
+    }, {
+      "id": "68719476746-CFG-30064771082",
+      "edgeType": "CFG",
+      "in": "30064771082",
+      "out": "68719476746"
+    }]
+  }, {
+    "id": "25769803778",
+    "label": "BLOCK",
+    "properties": {"ORDER": "2", "COLUMN_NUMBER": "31", "LINE_NUMBER": "10"},
+    "edges": []
+  }, {
+    "id": "68719476751",
+    "label": "IDENTIFIER",
+    "properties": {"NAME": "conn", "TYPE_FULL_NAME": "ANY", "COLUMN_NUMBER": "13", "ARGUMENT_INDEX": "0", "ORDER": "1", "CODE": "conn", "LINE_NUMBER": "14"},
+    "edges": [{
+      "id": "68719476751-CFG-30064771091",
+      "edgeType": "CFG",
+      "in": "30064771091",
+      "out": "68719476751"
+    }, {
+      "id": "30064771082-CFG-68719476751",
+      "edgeType": "CFG",
+      "in": "68719476751",
+      "out": "30064771082"
+    }]
+  }, {
+    "id": "30064771092",
+    "label": "CALL",
+    "properties": {"DISPATCH_TYPE": "DYNAMIC_DISPATCH", "NAME": "printStackTrace", "METHOD_FULL_NAME": "<unresolvedNamespace>.printStackTrace:<unresolvedSignature>(0)", "SIGNATURE": "<unresolvedSignature>(0)", "TYPE_FULL_NAME": "void", "COLUMN_NUMBER": "13", "ORDER": "1", "CODE": "printStackTrace()", "LINE_NUMBER": "16"},
+    "edges": [{
+      "id": "30064771092-CFG-124554051584",
+      "edgeType": "CFG",
+      "in": "124554051584",
+      "out": "30064771092"
+    }, {
+      "id": "68719476752-CFG-30064771092",
+      "edgeType": "CFG",
+      "in": "30064771092",
+      "out": "68719476752"
+    }]
+  }, {
+    "id": "68719476740",
+    "label": "IDENTIFIER",
+    "properties": {"NAME": "DriverManager", "TYPE_FULL_NAME": "ANY", "COLUMN_NUMBER": "31", "ARGUMENT_INDEX": "0", "ORDER": "1", "CODE": "DriverManager", "LINE_NUMBER": "7"},
+    "edges": [{
+      "id": "68719476740-CFG-90194313219",
+      "edgeType": "CFG",
+      "in": "90194313219",
+      "out": "68719476740"
+    }, {
+      "id": "68719476739-CFG-68719476740",
+      "edgeType": "CFG",
+      "in": "68719476740",
+      "out": "68719476739"
+    }]
+  }, {
+    "id": "90194313219",
+    "label": "LITERAL",
+    "properties": {"TYPE_FULL_NAME": "java.lang.String", "COLUMN_NUMBER": "59", "ARGUMENT_INDEX": "1", "ORDER": "2", "CODE": "\"jdbc:mysql://localhost:3306/mydatabase\"", "LINE_NUMBER": "7"},
+    "edges": [{
+      "id": "90194313219-CFG-90194313220",
+      "edgeType": "CFG",
+      "in": "90194313220",
+      "out": "90194313219"
+    }, {
+      "id": "68719476740-CFG-90194313219",
+      "edgeType": "CFG",
+      "in": "90194313219",
+      "out": "68719476740"
+    }]
+  }, {
+    "id": "90194313220",
+    "label": "LITERAL",
+    "properties": {"TYPE_FULL_NAME": "java.lang.String", "COLUMN_NUMBER": "101", "ARGUMENT_INDEX": "2", "ORDER": "3", "CODE": "\"username\"", "LINE_NUMBER": "7"},
+    "edges": [{
+      "id": "90194313220-CFG-90194313221",
+      "edgeType": "CFG",
+      "in": "90194313221",
+      "out": "90194313220"
+    }, {
+      "id": "90194313219-CFG-90194313220",
+      "edgeType": "CFG",
+      "in": "90194313220",
+      "out": "90194313219"
+    }]
+  }, {
+    "id": "90194313221",
+    "label": "LITERAL",
+    "properties": {"TYPE_FULL_NAME": "java.lang.String", "COLUMN_NUMBER": "113", "ARGUMENT_INDEX": "3", "ORDER": "4", "CODE": "\"password\"", "LINE_NUMBER": "7"},
+    "edges": [{
+      "id": "90194313221-CFG-30064771077",
+      "edgeType": "CFG",
+      "in": "30064771077",
+      "out": "90194313221"
+    }, {
+      "id": "90194313220-CFG-90194313221",
+      "edgeType": "CFG",
+      "in": "90194313221",
+      "out": "90194313220"
+    }]
+  }, {
+    "id": "68719476742",
+    "label": "IDENTIFIER",
+    "properties": {"NAME": "conn", "TYPE_FULL_NAME": "ANY", "COLUMN_NUMBER": "30", "ARGUMENT_INDEX": "0", "ORDER": "1", "CODE": "conn", "LINE_NUMBER": "8"},
+    "edges": [{
+      "id": "68719476742-CFG-30064771079",
+      "edgeType": "CFG",
+      "in": "30064771079",
+      "out": "68719476742"
+    }, {
+      "id": "68719476741-CFG-68719476742",
+      "edgeType": "CFG",
+      "in": "68719476742",
+      "out": "68719476741"
+    }]
+  }, {
+    "id": "68719476744",
+    "label": "IDENTIFIER",
+    "properties": {"NAME": "stmt", "TYPE_FULL_NAME": "ANY", "COLUMN_NUMBER": "28", "ARGUMENT_INDEX": "0", "ORDER": "1", "CODE": "stmt", "LINE_NUMBER": "9"},
+    "edges": [{
+      "id": "68719476744-CFG-68719476745",
+      "edgeType": "CFG",
+      "in": "68719476745",
+      "out": "68719476744"
+    }, {
+      "id": "68719476743-CFG-68719476744",
+      "edgeType": "CFG",
+      "in": "68719476744",
+      "out": "68719476743"
+    }]
+  }, {
+    "id": "68719476745",
+    "label": "IDENTIFIER",
+    "properties": {"NAME": "query", "TYPE_FULL_NAME": "ANY", "COLUMN_NUMBER": "46", "ARGUMENT_INDEX": "1", "ORDER": "2", "CODE": "query", "LINE_NUMBER": "9"},
+    "edges": [{
+      "id": "68719476745-CFG-30064771081",
+      "edgeType": "CFG",
+      "in": "30064771081",
+      "out": "68719476745"
+    }, {
+      "id": "68719476744-CFG-68719476745",
+      "edgeType": "CFG",
+      "in": "68719476745",
+      "out": "68719476744"
+    }]
+  }, {
+    "id": "68719476746",
+    "label": "IDENTIFIER",
+    "properties": {"NAME": "rs", "TYPE_FULL_NAME": "ANY", "COLUMN_NUMBER": "20", "ARGUMENT_INDEX": "0", "ORDER": "1", "CODE": "rs", "LINE_NUMBER": "10"},
+    "edges": [{
+      "id": "68719476746-CFG-30064771082",
+      "edgeType": "CFG",
+      "in": "30064771082",
+      "out": "68719476746"
+    }, {
+      "id": "30064771087-CFG-68719476746",
+      "edgeType": "CFG",
+      "in": "68719476746",
+      "out": "30064771087"
+    }, {
+      "id": "30064771080-CFG-68719476746",
+      "edgeType": "CFG",
+      "in": "68719476746",
+      "out": "30064771080"
+    }]
+  }, {
+    "id": "30064771083",
+    "label": "CALL",
+    "properties": {"DISPATCH_TYPE": "DYNAMIC_DISPATCH", "NAME": "println", "METHOD_FULL_NAME": "<unresolvedNamespace>.println:<unresolvedSignature>(1)", "SIGNATURE": "<unresolvedSignature>(1)", "TYPE_FULL_NAME": "void", "COLUMN_NUMBER": "17", "ORDER": "1", "CODE": "System.out.println(\"Username: \" + rs.getString(\"username\"))", "LINE_NUMBER": "11"},
+    "edges": [{
+      "id": "30064771083-CFG-68719476749",
+      "edgeType": "CFG",
+      "in": "68719476749",
+      "out": "30064771083"
+    }, {
+      "id": "30064771085-CFG-30064771083",
+      "edgeType": "CFG",
+      "in": "30064771083",
+      "out": "30064771085"
+    }]
+  }, {
+    "id": "30064771087",
+    "label": "CALL",
+    "properties": {"DISPATCH_TYPE": "DYNAMIC_DISPATCH", "NAME": "println", "METHOD_FULL_NAME": "<unresolvedNamespace>.println:<unresolvedSignature>(1)", "SIGNATURE": "<unresolvedSignature>(1)", "TYPE_FULL_NAME": "void", "COLUMN_NUMBER": "17", "ORDER": "2", "CODE": "System.out.println(\"Email: \" + rs.getString(\"email\"))", "LINE_NUMBER": "12"},
+    "edges": [{
+      "id": "30064771087-CFG-68719476746",
+      "edgeType": "CFG",
+      "in": "68719476746",
+      "out": "30064771087"
+    }, {
+      "id": "30064771089-CFG-30064771087",
+      "edgeType": "CFG",
+      "in": "30064771087",
+      "out": "30064771089"
+    }]
+  }, {
+    "id": "68719476752",
+    "label": "IDENTIFIER",
+    "properties": {"NAME": "e", "TYPE_FULL_NAME": "ANY", "COLUMN_NUMBER": "13", "ARGUMENT_INDEX": "0", "ORDER": "1", "CODE": "e", "LINE_NUMBER": "16"},
+    "edges": [{
+      "id": "68719476752-CFG-30064771092",
+      "edgeType": "CFG",
+      "in": "30064771092",
+      "out": "68719476752"
+    }, {
+      "id": "30064771091-CFG-68719476752",
+      "edgeType": "CFG",
+      "in": "68719476752",
+      "out": "30064771091"
+    }]
+  }, {
+    "id": "30064771084",
+    "label": "CALL",
+    "properties": {"DISPATCH_TYPE": "STATIC_DISPATCH", "NAME": "<operator>.fieldAccess", "METHOD_FULL_NAME": "<operator>.fieldAccess", "TYPE_FULL_NAME": "ANY", "COLUMN_NUMBER": "17", "ARGUMENT_INDEX": "0", "ORDER": "1", "CODE": "System.out", "LINE_NUMBER": "11"},
+    "edges": [{
+      "id": "30064771084-CFG-90194313222",
+      "edgeType": "CFG",
+      "in": "90194313222",
+      "out": "30064771084"
+    }, {
+      "id": "55834574848-CFG-30064771084",
+      "edgeType": "CFG",
+      "in": "30064771084",
+      "out": "55834574848"
+    }]
+  }, {
+    "id": "30064771085",
+    "label": "CALL",
+    "properties": {"DISPATCH_TYPE": "STATIC_DISPATCH", "NAME": "<operator>.addition", "METHOD_FULL_NAME": "<operator>.addition", "TYPE_FULL_NAME": "java.lang.String", "COLUMN_NUMBER": "36", "ARGUMENT_INDEX": "1", "ORDER": "2", "CODE": "\"Username: \" + rs.getString(\"username\")", "LINE_NUMBER": "11"},
+    "edges": [{
+      "id": "30064771085-CFG-30064771083",
+      "edgeType": "CFG",
+      "in": "30064771083",
+      "out": "30064771085"
+    }, {
+      "id": "30064771086-CFG-30064771085",
+      "edgeType": "CFG",
+      "in": "30064771085",
+      "out": "30064771086"
+    }]
+  }, {
+    "id": "30064771088",
+    "label": "CALL",
+    "properties": {"DISPATCH_TYPE": "STATIC_DISPATCH", "NAME": "<operator>.fieldAccess", "METHOD_FULL_NAME": "<operator>.fieldAccess", "TYPE_FULL_NAME": "ANY", "COLUMN_NUMBER": "17", "ARGUMENT_INDEX": "0", "ORDER": "1", "CODE": "System.out", "LINE_NUMBER": "12"},
+    "edges": [{
+      "id": "30064771088-CFG-90194313224",
+      "edgeType": "CFG",
+      "in": "90194313224",
+      "out": "30064771088"
+    }, {
+      "id": "55834574849-CFG-30064771088",
+      "edgeType": "CFG",
+      "in": "30064771088",
+      "out": "55834574849"
+    }]
+  }, {
+    "id": "30064771089",
+    "label": "CALL",
+    "properties": {"DISPATCH_TYPE": "STATIC_DISPATCH", "NAME": "<operator>.addition", "METHOD_FULL_NAME": "<operator>.addition", "TYPE_FULL_NAME": "java.lang.String", "COLUMN_NUMBER": "36", "ARGUMENT_INDEX": "1", "ORDER": "2", "CODE": "\"Email: \" + rs.getString(\"email\")", "LINE_NUMBER": "12"},
+    "edges": [{
+      "id": "30064771089-CFG-30064771087",
+      "edgeType": "CFG",
+      "in": "30064771087",
+      "out": "30064771089"
+    }, {
+      "id": "30064771090-CFG-30064771089",
+      "edgeType": "CFG",
+      "in": "30064771089",
+      "out": "30064771090"
+    }]
+  }, {
+    "id": "68719476747",
+    "label": "IDENTIFIER",
+    "properties": {"NAME": "System", "TYPE_FULL_NAME": "ANY", "COLUMN_NUMBER": "17", "ARGUMENT_INDEX": "1", "ORDER": "1", "CODE": "System", "LINE_NUMBER": "11"},
+    "edges": [{
+      "id": "68719476747-CFG-55834574848",
+      "edgeType": "CFG",
+      "in": "55834574848",
+      "out": "68719476747"
+    }, {
+      "id": "30064771082-CFG-68719476747",
+      "edgeType": "CFG",
+      "in": "68719476747",
+      "out": "30064771082"
+    }]
+  }, {
+    "id": "55834574848",
+    "label": "FIELD_IDENTIFIER",
+    "properties": {"COLUMN_NUMBER": "24", "ARGUMENT_INDEX": "2", "ORDER": "2", "CODE": "out", "LINE_NUMBER": "11", "CANONICAL_NAME": "out"},
+    "edges": [{
+      "id": "55834574848-CFG-30064771084",
+      "edgeType": "CFG",
+      "in": "30064771084",
+      "out": "55834574848"
+    }, {
+      "id": "68719476747-CFG-55834574848",
+      "edgeType": "CFG",
+      "in": "55834574848",
+      "out": "68719476747"
+    }]
+  }, {
+    "id": "90194313222",
+    "label": "LITERAL",
+    "properties": {"TYPE_FULL_NAME": "java.lang.String", "COLUMN_NUMBER": "36", "ARGUMENT_INDEX": "1", "ORDER": "1", "CODE": "\"Username: \"", "LINE_NUMBER": "11"},
+    "edges": [{
+      "id": "90194313222-CFG-68719476748",
+      "edgeType": "CFG",
+      "in": "68719476748",
+      "out": "90194313222"
+    }, {
+      "id": "30064771084-CFG-90194313222",
+      "edgeType": "CFG",
+      "in": "90194313222",
+      "out": "30064771084"
+    }]
+  }, {
+    "id": "30064771086",
+    "label": "CALL",
+    "properties": {"DISPATCH_TYPE": "DYNAMIC_DISPATCH", "NAME": "getString", "METHOD_FULL_NAME": "<unresolvedNamespace>.getString:<unresolvedSignature>(1)", "SIGNATURE": "<unresolvedSignature>(1)", "TYPE_FULL_NAME": "ANY", "COLUMN_NUMBER": "51", "ARGUMENT_INDEX": "2", "ORDER": "2", "CODE": "getString(\"username\")", "LINE_NUMBER": "11"},
+    "edges": [{
+      "id": "30064771086-CFG-30064771085",
+      "edgeType": "CFG",
+      "in": "30064771085",
+      "out": "30064771086"
+    }, {
+      "id": "90194313223-CFG-30064771086",
+      "edgeType": "CFG",
+      "in": "30064771086",
+      "out": "90194313223"
+    }]
+  }, {
+    "id": "68719476749",
+    "label": "IDENTIFIER",
+    "properties": {"NAME": "System", "TYPE_FULL_NAME": "ANY", "COLUMN_NUMBER": "17", "ARGUMENT_INDEX": "1", "ORDER": "1", "CODE": "System", "LINE_NUMBER": "12"},
+    "edges": [{
+      "id": "68719476749-CFG-55834574849",
+      "edgeType": "CFG",
+      "in": "55834574849",
+      "out": "68719476749"
+    }, {
+      "id": "30064771083-CFG-68719476749",
+      "edgeType": "CFG",
+      "in": "68719476749",
+      "out": "30064771083"
+    }]
+  }, {
+    "id": "55834574849",
+    "label": "FIELD_IDENTIFIER",
+    "properties": {"COLUMN_NUMBER": "24", "ARGUMENT_INDEX": "2", "ORDER": "2", "CODE": "out", "LINE_NUMBER": "12", "CANONICAL_NAME": "out"},
+    "edges": [{
+      "id": "55834574849-CFG-30064771088",
+      "edgeType": "CFG",
+      "in": "30064771088",
+      "out": "55834574849"
+    }, {
+      "id": "68719476749-CFG-55834574849",
+      "edgeType": "CFG",
+      "in": "55834574849",
+      "out": "68719476749"
+    }]
+  }, {
+    "id": "90194313224",
+    "label": "LITERAL",
+    "properties": {"TYPE_FULL_NAME": "java.lang.String", "COLUMN_NUMBER": "36", "ARGUMENT_INDEX": "1", "ORDER": "1", "CODE": "\"Email: \"", "LINE_NUMBER": "12"},
+    "edges": [{
+      "id": "90194313224-CFG-68719476750",
+      "edgeType": "CFG",
+      "in": "68719476750",
+      "out": "90194313224"
+    }, {
+      "id": "30064771088-CFG-90194313224",
+      "edgeType": "CFG",
+      "in": "90194313224",
+      "out": "30064771088"
+    }]
+  }, {
+    "id": "30064771090",
+    "label": "CALL",
+    "properties": {"DISPATCH_TYPE": "DYNAMIC_DISPATCH", "NAME": "getString", "METHOD_FULL_NAME": "<unresolvedNamespace>.getString:<unresolvedSignature>(1)", "SIGNATURE": "<unresolvedSignature>(1)", "TYPE_FULL_NAME": "ANY", "COLUMN_NUMBER": "48", "ARGUMENT_INDEX": "2", "ORDER": "2", "CODE": "getString(\"email\")", "LINE_NUMBER": "12"},
+    "edges": [{
+      "id": "30064771090-CFG-30064771089",
+      "edgeType": "CFG",
+      "in": "30064771089",
+      "out": "30064771090"
+    }, {
+      "id": "90194313225-CFG-30064771090",
+      "edgeType": "CFG",
+      "in": "30064771090",
+      "out": "90194313225"
+    }]
+  }, {
+    "id": "68719476748",
+    "label": "IDENTIFIER",
+    "properties": {"NAME": "rs", "TYPE_FULL_NAME": "ANY", "COLUMN_NUMBER": "51", "ARGUMENT_INDEX": "0", "ORDER": "1", "CODE": "rs", "LINE_NUMBER": "11"},
+    "edges": [{
+      "id": "68719476748-CFG-90194313223",
+      "edgeType": "CFG",
+      "in": "90194313223",
+      "out": "68719476748"
+    }, {
+      "id": "90194313222-CFG-68719476748",
+      "edgeType": "CFG",
+      "in": "68719476748",
+      "out": "90194313222"
+    }]
+  }, {
+    "id": "90194313223",
+    "label": "LITERAL",
+    "properties": {"TYPE_FULL_NAME": "java.lang.String", "COLUMN_NUMBER": "64", "ARGUMENT_INDEX": "1", "ORDER": "2", "CODE": "\"username\"", "LINE_NUMBER": "11"},
+    "edges": [{
+      "id": "90194313223-CFG-30064771086",
+      "edgeType": "CFG",
+      "in": "30064771086",
+      "out": "90194313223"
+    }, {
+      "id": "68719476748-CFG-90194313223",
+      "edgeType": "CFG",
+      "in": "90194313223",
+      "out": "68719476748"
+    }]
+  }, {
+    "id": "68719476750",
+    "label": "IDENTIFIER",
+    "properties": {"NAME": "rs", "TYPE_FULL_NAME": "ANY", "COLUMN_NUMBER": "48", "ARGUMENT_INDEX": "0", "ORDER": "1", "CODE": "rs", "LINE_NUMBER": "12"},
+    "edges": [{
+      "id": "68719476750-CFG-90194313225",
+      "edgeType": "CFG",
+      "in": "90194313225",
+      "out": "68719476750"
+    }, {
+      "id": "90194313224-CFG-68719476750",
+      "edgeType": "CFG",
+      "in": "68719476750",
+      "out": "90194313224"
+    }]
+  }, {
+    "id": "90194313225",
+    "label": "LITERAL",
+    "properties": {"TYPE_FULL_NAME": "java.lang.String", "COLUMN_NUMBER": "61", "ARGUMENT_INDEX": "1", "ORDER": "2", "CODE": "\"email\"", "LINE_NUMBER": "12"},
+    "edges": [{
+      "id": "90194313225-CFG-30064771090",
+      "edgeType": "CFG",
+      "in": "30064771090",
+      "out": "90194313225"
+    }, {
+      "id": "68719476750-CFG-90194313225",
+      "edgeType": "CFG",
+      "in": "90194313225",
+      "out": "68719476750"
+    }]
+  }],
+      "PDG": [{
+    "id": "30064771081",
+    "label": "CALL",
+    "properties": {"DISPATCH_TYPE": "DYNAMIC_DISPATCH", "NAME": "executeQuery", "METHOD_FULL_NAME": "<unresolvedNamespace>.executeQuery:<unresolvedSignature>(1)", "SIGNATURE": "<unresolvedSignature>(1)", "TYPE_FULL_NAME": "ANY", "COLUMN_NUMBER": "28", "ARGUMENT_INDEX": "2", "ORDER": "2", "CODE": "executeQuery(query)", "LINE_NUMBER": "9"},
+    "edges": [{
+      "id": "30064771081-REACHING_DEF-68719476743",
+      "edgeType": "REACHING_DEF",
+      "in": "68719476743",
+      "out": "30064771081"
+    }, {
+      "id": "30064771081-REACHING_DEF-30064771080",
+      "edgeType": "REACHING_DEF",
+      "in": "30064771080",
+      "out": "30064771081"
+    }, {
+      "id": "30064771081-REACHING_DEF-124554051584",
+      "edgeType": "REACHING_DEF",
+      "in": "124554051584",
+      "out": "30064771081"
+    }, {
+      "id": "68719476744-REACHING_DEF-30064771081",
+      "edgeType": "REACHING_DEF",
+      "in": "30064771081",
+      "out": "68719476744"
+    }, {
+      "id": "68719476745-REACHING_DEF-30064771081",
+      "edgeType": "REACHING_DEF",
+      "in": "30064771081",
+      "out": "68719476745"
+    }]
+  }, {
+    "id": "68719476743",
+    "label": "IDENTIFIER",
+    "properties": {"NAME": "rs", "TYPE_FULL_NAME": "ANY", "COLUMN_NUMBER": "23", "ARGUMENT_INDEX": "1", "ORDER": "1", "CODE": "rs", "LINE_NUMBER": "9"},
+    "edges": [{
+      "id": "68719476743-REACHING_DEF-30064771080",
+      "edgeType": "REACHING_DEF",
+      "in": "30064771080",
+      "out": "68719476743"
+    }, {
+      "id": "68719476743-REACHING_DEF-68719476746",
+      "edgeType": "REACHING_DEF",
+      "in": "68719476746",
+      "out": "68719476743"
+    }, {
+      "id": "30064771081-REACHING_DEF-68719476743",
+      "edgeType": "REACHING_DEF",
+      "in": "68719476743",
+      "out": "30064771081"
+    }]
+  }, {
+    "id": "68719476746",
+    "label": "IDENTIFIER",
+    "properties": {"NAME": "rs", "TYPE_FULL_NAME": "ANY", "COLUMN_NUMBER": "20", "ARGUMENT_INDEX": "0", "ORDER": "1", "CODE": "rs", "LINE_NUMBER": "10"},
+    "edges": [{
+      "id": "68719476746-REACHING_DEF-30064771082",
+      "edgeType": "REACHING_DEF",
+      "in": "30064771082",
+      "out": "68719476746"
+    }, {
+      "id": "68719476746-REACHING_DEF-68719476748",
+      "edgeType": "REACHING_DEF",
+      "in": "68719476748",
+      "out": "68719476746"
+    }, {
+      "id": "68719476746-REACHING_DEF-124554051584",
+      "edgeType": "REACHING_DEF",
+      "in": "124554051584",
+      "out": "68719476746"
+    }, {
+      "id": "107374182400-REACHING_DEF-68719476746",
+      "edgeType": "REACHING_DEF",
+      "in": "68719476746",
+      "out": "107374182400"
+    }, {
+      "id": "68719476743-REACHING_DEF-68719476746",
+      "edgeType": "REACHING_DEF",
+      "in": "68719476746",
+      "out": "68719476743"
+    }, {
+      "id": "68719476750-REACHING_DEF-68719476746",
+      "edgeType": "REACHING_DEF",
+      "in": "68719476746",
+      "out": "68719476750"
+    }]
+  }, {
+    "id": "30064771079",
+    "label": "CALL",
+    "properties": {"DISPATCH_TYPE": "DYNAMIC_DISPATCH", "NAME": "createStatement", "METHOD_FULL_NAME": "<unresolvedNamespace>.createStatement:<unresolvedSignature>(0)", "SIGNATURE": "<unresolvedSignature>(0)", "TYPE_FULL_NAME": "ANY", "COLUMN_NUMBER": "30", "ARGUMENT_INDEX": "2", "ORDER": "2", "CODE": "createStatement()", "LINE_NUMBER": "8"},
+    "edges": [{
+      "id": "30064771079-REACHING_DEF-68719476741",
+      "edgeType": "REACHING_DEF",
+      "in": "68719476741",
+      "out": "30064771079"
+    }, {
+      "id": "30064771079-REACHING_DEF-30064771078",
+      "edgeType": "REACHING_DEF",
+      "in": "30064771078",
+      "out": "30064771079"
+    }, {
+      "id": "30064771079-REACHING_DEF-124554051584",
+      "edgeType": "REACHING_DEF",
+      "in": "124554051584",
+      "out": "30064771079"
+    }, {
+      "id": "68719476742-REACHING_DEF-30064771079",
+      "edgeType": "REACHING_DEF",
+      "in": "30064771079",
+      "out": "68719476742"
+    }]
+  }, {
+    "id": "68719476741",
+    "label": "IDENTIFIER",
+    "properties": {"NAME": "stmt", "TYPE_FULL_NAME": "ANY", "COLUMN_NUMBER": "23", "ARGUMENT_INDEX": "1", "ORDER": "1", "CODE": "stmt", "LINE_NUMBER": "8"},
+    "edges": [{
+      "id": "68719476741-REACHING_DEF-68719476744",
+      "edgeType": "REACHING_DEF",
+      "in": "68719476744",
+      "out": "68719476741"
+    }, {
+      "id": "68719476741-REACHING_DEF-30064771078",
+      "edgeType": "REACHING_DEF",
+      "in": "30064771078",
+      "out": "68719476741"
+    }, {
+      "id": "30064771079-REACHING_DEF-68719476741",
+      "edgeType": "REACHING_DEF",
+      "in": "68719476741",
+      "out": "30064771079"
+    }]
+  }, {
+    "id": "68719476744",
+    "label": "IDENTIFIER",
+    "properties": {"NAME": "stmt", "TYPE_FULL_NAME": "ANY", "COLUMN_NUMBER": "28", "ARGUMENT_INDEX": "0", "ORDER": "1", "CODE": "stmt", "LINE_NUMBER": "9"},
+    "edges": [{
+      "id": "68719476744-REACHING_DEF-68719476745",
+      "edgeType": "REACHING_DEF",
+      "in": "68719476745",
+      "out": "68719476744"
+    }, {
+      "id": "68719476744-REACHING_DEF-30064771081",
+      "edgeType": "REACHING_DEF",
+      "in": "30064771081",
+      "out": "68719476744"
+    }, {
+      "id": "68719476744-REACHING_DEF-124554051584",
+      "edgeType": "REACHING_DEF",
+      "in": "124554051584",
+      "out": "68719476744"
+    }, {
+      "id": "107374182400-REACHING_DEF-68719476744",
+      "edgeType": "REACHING_DEF",
+      "in": "68719476744",
+      "out": "107374182400"
+    }, {
+      "id": "68719476741-REACHING_DEF-68719476744",
+      "edgeType": "REACHING_DEF",
+      "in": "68719476744",
+      "out": "68719476741"
+    }, {
+      "id": "68719476745-REACHING_DEF-68719476744",
+      "edgeType": "REACHING_DEF",
+      "in": "68719476744",
+      "out": "68719476745"
+    }]
+  }, {
+    "id": "30064771077",
+    "label": "CALL",
+    "properties": {"DISPATCH_TYPE": "DYNAMIC_DISPATCH", "NAME": "getConnection", "METHOD_FULL_NAME": "<unresolvedNamespace>.getConnection:<unresolvedSignature>(3)", "SIGNATURE": "<unresolvedSignature>(3)", "TYPE_FULL_NAME": "ANY", "COLUMN_NUMBER": "31", "ARGUMENT_INDEX": "2", "ORDER": "2", "CODE": "getConnection(\"jdbc:mysql://localhost:3306/mydatabase\", \"username\", \"password\")", "LINE_NUMBER": "7"},
+    "edges": [{
+      "id": "30064771077-REACHING_DEF-68719476739",
+      "edgeType": "REACHING_DEF",
+      "in": "68719476739",
+      "out": "30064771077"
+    }, {
+      "id": "30064771077-REACHING_DEF-30064771076",
+      "edgeType": "REACHING_DEF",
+      "in": "30064771076",
+      "out": "30064771077"
+    }, {
+      "id": "30064771077-REACHING_DEF-124554051584",
+      "edgeType": "REACHING_DEF",
+      "in": "124554051584",
+      "out": "30064771077"
+    }, {
+      "id": "68719476740-REACHING_DEF-30064771077",
+      "edgeType": "REACHING_DEF",
+      "in": "30064771077",
+      "out": "68719476740"
+    }, {
+      "id": "90194313219-REACHING_DEF-30064771077",
+      "edgeType": "REACHING_DEF",
+      "in": "30064771077",
+      "out": "90194313219"
+    }, {
+      "id": "90194313220-REACHING_DEF-30064771077",
+      "edgeType": "REACHING_DEF",
+      "in": "30064771077",
+      "out": "90194313220"
+    }, {
+      "id": "90194313221-REACHING_DEF-30064771077",
+      "edgeType": "REACHING_DEF",
+      "in": "30064771077",
+      "out": "90194313221"
+    }]
+  }, {
+    "id": "68719476739",
+    "label": "IDENTIFIER",
+    "properties": {"NAME": "conn", "TYPE_FULL_NAME": "ANY", "COLUMN_NUMBER": "24", "ARGUMENT_INDEX": "1", "ORDER": "1", "CODE": "conn", "LINE_NUMBER": "7"},
+    "edges": [{
+      "id": "68719476739-REACHING_DEF-30064771076",
+      "edgeType": "REACHING_DEF",
+      "in": "30064771076",
+      "out": "68719476739"
+    }, {
+      "id": "68719476739-REACHING_DEF-68719476742",
+      "edgeType": "REACHING_DEF",
+      "in": "68719476742",
+      "out": "68719476739"
+    }, {
+      "id": "30064771077-REACHING_DEF-68719476739",
+      "edgeType": "REACHING_DEF",
+      "in": "68719476739",
+      "out": "30064771077"
+    }]
+  }, {
+    "id": "68719476742",
+    "label": "IDENTIFIER",
+    "properties": {"NAME": "conn", "TYPE_FULL_NAME": "ANY", "COLUMN_NUMBER": "30", "ARGUMENT_INDEX": "0", "ORDER": "1", "CODE": "conn", "LINE_NUMBER": "8"},
+    "edges": [{
+      "id": "68719476742-REACHING_DEF-68719476751",
+      "edgeType": "REACHING_DEF",
+      "in": "68719476751",
+      "out": "68719476742"
+    }, {
+      "id": "68719476742-REACHING_DEF-30064771079",
+      "edgeType": "REACHING_DEF",
+      "in": "30064771079",
+      "out": "68719476742"
+    }, {
+      "id": "107374182400-REACHING_DEF-68719476742",
+      "edgeType": "REACHING_DEF",
+      "in": "68719476742",
+      "out": "107374182400"
+    }, {
+      "id": "68719476739-REACHING_DEF-68719476742",
+      "edgeType": "REACHING_DEF",
+      "in": "68719476742",
+      "out": "68719476739"
+    }]
+  }, {
+    "id": "68719476748",
+    "label": "IDENTIFIER",
+    "properties": {"NAME": "rs", "TYPE_FULL_NAME": "ANY", "COLUMN_NUMBER": "51", "ARGUMENT_INDEX": "0", "ORDER": "1", "CODE": "rs", "LINE_NUMBER": "11"},
+    "edges": [{
+      "id": "68719476748-REACHING_DEF-68719476750",
+      "edgeType": "REACHING_DEF",
+      "in": "68719476750",
+      "out": "68719476748"
+    }, {
+      "id": "68719476748-REACHING_DEF-30064771086",
+      "edgeType": "REACHING_DEF",
+      "in": "30064771086",
+      "out": "68719476748"
+    }, {
+      "id": "107374182400-REACHING_DEF-68719476748",
+      "edgeType": "REACHING_DEF",
+      "in": "68719476748",
+      "out": "107374182400"
+    }, {
+      "id": "68719476746-REACHING_DEF-68719476748",
+      "edgeType": "REACHING_DEF",
+      "in": "68719476748",
+      "out": "68719476746"
+    }, {
+      "id": "90194313223-REACHING_DEF-68719476748",
+      "edgeType": "REACHING_DEF",
+      "in": "68719476748",
+      "out": "90194313223"
+    }]
+  }, {
+    "id": "68719476745",
+    "label": "IDENTIFIER",
+    "properties": {"NAME": "query", "TYPE_FULL_NAME": "ANY", "COLUMN_NUMBER": "46", "ARGUMENT_INDEX": "1", "ORDER": "2", "CODE": "query", "LINE_NUMBER": "9"},
+    "edges": [{
+      "id": "68719476745-REACHING_DEF-68719476744",
+      "edgeType": "REACHING_DEF",
+      "in": "68719476744",
+      "out": "68719476745"
+    }, {
+      "id": "68719476745-REACHING_DEF-30064771081",
+      "edgeType": "REACHING_DEF",
+      "in": "30064771081",
+      "out": "68719476745"
+    }, {
+      "id": "68719476745-REACHING_DEF-124554051584",
+      "edgeType": "REACHING_DEF",
+      "in": "124554051584",
+      "out": "68719476745"
+    }, {
+      "id": "107374182400-REACHING_DEF-68719476745",
+      "edgeType": "REACHING_DEF",
+      "in": "68719476745",
+      "out": "107374182400"
+    }, {
+      "id": "68719476737-REACHING_DEF-68719476745",
+      "edgeType": "REACHING_DEF",
+      "in": "68719476745",
+      "out": "68719476737"
+    }, {
+      "id": "68719476744-REACHING_DEF-68719476745",
+      "edgeType": "REACHING_DEF",
+      "in": "68719476745",
+      "out": "68719476744"
+    }]
+  }, {
+    "id": "68719476750",
+    "label": "IDENTIFIER",
+    "properties": {"NAME": "rs", "TYPE_FULL_NAME": "ANY", "COLUMN_NUMBER": "48", "ARGUMENT_INDEX": "0", "ORDER": "1", "CODE": "rs", "LINE_NUMBER": "12"},
+    "edges": [{
+      "id": "68719476750-REACHING_DEF-30064771090",
+      "edgeType": "REACHING_DEF",
+      "in": "30064771090",
+      "out": "68719476750"
+    }, {
+      "id": "68719476750-REACHING_DEF-68719476746",
+      "edgeType": "REACHING_DEF",
+      "in": "68719476746",
+      "out": "68719476750"
+    }, {
+      "id": "107374182400-REACHING_DEF-68719476750",
+      "edgeType": "REACHING_DEF",
+      "in": "68719476750",
+      "out": "107374182400"
+    }, {
+      "id": "68719476748-REACHING_DEF-68719476750",
+      "edgeType": "REACHING_DEF",
+      "in": "68719476750",
+      "out": "68719476748"
+    }, {
+      "id": "90194313225-REACHING_DEF-68719476750",
+      "edgeType": "REACHING_DEF",
+      "in": "68719476750",
+      "out": "90194313225"
+    }]
+  }, {
+    "id": "68719476751",
+    "label": "IDENTIFIER",
+    "properties": {"NAME": "conn", "TYPE_FULL_NAME": "ANY", "COLUMN_NUMBER": "13", "ARGUMENT_INDEX": "0", "ORDER": "1", "CODE": "conn", "LINE_NUMBER": "14"},
+    "edges": [{
+      "id": "68719476751-REACHING_DEF-30064771091",
+      "edgeType": "REACHING_DEF",
+      "in": "30064771091",
+      "out": "68719476751"
+    }, {
+      "id": "68719476751-REACHING_DEF-124554051584",
+      "edgeType": "REACHING_DEF",
+      "in": "124554051584",
+      "out": "68719476751"
+    }, {
+      "id": "107374182400-REACHING_DEF-68719476751",
+      "edgeType": "REACHING_DEF",
+      "in": "68719476751",
+      "out": "107374182400"
+    }, {
+      "id": "68719476742-REACHING_DEF-68719476751",
+      "edgeType": "REACHING_DEF",
+      "in": "68719476751",
+      "out": "68719476742"
+    }]
+  }]
+    }, {
+      "function": "SQLInjectionVulnerable.<init>:void()",
+      "file": "",
+      "id": "107374182401",
+      "AST": [{
+    "id": "111669149697",
+    "label": "METHOD_PARAMETER_IN",
+    "properties": {"DYNAMIC_TYPE_HINT_FULL_NAME": "IndexedSeq(SQLInjectionVulnerable)", "NAME": "this", "COLUMN_NUMBER": "1", "ORDER": "0", "INDEX": "0", "CODE": "this", "LINE_NUMBER": "2", "EVALUATION_STRATEGY": "BY_SHARING", "TYPE_FULL_NAME": "SQLInjectionVulnerable"},
+    "edges": [{
+      "id": "107374182401-AST-111669149697",
+      "edgeType": "AST",
+      "in": "111669149697",
+      "out": "107374182401"
+    }]
+  }, {
+    "id": "25769803780",
+    "label": "BLOCK",
+    "properties": {"ORDER": "2", "COLUMN_NUMBER": "1", "LINE_NUMBER": "2", "TYPE_FULL_NAME": "ANY"},
+    "edges": [{
+      "id": "107374182401-AST-25769803780",
+      "edgeType": "AST",
+      "in": "25769803780",
+      "out": "107374182401"
+    }]
+  }, {
+    "id": "128849018882",
+    "label": "MODIFIER",
+    "properties": {"ORDER": "3", "COLUMN_NUMBER": "1", "MODIFIER_TYPE": "CONSTRUCTOR", "LINE_NUMBER": "2"},
+    "edges": [{
+      "id": "107374182401-AST-128849018882",
+      "edgeType": "AST",
+      "in": "128849018882",
+      "out": "107374182401"
+    }]
+  }, {
+    "id": "128849018883",
+    "label": "MODIFIER",
+    "properties": {"ORDER": "4", "COLUMN_NUMBER": "1", "MODIFIER_TYPE": "PUBLIC", "LINE_NUMBER": "2"},
+    "edges": [{
+      "id": "107374182401-AST-128849018883",
+      "edgeType": "AST",
+      "in": "128849018883",
+      "out": "107374182401"
+    }]
+  }, {
+    "id": "124554051585",
+    "label": "METHOD_RETURN",
+    "properties": {"COLUMN_NUMBER": "1", "ORDER": "5", "CODE": "RET", "LINE_NUMBER": "2", "EVALUATION_STRATEGY": "BY_VALUE", "TYPE_FULL_NAME": "void"},
+    "edges": [{
+      "id": "107374182401-AST-124554051585",
+      "edgeType": "AST",
+      "in": "124554051585",
+      "out": "107374182401"
+    }]
+  }, {
+    "id": "115964116993",
+    "label": "METHOD_PARAMETER_OUT",
+    "properties": {"NAME": "this", "COLUMN_NUMBER": "1", "ORDER": "0", "INDEX": "0", "CODE": "this", "LINE_NUMBER": "2", "EVALUATION_STRATEGY": "BY_SHARING", "TYPE_FULL_NAME": "SQLInjectionVulnerable"},
+    "edges": [{
+      "id": "107374182401-AST-115964116993",
+      "edgeType": "AST",
+      "in": "115964116993",
+      "out": "107374182401"
+    }]
+  }],
+      "CFG": [{
+    "id": "25769803780",
+    "label": "BLOCK",
+    "properties": {"ORDER": "2", "COLUMN_NUMBER": "1", "LINE_NUMBER": "2", "TYPE_FULL_NAME": "ANY"},
+    "edges": []
+  }],
+      "PDG": []
+    }, {
+      "function": "<unresolvedNamespace>.getConnection:<unresolvedSignature>(3)",
+      "file": "<unknown>",
+      "id": "107374182402",
+      "AST": [{
+    "id": "111669149698",
+    "label": "METHOD_PARAMETER_IN",
+    "properties": {"NAME": "p0", "CODE": "p0", "ORDER": "0", "INDEX": "0", "EVALUATION_STRATEGY": "BY_VALUE", "TYPE_FULL_NAME": "ANY"},
+    "edges": [{
+      "id": "107374182402-AST-111669149698",
+      "edgeType": "AST",
+      "in": "111669149698",
+      "out": "107374182402"
+    }]
+  }, {
+    "id": "111669149699",
+    "label": "METHOD_PARAMETER_IN",
+    "properties": {"NAME": "p1", "CODE": "p1", "ORDER": "1", "INDEX": "1", "EVALUATION_STRATEGY": "BY_VALUE", "TYPE_FULL_NAME": "ANY"},
+    "edges": [{
+      "id": "107374182402-AST-111669149699",
+      "edgeType": "AST",
+      "in": "111669149699",
+      "out": "107374182402"
+    }]
+  }, {
+    "id": "111669149700",
+    "label": "METHOD_PARAMETER_IN",
+    "properties": {"NAME": "p2", "CODE": "p2", "ORDER": "2", "INDEX": "2", "EVALUATION_STRATEGY": "BY_VALUE", "TYPE_FULL_NAME": "ANY"},
+    "edges": [{
+      "id": "107374182402-AST-111669149700",
+      "edgeType": "AST",
+      "in": "111669149700",
+      "out": "107374182402"
+    }]
+  }, {
+    "id": "111669149701",
+    "label": "METHOD_PARAMETER_IN",
+    "properties": {"NAME": "p3", "CODE": "p3", "ORDER": "3", "INDEX": "3", "EVALUATION_STRATEGY": "BY_VALUE", "TYPE_FULL_NAME": "ANY"},
+    "edges": [{
+      "id": "107374182402-AST-111669149701",
+      "edgeType": "AST",
+      "in": "111669149701",
+      "out": "107374182402"
+    }]
+  }, {
+    "id": "25769803781",
+    "label": "BLOCK",
+    "properties": {"ORDER": "1", "ARGUMENT_INDEX": "1", "TYPE_FULL_NAME": "ANY"},
+    "edges": [{
+      "id": "107374182402-AST-25769803781",
+      "edgeType": "AST",
+      "in": "25769803781",
+      "out": "107374182402"
+    }]
+  }, {
+    "id": "124554051586",
+    "label": "METHOD_RETURN",
+    "properties": {"ORDER": "2", "CODE": "RET", "TYPE_FULL_NAME": "ANY", "EVALUATION_STRATEGY": "BY_VALUE"},
+    "edges": [{
+      "id": "107374182402-AST-124554051586",
+      "edgeType": "AST",
+      "in": "124554051586",
+      "out": "107374182402"
+    }]
+  }, {
+    "id": "115964116994",
+    "label": "METHOD_PARAMETER_OUT",
+    "properties": {"NAME": "p0", "CODE": "p0", "ORDER": "0", "INDEX": "0", "EVALUATION_STRATEGY": "BY_VALUE", "TYPE_FULL_NAME": "ANY"},
+    "edges": [{
+      "id": "107374182402-AST-115964116994",
+      "edgeType": "AST",
+      "in": "115964116994",
+      "out": "107374182402"
+    }]
+  }, {
+    "id": "115964116995",
+    "label": "METHOD_PARAMETER_OUT",
+    "properties": {"NAME": "p1", "CODE": "p1", "ORDER": "1", "INDEX": "1", "EVALUATION_STRATEGY": "BY_VALUE", "TYPE_FULL_NAME": "ANY"},
+    "edges": [{
+      "id": "107374182402-AST-115964116995",
+      "edgeType": "AST",
+      "in": "115964116995",
+      "out": "107374182402"
+    }]
+  }, {
+    "id": "115964116996",
+    "label": "METHOD_PARAMETER_OUT",
+    "properties": {"NAME": "p2", "CODE": "p2", "ORDER": "2", "INDEX": "2", "EVALUATION_STRATEGY": "BY_VALUE", "TYPE_FULL_NAME": "ANY"},
+    "edges": [{
+      "id": "107374182402-AST-115964116996",
+      "edgeType": "AST",
+      "in": "115964116996",
+      "out": "107374182402"
+    }]
+  }, {
+    "id": "115964116997",
+    "label": "METHOD_PARAMETER_OUT",
+    "properties": {"NAME": "p3", "CODE": "p3", "ORDER": "3", "INDEX": "3", "EVALUATION_STRATEGY": "BY_VALUE", "TYPE_FULL_NAME": "ANY"},
+    "edges": [{
+      "id": "107374182402-AST-115964116997",
+      "edgeType": "AST",
+      "in": "115964116997",
+      "out": "107374182402"
+    }]
+  }],
+      "CFG": [{
+    "id": "25769803781",
+    "label": "BLOCK",
+    "properties": {"ORDER": "1", "ARGUMENT_INDEX": "1", "TYPE_FULL_NAME": "ANY"},
+    "edges": []
+  }],
+      "PDG": []
+    }, {
+      "function": "<unresolvedNamespace>.close:<unresolvedSignature>(0)",
+      "file": "<unknown>",
+      "id": "107374182403",
+      "AST": [{
+    "id": "111669149702",
+    "label": "METHOD_PARAMETER_IN",
+    "properties": {"NAME": "p0", "CODE": "p0", "ORDER": "0", "INDEX": "0", "EVALUATION_STRATEGY": "BY_VALUE", "TYPE_FULL_NAME": "ANY"},
+    "edges": [{
+      "id": "107374182403-AST-111669149702",
+      "edgeType": "AST",
+      "in": "111669149702",
+      "out": "107374182403"
+    }]
+  }, {
+    "id": "25769803782",
+    "label": "BLOCK",
+    "properties": {"ORDER": "1", "ARGUMENT_INDEX": "1", "TYPE_FULL_NAME": "ANY"},
+    "edges": [{
+      "id": "107374182403-AST-25769803782",
+      "edgeType": "AST",
+      "in": "25769803782",
+      "out": "107374182403"
+    }]
+  }, {
+    "id": "124554051587",
+    "label": "METHOD_RETURN",
+    "properties": {"ORDER": "2", "CODE": "RET", "TYPE_FULL_NAME": "ANY", "EVALUATION_STRATEGY": "BY_VALUE"},
+    "edges": [{
+      "id": "107374182403-AST-124554051587",
+      "edgeType": "AST",
+      "in": "124554051587",
+      "out": "107374182403"
+    }]
+  }, {
+    "id": "115964116998",
+    "label": "METHOD_PARAMETER_OUT",
+    "properties": {"NAME": "p0", "CODE": "p0", "ORDER": "0", "INDEX": "0", "EVALUATION_STRATEGY": "BY_VALUE", "TYPE_FULL_NAME": "ANY"},
+    "edges": [{
+      "id": "107374182403-AST-115964116998",
+      "edgeType": "AST",
+      "in": "115964116998",
+      "out": "107374182403"
+    }]
+  }],
+      "CFG": [{
+    "id": "25769803782",
+    "label": "BLOCK",
+    "properties": {"ORDER": "1", "ARGUMENT_INDEX": "1", "TYPE_FULL_NAME": "ANY"},
+    "edges": []
+  }],
+      "PDG": []
+    }, {
+      "function": "<unresolvedNamespace>.println:<unresolvedSignature>(1)",
+      "file": "<unknown>",
+      "id": "107374182404",
+      "AST": [{
+    "id": "111669149703",
+    "label": "METHOD_PARAMETER_IN",
+    "properties": {"NAME": "p0", "CODE": "p0", "ORDER": "0", "INDEX": "0", "EVALUATION_STRATEGY": "BY_VALUE", "TYPE_FULL_NAME": "ANY"},
+    "edges": [{
+      "id": "107374182404-AST-111669149703",
+      "edgeType": "AST",
+      "in": "111669149703",
+      "out": "107374182404"
+    }]
+  }, {
+    "id": "111669149704",
+    "label": "METHOD_PARAMETER_IN",
+    "properties": {"NAME": "p1", "CODE": "p1", "ORDER": "1", "INDEX": "1", "EVALUATION_STRATEGY": "BY_VALUE", "TYPE_FULL_NAME": "ANY"},
+    "edges": [{
+      "id": "107374182404-AST-111669149704",
+      "edgeType": "AST",
+      "in": "111669149704",
+      "out": "107374182404"
+    }]
+  }, {
+    "id": "25769803783",
+    "label": "BLOCK",
+    "properties": {"ORDER": "1", "ARGUMENT_INDEX": "1", "TYPE_FULL_NAME": "ANY"},
+    "edges": [{
+      "id": "107374182404-AST-25769803783",
+      "edgeType": "AST",
+      "in": "25769803783",
+      "out": "107374182404"
+    }]
+  }, {
+    "id": "124554051588",
+    "label": "METHOD_RETURN",
+    "properties": {"ORDER": "2", "CODE": "RET", "TYPE_FULL_NAME": "ANY", "EVALUATION_STRATEGY": "BY_VALUE"},
+    "edges": [{
+      "id": "107374182404-AST-124554051588",
+      "edgeType": "AST",
+      "in": "124554051588",
+      "out": "107374182404"
+    }]
+  }, {
+    "id": "115964116999",
+    "label": "METHOD_PARAMETER_OUT",
+    "properties": {"NAME": "p0", "CODE": "p0", "ORDER": "0", "INDEX": "0", "EVALUATION_STRATEGY": "BY_VALUE", "TYPE_FULL_NAME": "ANY"},
+    "edges": [{
+      "id": "107374182404-AST-115964116999",
+      "edgeType": "AST",
+      "in": "115964116999",
+      "out": "107374182404"
+    }]
+  }, {
+    "id": "115964117000",
+    "label": "METHOD_PARAMETER_OUT",
+    "properties": {"NAME": "p1", "CODE": "p1", "ORDER": "1", "INDEX": "1", "EVALUATION_STRATEGY": "BY_VALUE", "TYPE_FULL_NAME": "ANY"},
+    "edges": [{
+      "id": "107374182404-AST-115964117000",
+      "edgeType": "AST",
+      "in": "115964117000",
+      "out": "107374182404"
+    }]
+  }],
+      "CFG": [{
+    "id": "25769803783",
+    "label": "BLOCK",
+    "properties": {"ORDER": "1", "ARGUMENT_INDEX": "1", "TYPE_FULL_NAME": "ANY"},
+    "edges": []
+  }],
+      "PDG": []
+    }, {
+      "function": "<unresolvedNamespace>.getString:<unresolvedSignature>(1)",
+      "file": "<unknown>",
+      "id": "107374182405",
+      "AST": [{
+    "id": "111669149705",
+    "label": "METHOD_PARAMETER_IN",
+    "properties": {"NAME": "p0", "CODE": "p0", "ORDER": "0", "INDEX": "0", "EVALUATION_STRATEGY": "BY_VALUE", "TYPE_FULL_NAME": "ANY"},
+    "edges": [{
+      "id": "107374182405-AST-111669149705",
+      "edgeType": "AST",
+      "in": "111669149705",
+      "out": "107374182405"
+    }]
+  }, {
+    "id": "111669149706",
+    "label": "METHOD_PARAMETER_IN",
+    "properties": {"NAME": "p1", "CODE": "p1", "ORDER": "1", "INDEX": "1", "EVALUATION_STRATEGY": "BY_VALUE", "TYPE_FULL_NAME": "ANY"},
+    "edges": [{
+      "id": "107374182405-AST-111669149706",
+      "edgeType": "AST",
+      "in": "111669149706",
+      "out": "107374182405"
+    }]
+  }, {
+    "id": "25769803784",
+    "label": "BLOCK",
+    "properties": {"ORDER": "1", "ARGUMENT_INDEX": "1", "TYPE_FULL_NAME": "ANY"},
+    "edges": [{
+      "id": "107374182405-AST-25769803784",
+      "edgeType": "AST",
+      "in": "25769803784",
+      "out": "107374182405"
+    }]
+  }, {
+    "id": "124554051589",
+    "label": "METHOD_RETURN",
+    "properties": {"ORDER": "2", "CODE": "RET", "TYPE_FULL_NAME": "ANY", "EVALUATION_STRATEGY": "BY_VALUE"},
+    "edges": [{
+      "id": "107374182405-AST-124554051589",
+      "edgeType": "AST",
+      "in": "124554051589",
+      "out": "107374182405"
+    }]
+  }, {
+    "id": "115964117001",
+    "label": "METHOD_PARAMETER_OUT",
+    "properties": {"NAME": "p0", "CODE": "p0", "ORDER": "0", "INDEX": "0", "EVALUATION_STRATEGY": "BY_VALUE", "TYPE_FULL_NAME": "ANY"},
+    "edges": [{
+      "id": "107374182405-AST-115964117001",
+      "edgeType": "AST",
+      "in": "115964117001",
+      "out": "107374182405"
+    }]
+  }, {
+    "id": "115964117002",
+    "label": "METHOD_PARAMETER_OUT",
+    "properties": {"NAME": "p1", "CODE": "p1", "ORDER": "1", "INDEX": "1", "EVALUATION_STRATEGY": "BY_VALUE", "TYPE_FULL_NAME": "ANY"},
+    "edges": [{
+      "id": "107374182405-AST-115964117002",
+      "edgeType": "AST",
+      "in": "115964117002",
+      "out": "107374182405"
+    }]
+  }],
+      "CFG": [{
+    "id": "25769803784",
+    "label": "BLOCK",
+    "properties": {"ORDER": "1", "ARGUMENT_INDEX": "1", "TYPE_FULL_NAME": "ANY"},
+    "edges": []
+  }],
+      "PDG": []
+    }, {
+      "function": "<unresolvedNamespace>.next:<unresolvedSignature>(0)",
+      "file": "<unknown>",
+      "id": "107374182406",
+      "AST": [{
+    "id": "111669149707",
+    "label": "METHOD_PARAMETER_IN",
+    "properties": {"NAME": "p0", "CODE": "p0", "ORDER": "0", "INDEX": "0", "EVALUATION_STRATEGY": "BY_VALUE", "TYPE_FULL_NAME": "ANY"},
+    "edges": [{
+      "id": "107374182406-AST-111669149707",
+      "edgeType": "AST",
+      "in": "111669149707",
+      "out": "107374182406"
+    }]
+  }, {
+    "id": "25769803785",
+    "label": "BLOCK",
+    "properties": {"ORDER": "1", "ARGUMENT_INDEX": "1", "TYPE_FULL_NAME": "ANY"},
+    "edges": [{
+      "id": "107374182406-AST-25769803785",
+      "edgeType": "AST",
+      "in": "25769803785",
+      "out": "107374182406"
+    }]
+  }, {
+    "id": "124554051590",
+    "label": "METHOD_RETURN",
+    "properties": {"ORDER": "2", "CODE": "RET", "TYPE_FULL_NAME": "ANY", "EVALUATION_STRATEGY": "BY_VALUE"},
+    "edges": [{
+      "id": "107374182406-AST-124554051590",
+      "edgeType": "AST",
+      "in": "124554051590",
+      "out": "107374182406"
+    }]
+  }, {
+    "id": "115964117003",
+    "label": "METHOD_PARAMETER_OUT",
+    "properties": {"NAME": "p0", "CODE": "p0", "ORDER": "0", "INDEX": "0", "EVALUATION_STRATEGY": "BY_VALUE", "TYPE_FULL_NAME": "ANY"},
+    "edges": [{
+      "id": "107374182406-AST-115964117003",
+      "edgeType": "AST",
+      "in": "115964117003",
+      "out": "107374182406"
+    }]
+  }],
+      "CFG": [{
+    "id": "25769803785",
+    "label": "BLOCK",
+    "properties": {"ORDER": "1", "ARGUMENT_INDEX": "1", "TYPE_FULL_NAME": "ANY"},
+    "edges": []
+  }],
+      "PDG": []
+    }, {
+      "function": "<unresolvedNamespace>.createStatement:<unresolvedSignature>(0)",
+      "file": "<unknown>",
+      "id": "107374182407",
+      "AST": [{
+    "id": "111669149708",
+    "label": "METHOD_PARAMETER_IN",
+    "properties": {"NAME": "p0", "CODE": "p0", "ORDER": "0", "INDEX": "0", "EVALUATION_STRATEGY": "BY_VALUE", "TYPE_FULL_NAME": "ANY"},
+    "edges": [{
+      "id": "107374182407-AST-111669149708",
+      "edgeType": "AST",
+      "in": "111669149708",
+      "out": "107374182407"
+    }]
+  }, {
+    "id": "25769803786",
+    "label": "BLOCK",
+    "properties": {"ORDER": "1", "ARGUMENT_INDEX": "1", "TYPE_FULL_NAME": "ANY"},
+    "edges": [{
+      "id": "107374182407-AST-25769803786",
+      "edgeType": "AST",
+      "in": "25769803786",
+      "out": "107374182407"
+    }]
+  }, {
+    "id": "124554051591",
+    "label": "METHOD_RETURN",
+    "properties": {"ORDER": "2", "CODE": "RET", "TYPE_FULL_NAME": "ANY", "EVALUATION_STRATEGY": "BY_VALUE"},
+    "edges": [{
+      "id": "107374182407-AST-124554051591",
+      "edgeType": "AST",
+      "in": "124554051591",
+      "out": "107374182407"
+    }]
+  }, {
+    "id": "115964117004",
+    "label": "METHOD_PARAMETER_OUT",
+    "properties": {"NAME": "p0", "CODE": "p0", "ORDER": "0", "INDEX": "0", "EVALUATION_STRATEGY": "BY_VALUE", "TYPE_FULL_NAME": "ANY"},
+    "edges": [{
+      "id": "107374182407-AST-115964117004",
+      "edgeType": "AST",
+      "in": "115964117004",
+      "out": "107374182407"
+    }]
+  }],
+      "CFG": [{
+    "id": "25769803786",
+    "label": "BLOCK",
+    "properties": {"ORDER": "1", "ARGUMENT_INDEX": "1", "TYPE_FULL_NAME": "ANY"},
+    "edges": []
+  }],
+      "PDG": []
+    }, {
+      "function": "<unresolvedNamespace>.printStackTrace:<unresolvedSignature>(0)",
+      "file": "<unknown>",
+      "id": "107374182408",
+      "AST": [{
+    "id": "111669149709",
+    "label": "METHOD_PARAMETER_IN",
+    "properties": {"NAME": "p0", "CODE": "p0", "ORDER": "0", "INDEX": "0", "EVALUATION_STRATEGY": "BY_VALUE", "TYPE_FULL_NAME": "ANY"},
+    "edges": [{
+      "id": "107374182408-AST-111669149709",
+      "edgeType": "AST",
+      "in": "111669149709",
+      "out": "107374182408"
+    }]
+  }, {
+    "id": "25769803787",
+    "label": "BLOCK",
+    "properties": {"ORDER": "1", "ARGUMENT_INDEX": "1", "TYPE_FULL_NAME": "ANY"},
+    "edges": [{
+      "id": "107374182408-AST-25769803787",
+      "edgeType": "AST",
+      "in": "25769803787",
+      "out": "107374182408"
+    }]
+  }, {
+    "id": "124554051592",
+    "label": "METHOD_RETURN",
+    "properties": {"ORDER": "2", "CODE": "RET", "TYPE_FULL_NAME": "ANY", "EVALUATION_STRATEGY": "BY_VALUE"},
+    "edges": [{
+      "id": "107374182408-AST-124554051592",
+      "edgeType": "AST",
+      "in": "124554051592",
+      "out": "107374182408"
+    }]
+  }, {
+    "id": "115964117005",
+    "label": "METHOD_PARAMETER_OUT",
+    "properties": {"NAME": "p0", "CODE": "p0", "ORDER": "0", "INDEX": "0", "EVALUATION_STRATEGY": "BY_VALUE", "TYPE_FULL_NAME": "ANY"},
+    "edges": [{
+      "id": "107374182408-AST-115964117005",
+      "edgeType": "AST",
+      "in": "115964117005",
+      "out": "107374182408"
+    }]
+  }],
+      "CFG": [{
+    "id": "25769803787",
+    "label": "BLOCK",
+    "properties": {"ORDER": "1", "ARGUMENT_INDEX": "1", "TYPE_FULL_NAME": "ANY"},
+    "edges": []
+  }],
+      "PDG": []
+    }, {
+      "function": "<operator>.fieldAccess",
+      "file": "<unknown>",
+      "id": "107374182409",
+      "AST": [{
+    "id": "111669149710",
+    "label": "METHOD_PARAMETER_IN",
+    "properties": {"NAME": "p1", "CODE": "p1", "ORDER": "1", "INDEX": "1", "EVALUATION_STRATEGY": "BY_VALUE", "TYPE_FULL_NAME": "ANY"},
+    "edges": [{
+      "id": "107374182409-AST-111669149710",
+      "edgeType": "AST",
+      "in": "111669149710",
+      "out": "107374182409"
+    }]
+  }, {
+    "id": "111669149711",
+    "label": "METHOD_PARAMETER_IN",
+    "properties": {"NAME": "p2", "CODE": "p2", "ORDER": "2", "INDEX": "2", "EVALUATION_STRATEGY": "BY_VALUE", "TYPE_FULL_NAME": "ANY"},
+    "edges": [{
+      "id": "107374182409-AST-111669149711",
+      "edgeType": "AST",
+      "in": "111669149711",
+      "out": "107374182409"
+    }]
+  }, {
+    "id": "25769803788",
+    "label": "BLOCK",
+    "properties": {"ORDER": "1", "ARGUMENT_INDEX": "1", "TYPE_FULL_NAME": "ANY"},
+    "edges": [{
+      "id": "107374182409-AST-25769803788",
+      "edgeType": "AST",
+      "in": "25769803788",
+      "out": "107374182409"
+    }]
+  }, {
+    "id": "124554051593",
+    "label": "METHOD_RETURN",
+    "properties": {"ORDER": "2", "CODE": "RET", "TYPE_FULL_NAME": "ANY", "EVALUATION_STRATEGY": "BY_VALUE"},
+    "edges": [{
+      "id": "107374182409-AST-124554051593",
+      "edgeType": "AST",
+      "in": "124554051593",
+      "out": "107374182409"
+    }]
+  }, {
+    "id": "115964117006",
+    "label": "METHOD_PARAMETER_OUT",
+    "properties": {"NAME": "p1", "CODE": "p1", "ORDER": "1", "INDEX": "1", "EVALUATION_STRATEGY": "BY_VALUE", "TYPE_FULL_NAME": "ANY"},
+    "edges": [{
+      "id": "107374182409-AST-115964117006",
+      "edgeType": "AST",
+      "in": "115964117006",
+      "out": "107374182409"
+    }]
+  }, {
+    "id": "115964117007",
+    "label": "METHOD_PARAMETER_OUT",
+    "properties": {"NAME": "p2", "CODE": "p2", "ORDER": "2", "INDEX": "2", "EVALUATION_STRATEGY": "BY_VALUE", "TYPE_FULL_NAME": "ANY"},
+    "edges": [{
+      "id": "107374182409-AST-115964117007",
+      "edgeType": "AST",
+      "in": "115964117007",
+      "out": "107374182409"
+    }]
+  }],
+      "CFG": [{
+    "id": "25769803788",
+    "label": "BLOCK",
+    "properties": {"ORDER": "1", "ARGUMENT_INDEX": "1", "TYPE_FULL_NAME": "ANY"},
+    "edges": []
+  }],
+      "PDG": []
+    }, {
+      "function": "<unresolvedNamespace>.executeQuery:<unresolvedSignature>(1)",
+      "file": "<unknown>",
+      "id": "107374182410",
+      "AST": [{
+    "id": "111669149712",
+    "label": "METHOD_PARAMETER_IN",
+    "properties": {"NAME": "p0", "CODE": "p0", "ORDER": "0", "INDEX": "0", "EVALUATION_STRATEGY": "BY_VALUE", "TYPE_FULL_NAME": "ANY"},
+    "edges": [{
+      "id": "107374182410-AST-111669149712",
+      "edgeType": "AST",
+      "in": "111669149712",
+      "out": "107374182410"
+    }]
+  }, {
+    "id": "111669149713",
+    "label": "METHOD_PARAMETER_IN",
+    "properties": {"NAME": "p1", "CODE": "p1", "ORDER": "1", "INDEX": "1", "EVALUATION_STRATEGY": "BY_VALUE", "TYPE_FULL_NAME": "ANY"},
+    "edges": [{
+      "id": "107374182410-AST-111669149713",
+      "edgeType": "AST",
+      "in": "111669149713",
+      "out": "107374182410"
+    }]
+  }, {
+    "id": "25769803789",
+    "label": "BLOCK",
+    "properties": {"ORDER": "1", "ARGUMENT_INDEX": "1", "TYPE_FULL_NAME": "ANY"},
+    "edges": [{
+      "id": "107374182410-AST-25769803789",
+      "edgeType": "AST",
+      "in": "25769803789",
+      "out": "107374182410"
+    }]
+  }, {
+    "id": "124554051594",
+    "label": "METHOD_RETURN",
+    "properties": {"ORDER": "2", "CODE": "RET", "TYPE_FULL_NAME": "ANY", "EVALUATION_STRATEGY": "BY_VALUE"},
+    "edges": [{
+      "id": "107374182410-AST-124554051594",
+      "edgeType": "AST",
+      "in": "124554051594",
+      "out": "107374182410"
+    }]
+  }, {
+    "id": "115964117008",
+    "label": "METHOD_PARAMETER_OUT",
+    "properties": {"NAME": "p0", "CODE": "p0", "ORDER": "0", "INDEX": "0", "EVALUATION_STRATEGY": "BY_VALUE", "TYPE_FULL_NAME": "ANY"},
+    "edges": [{
+      "id": "107374182410-AST-115964117008",
+      "edgeType": "AST",
+      "in": "115964117008",
+      "out": "107374182410"
+    }]
+  }, {
+    "id": "115964117009",
+    "label": "METHOD_PARAMETER_OUT",
+    "properties": {"NAME": "p1", "CODE": "p1", "ORDER": "1", "INDEX": "1", "EVALUATION_STRATEGY": "BY_VALUE", "TYPE_FULL_NAME": "ANY"},
+    "edges": [{
+      "id": "107374182410-AST-115964117009",
+      "edgeType": "AST",
+      "in": "115964117009",
+      "out": "107374182410"
+    }]
+  }],
+      "CFG": [{
+    "id": "25769803789",
+    "label": "BLOCK",
+    "properties": {"ORDER": "1", "ARGUMENT_INDEX": "1", "TYPE_FULL_NAME": "ANY"},
+    "edges": []
+  }],
+      "PDG": []
+    }, {
+      "function": "<operator>.assignment",
+      "file": "<unknown>",
+      "id": "107374182411",
+      "AST": [{
+    "id": "111669149714",
+    "label": "METHOD_PARAMETER_IN",
+    "properties": {"NAME": "p1", "CODE": "p1", "ORDER": "1", "INDEX": "1", "EVALUATION_STRATEGY": "BY_VALUE", "TYPE_FULL_NAME": "ANY"},
+    "edges": [{
+      "id": "107374182411-AST-111669149714",
+      "edgeType": "AST",
+      "in": "111669149714",
+      "out": "107374182411"
+    }]
+  }, {
+    "id": "111669149715",
+    "label": "METHOD_PARAMETER_IN",
+    "properties": {"NAME": "p2", "CODE": "p2", "ORDER": "2", "INDEX": "2", "EVALUATION_STRATEGY": "BY_VALUE", "TYPE_FULL_NAME": "ANY"},
+    "edges": [{
+      "id": "107374182411-AST-111669149715",
+      "edgeType": "AST",
+      "in": "111669149715",
+      "out": "107374182411"
+    }]
+  }, {
+    "id": "25769803790",
+    "label": "BLOCK",
+    "properties": {"ORDER": "1", "ARGUMENT_INDEX": "1", "TYPE_FULL_NAME": "ANY"},
+    "edges": [{
+      "id": "107374182411-AST-25769803790",
+      "edgeType": "AST",
+      "in": "25769803790",
+      "out": "107374182411"
+    }]
+  }, {
+    "id": "124554051595",
+    "label": "METHOD_RETURN",
+    "properties": {"ORDER": "2", "CODE": "RET", "TYPE_FULL_NAME": "ANY", "EVALUATION_STRATEGY": "BY_VALUE"},
+    "edges": [{
+      "id": "107374182411-AST-124554051595",
+      "edgeType": "AST",
+      "in": "124554051595",
+      "out": "107374182411"
+    }]
+  }, {
+    "id": "115964117010",
+    "label": "METHOD_PARAMETER_OUT",
+    "properties": {"NAME": "p1", "CODE": "p1", "ORDER": "1", "INDEX": "1", "EVALUATION_STRATEGY": "BY_VALUE", "TYPE_FULL_NAME": "ANY"},
+    "edges": [{
+      "id": "107374182411-AST-115964117010",
+      "edgeType": "AST",
+      "in": "115964117010",
+      "out": "107374182411"
+    }]
+  }, {
+    "id": "115964117011",
+    "label": "METHOD_PARAMETER_OUT",
+    "properties": {"NAME": "p2", "CODE": "p2", "ORDER": "2", "INDEX": "2", "EVALUATION_STRATEGY": "BY_VALUE", "TYPE_FULL_NAME": "ANY"},
+    "edges": [{
+      "id": "107374182411-AST-115964117011",
+      "edgeType": "AST",
+      "in": "115964117011",
+      "out": "107374182411"
+    }]
+  }],
+      "CFG": [{
+    "id": "25769803790",
+    "label": "BLOCK",
+    "properties": {"ORDER": "1", "ARGUMENT_INDEX": "1", "TYPE_FULL_NAME": "ANY"},
+    "edges": []
+  }],
+      "PDG": []
+    }, {
+      "function": "<operator>.addition",
+      "file": "<unknown>",
+      "id": "107374182412",
+      "AST": [{
+    "id": "111669149716",
+    "label": "METHOD_PARAMETER_IN",
+    "properties": {"NAME": "p1", "CODE": "p1", "ORDER": "1", "INDEX": "1", "EVALUATION_STRATEGY": "BY_VALUE", "TYPE_FULL_NAME": "ANY"},
+    "edges": [{
+      "id": "107374182412-AST-111669149716",
+      "edgeType": "AST",
+      "in": "111669149716",
+      "out": "107374182412"
+    }]
+  }, {
+    "id": "111669149717",
+    "label": "METHOD_PARAMETER_IN",
+    "properties": {"NAME": "p2", "CODE": "p2", "ORDER": "2", "INDEX": "2", "EVALUATION_STRATEGY": "BY_VALUE", "TYPE_FULL_NAME": "ANY"},
+    "edges": [{
+      "id": "107374182412-AST-111669149717",
+      "edgeType": "AST",
+      "in": "111669149717",
+      "out": "107374182412"
+    }]
+  }, {
+    "id": "25769803791",
+    "label": "BLOCK",
+    "properties": {"ORDER": "1", "ARGUMENT_INDEX": "1", "TYPE_FULL_NAME": "ANY"},
+    "edges": [{
+      "id": "107374182412-AST-25769803791",
+      "edgeType": "AST",
+      "in": "25769803791",
+      "out": "107374182412"
+    }]
+  }, {
+    "id": "124554051596",
+    "label": "METHOD_RETURN",
+    "properties": {"ORDER": "2", "CODE": "RET", "TYPE_FULL_NAME": "ANY", "EVALUATION_STRATEGY": "BY_VALUE"},
+    "edges": [{
+      "id": "107374182412-AST-124554051596",
+      "edgeType": "AST",
+      "in": "124554051596",
+      "out": "107374182412"
+    }]
+  }, {
+    "id": "115964117012",
+    "label": "METHOD_PARAMETER_OUT",
+    "properties": {"NAME": "p1", "CODE": "p1", "ORDER": "1", "INDEX": "1", "EVALUATION_STRATEGY": "BY_VALUE", "TYPE_FULL_NAME": "ANY"},
+    "edges": [{
+      "id": "107374182412-AST-115964117012",
+      "edgeType": "AST",
+      "in": "115964117012",
+      "out": "107374182412"
+    }]
+  }, {
+    "id": "115964117013",
+    "label": "METHOD_PARAMETER_OUT",
+    "properties": {"NAME": "p2", "CODE": "p2", "ORDER": "2", "INDEX": "2", "EVALUATION_STRATEGY": "BY_VALUE", "TYPE_FULL_NAME": "ANY"},
+    "edges": [{
+      "id": "107374182412-AST-115964117013",
+      "edgeType": "AST",
+      "in": "115964117013",
+      "out": "107374182412"
+    }]
+  }],
+      "CFG": [{
+    "id": "25769803791",
+    "label": "BLOCK",
+    "properties": {"ORDER": "1", "ARGUMENT_INDEX": "1", "TYPE_FULL_NAME": "ANY"},
+    "edges": []
+  }],
+      "PDG": []
+    }]}

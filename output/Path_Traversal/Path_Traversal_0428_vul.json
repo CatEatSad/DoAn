@@ -1,0 +1,3367 @@
+{"functions": [{
+      "function": "PathTraversalVulnerability.main:<unresolvedSignature>(1)",
+      "file": "",
+      "id": "107374182400",
+      "AST": [{
+    "id": "111669149696",
+    "label": "METHOD_PARAMETER_IN",
+    "properties": {"NAME": "args", "COLUMN_NUMBER": "29", "ORDER": "1", "INDEX": "1", "CODE": "String[] args", "LINE_NUMBER": "6", "EVALUATION_STRATEGY": "BY_SHARING", "TYPE_FULL_NAME": "<unresolvedNamespace>.String[]"},
+    "edges": [{
+      "id": "107374182400-AST-111669149696",
+      "edgeType": "AST",
+      "in": "111669149696",
+      "out": "107374182400"
+    }]
+  }, {
+    "id": "25769803776",
+    "label": "BLOCK",
+    "properties": {"ORDER": "2", "COLUMN_NUMBER": "44", "LINE_NUMBER": "6"},
+    "edges": [{
+      "id": "25769803776-AST-94489280512",
+      "edgeType": "AST",
+      "in": "94489280512",
+      "out": "25769803776"
+    }, {
+      "id": "25769803776-AST-30064771072",
+      "edgeType": "AST",
+      "in": "30064771072",
+      "out": "25769803776"
+    }, {
+      "id": "25769803776-AST-30064771074",
+      "edgeType": "AST",
+      "in": "30064771074",
+      "out": "25769803776"
+    }, {
+      "id": "25769803776-AST-30064771076",
+      "edgeType": "AST",
+      "in": "30064771076",
+      "out": "25769803776"
+    }, {
+      "id": "25769803776-AST-94489280513",
+      "edgeType": "AST",
+      "in": "94489280513",
+      "out": "25769803776"
+    }, {
+      "id": "25769803776-AST-30064771078",
+      "edgeType": "AST",
+      "in": "30064771078",
+      "out": "25769803776"
+    }, {
+      "id": "25769803776-AST-47244640256",
+      "edgeType": "AST",
+      "in": "47244640256",
+      "out": "25769803776"
+    }, {
+      "id": "107374182400-AST-25769803776",
+      "edgeType": "AST",
+      "in": "25769803776",
+      "out": "107374182400"
+    }]
+  }, {
+    "id": "94489280512",
+    "label": "LOCAL",
+    "properties": {"NAME": "scanner", "TYPE_FULL_NAME": "java.util.Scanner", "COLUMN_NUMBER": "9", "GENERIC_SIGNATURE": "LScanner;", "ORDER": "1", "CODE": "Scanner scanner", "LINE_NUMBER": "7"},
+    "edges": [{
+      "id": "25769803776-AST-94489280512",
+      "edgeType": "AST",
+      "in": "94489280512",
+      "out": "25769803776"
+    }]
+  }, {
+    "id": "30064771072",
+    "label": "CALL",
+    "properties": {"DISPATCH_TYPE": "STATIC_DISPATCH", "NAME": "<operator>.assignment", "METHOD_FULL_NAME": "<operator>.assignment", "TYPE_FULL_NAME": "java.util.Scanner", "COLUMN_NUMBER": "17", "ORDER": "2", "CODE": "Scanner scanner = new Scanner(System.in)", "LINE_NUMBER": "7"},
+    "edges": [{
+      "id": "30064771072-AST-68719476736",
+      "edgeType": "AST",
+      "in": "68719476736",
+      "out": "30064771072"
+    }, {
+      "id": "30064771072-AST-30064771073",
+      "edgeType": "AST",
+      "in": "30064771073",
+      "out": "30064771072"
+    }, {
+      "id": "25769803776-AST-30064771072",
+      "edgeType": "AST",
+      "in": "30064771072",
+      "out": "25769803776"
+    }]
+  }, {
+    "id": "68719476736",
+    "label": "IDENTIFIER",
+    "properties": {"NAME": "scanner", "TYPE_FULL_NAME": "java.util.Scanner", "COLUMN_NUMBER": "17", "ARGUMENT_INDEX": "1", "ORDER": "1", "CODE": "scanner", "LINE_NUMBER": "7"},
+    "edges": [{
+      "id": "30064771072-AST-68719476736",
+      "edgeType": "AST",
+      "in": "68719476736",
+      "out": "30064771072"
+    }]
+  }, {
+    "id": "30064771073",
+    "label": "CALL",
+    "properties": {"DISPATCH_TYPE": "STATIC_DISPATCH", "NAME": "<operator>.alloc", "METHOD_FULL_NAME": "<operator>.alloc", "TYPE_FULL_NAME": "java.util.Scanner", "COLUMN_NUMBER": "27", "ARGUMENT_INDEX": "2", "ORDER": "2", "CODE": "new Scanner(System.in)", "LINE_NUMBER": "7"},
+    "edges": [{
+      "id": "30064771072-AST-30064771073",
+      "edgeType": "AST",
+      "in": "30064771073",
+      "out": "30064771072"
+    }]
+  }, {
+    "id": "30064771074",
+    "label": "CALL",
+    "properties": {"DISPATCH_TYPE": "STATIC_DISPATCH", "NAME": "<init>", "METHOD_FULL_NAME": "java.util.Scanner.<init>:<unresolvedSignature>(1)", "SIGNATURE": "<unresolvedSignature>(1)", "TYPE_FULL_NAME": "void", "ORDER": "3", "CODE": "new Scanner(System.in)", "LINE_NUMBER": "7"},
+    "edges": [{
+      "id": "30064771074-AST-68719476737",
+      "edgeType": "AST",
+      "in": "68719476737",
+      "out": "30064771074"
+    }, {
+      "id": "30064771074-AST-30064771075",
+      "edgeType": "AST",
+      "in": "30064771075",
+      "out": "30064771074"
+    }, {
+      "id": "25769803776-AST-30064771074",
+      "edgeType": "AST",
+      "in": "30064771074",
+      "out": "25769803776"
+    }]
+  }, {
+    "id": "68719476737",
+    "label": "IDENTIFIER",
+    "properties": {"NAME": "scanner", "TYPE_FULL_NAME": "java.util.Scanner", "COLUMN_NUMBER": "17", "ARGUMENT_INDEX": "0", "ORDER": "1", "CODE": "scanner", "LINE_NUMBER": "7"},
+    "edges": [{
+      "id": "30064771074-AST-68719476737",
+      "edgeType": "AST",
+      "in": "68719476737",
+      "out": "30064771074"
+    }]
+  }, {
+    "id": "30064771075",
+    "label": "CALL",
+    "properties": {"DISPATCH_TYPE": "STATIC_DISPATCH", "NAME": "<operator>.fieldAccess", "METHOD_FULL_NAME": "<operator>.fieldAccess", "TYPE_FULL_NAME": "ANY", "COLUMN_NUMBER": "39", "ARGUMENT_INDEX": "1", "ORDER": "2", "CODE": "System.in", "LINE_NUMBER": "7"},
+    "edges": [{
+      "id": "30064771075-AST-68719476738",
+      "edgeType": "AST",
+      "in": "68719476738",
+      "out": "30064771075"
+    }, {
+      "id": "30064771075-AST-55834574848",
+      "edgeType": "AST",
+      "in": "55834574848",
+      "out": "30064771075"
+    }, {
+      "id": "30064771074-AST-30064771075",
+      "edgeType": "AST",
+      "in": "30064771075",
+      "out": "30064771074"
+    }]
+  }, {
+    "id": "68719476738",
+    "label": "IDENTIFIER",
+    "properties": {"NAME": "System", "TYPE_FULL_NAME": "ANY", "COLUMN_NUMBER": "39", "ARGUMENT_INDEX": "1", "ORDER": "1", "CODE": "System", "LINE_NUMBER": "7"},
+    "edges": [{
+      "id": "30064771075-AST-68719476738",
+      "edgeType": "AST",
+      "in": "68719476738",
+      "out": "30064771075"
+    }]
+  }, {
+    "id": "55834574848",
+    "label": "FIELD_IDENTIFIER",
+    "properties": {"COLUMN_NUMBER": "46", "ARGUMENT_INDEX": "2", "ORDER": "2", "CODE": "in", "LINE_NUMBER": "7", "CANONICAL_NAME": "in"},
+    "edges": [{
+      "id": "30064771075-AST-55834574848",
+      "edgeType": "AST",
+      "in": "55834574848",
+      "out": "30064771075"
+    }]
+  }, {
+    "id": "30064771076",
+    "label": "CALL",
+    "properties": {"DISPATCH_TYPE": "DYNAMIC_DISPATCH", "NAME": "println", "METHOD_FULL_NAME": "<unresolvedNamespace>.println:<unresolvedSignature>(1)", "SIGNATURE": "<unresolvedSignature>(1)", "TYPE_FULL_NAME": "void", "COLUMN_NUMBER": "9", "ORDER": "4", "CODE": "System.out.println(\"Enter the file name:\")", "LINE_NUMBER": "8"},
+    "edges": [{
+      "id": "30064771076-AST-30064771077",
+      "edgeType": "AST",
+      "in": "30064771077",
+      "out": "30064771076"
+    }, {
+      "id": "30064771076-AST-90194313216",
+      "edgeType": "AST",
+      "in": "90194313216",
+      "out": "30064771076"
+    }, {
+      "id": "25769803776-AST-30064771076",
+      "edgeType": "AST",
+      "in": "30064771076",
+      "out": "25769803776"
+    }]
+  }, {
+    "id": "30064771077",
+    "label": "CALL",
+    "properties": {"DISPATCH_TYPE": "STATIC_DISPATCH", "NAME": "<operator>.fieldAccess", "METHOD_FULL_NAME": "<operator>.fieldAccess", "TYPE_FULL_NAME": "ANY", "COLUMN_NUMBER": "9", "ARGUMENT_INDEX": "0", "ORDER": "1", "CODE": "System.out", "LINE_NUMBER": "8"},
+    "edges": [{
+      "id": "30064771077-AST-68719476739",
+      "edgeType": "AST",
+      "in": "68719476739",
+      "out": "30064771077"
+    }, {
+      "id": "30064771077-AST-55834574849",
+      "edgeType": "AST",
+      "in": "55834574849",
+      "out": "30064771077"
+    }, {
+      "id": "30064771076-AST-30064771077",
+      "edgeType": "AST",
+      "in": "30064771077",
+      "out": "30064771076"
+    }]
+  }, {
+    "id": "68719476739",
+    "label": "IDENTIFIER",
+    "properties": {"NAME": "System", "TYPE_FULL_NAME": "ANY", "COLUMN_NUMBER": "9", "ARGUMENT_INDEX": "1", "ORDER": "1", "CODE": "System", "LINE_NUMBER": "8"},
+    "edges": [{
+      "id": "30064771077-AST-68719476739",
+      "edgeType": "AST",
+      "in": "68719476739",
+      "out": "30064771077"
+    }]
+  }, {
+    "id": "55834574849",
+    "label": "FIELD_IDENTIFIER",
+    "properties": {"COLUMN_NUMBER": "16", "ARGUMENT_INDEX": "2", "ORDER": "2", "CODE": "out", "LINE_NUMBER": "8", "CANONICAL_NAME": "out"},
+    "edges": [{
+      "id": "30064771077-AST-55834574849",
+      "edgeType": "AST",
+      "in": "55834574849",
+      "out": "30064771077"
+    }]
+  }, {
+    "id": "90194313216",
+    "label": "LITERAL",
+    "properties": {"TYPE_FULL_NAME": "java.lang.String", "COLUMN_NUMBER": "28", "ARGUMENT_INDEX": "1", "ORDER": "2", "CODE": "\"Enter the file name:\"", "LINE_NUMBER": "8"},
+    "edges": [{
+      "id": "30064771076-AST-90194313216",
+      "edgeType": "AST",
+      "in": "90194313216",
+      "out": "30064771076"
+    }]
+  }, {
+    "id": "94489280513",
+    "label": "LOCAL",
+    "properties": {"NAME": "fileName", "TYPE_FULL_NAME": "ANY", "COLUMN_NUMBER": "9", "GENERIC_SIGNATURE": "LString;", "ORDER": "5", "CODE": "String fileName", "LINE_NUMBER": "9"},
+    "edges": [{
+      "id": "25769803776-AST-94489280513",
+      "edgeType": "AST",
+      "in": "94489280513",
+      "out": "25769803776"
+    }]
+  }, {
+    "id": "30064771078",
+    "label": "CALL",
+    "properties": {"DISPATCH_TYPE": "STATIC_DISPATCH", "NAME": "<operator>.assignment", "METHOD_FULL_NAME": "<operator>.assignment", "TYPE_FULL_NAME": "ANY", "COLUMN_NUMBER": "16", "ORDER": "6", "CODE": "String fileName = scanner.nextLine()", "LINE_NUMBER": "9"},
+    "edges": [{
+      "id": "30064771078-AST-68719476740",
+      "edgeType": "AST",
+      "in": "68719476740",
+      "out": "30064771078"
+    }, {
+      "id": "30064771078-AST-30064771079",
+      "edgeType": "AST",
+      "in": "30064771079",
+      "out": "30064771078"
+    }, {
+      "id": "25769803776-AST-30064771078",
+      "edgeType": "AST",
+      "in": "30064771078",
+      "out": "25769803776"
+    }]
+  }, {
+    "id": "68719476740",
+    "label": "IDENTIFIER",
+    "properties": {"NAME": "fileName", "TYPE_FULL_NAME": "ANY", "COLUMN_NUMBER": "16", "ARGUMENT_INDEX": "1", "ORDER": "1", "CODE": "fileName", "LINE_NUMBER": "9"},
+    "edges": [{
+      "id": "30064771078-AST-68719476740",
+      "edgeType": "AST",
+      "in": "68719476740",
+      "out": "30064771078"
+    }]
+  }, {
+    "id": "30064771079",
+    "label": "CALL",
+    "properties": {"DISPATCH_TYPE": "DYNAMIC_DISPATCH", "NAME": "nextLine", "METHOD_FULL_NAME": "java.util.Scanner.nextLine:<unresolvedSignature>(0)", "SIGNATURE": "<unresolvedSignature>(0)", "TYPE_FULL_NAME": "ANY", "COLUMN_NUMBER": "27", "ARGUMENT_INDEX": "2", "ORDER": "2", "CODE": "nextLine()", "LINE_NUMBER": "9"},
+    "edges": [{
+      "id": "30064771079-AST-68719476741",
+      "edgeType": "AST",
+      "in": "68719476741",
+      "out": "30064771079"
+    }, {
+      "id": "30064771078-AST-30064771079",
+      "edgeType": "AST",
+      "in": "30064771079",
+      "out": "30064771078"
+    }]
+  }, {
+    "id": "68719476741",
+    "label": "IDENTIFIER",
+    "properties": {"NAME": "scanner", "TYPE_FULL_NAME": "java.util.Scanner", "COLUMN_NUMBER": "27", "ARGUMENT_INDEX": "0", "ORDER": "1", "CODE": "scanner", "LINE_NUMBER": "9"},
+    "edges": [{
+      "id": "30064771079-AST-68719476741",
+      "edgeType": "AST",
+      "in": "68719476741",
+      "out": "30064771079"
+    }]
+  }, {
+    "id": "47244640256",
+    "label": "CONTROL_STRUCTURE",
+    "properties": {"CONTROL_STRUCTURE_TYPE": "TRY", "PARSER_TYPE_NAME": "TryStmt", "COLUMN_NUMBER": "9", "ORDER": "7", "CODE": "try", "LINE_NUMBER": "10"},
+    "edges": [{
+      "id": "47244640256-AST-25769803777",
+      "edgeType": "AST",
+      "in": "25769803777",
+      "out": "47244640256"
+    }, {
+      "id": "47244640256-AST-47244640258",
+      "edgeType": "AST",
+      "in": "47244640258",
+      "out": "47244640256"
+    }, {
+      "id": "25769803776-AST-47244640256",
+      "edgeType": "AST",
+      "in": "47244640256",
+      "out": "25769803776"
+    }]
+  }, {
+    "id": "25769803777",
+    "label": "BLOCK",
+    "properties": {"COLUMN_NUMBER": "13", "ARGUMENT_INDEX": "1", "ORDER": "1", "CODE": "try", "LINE_NUMBER": "10"},
+    "edges": [{
+      "id": "25769803777-AST-94489280514",
+      "edgeType": "AST",
+      "in": "94489280514",
+      "out": "25769803777"
+    }, {
+      "id": "25769803777-AST-30064771080",
+      "edgeType": "AST",
+      "in": "30064771080",
+      "out": "25769803777"
+    }, {
+      "id": "25769803777-AST-30064771082",
+      "edgeType": "AST",
+      "in": "30064771082",
+      "out": "25769803777"
+    }, {
+      "id": "25769803777-AST-94489280515",
+      "edgeType": "AST",
+      "in": "94489280515",
+      "out": "25769803777"
+    }, {
+      "id": "25769803777-AST-30064771084",
+      "edgeType": "AST",
+      "in": "30064771084",
+      "out": "25769803777"
+    }, {
+      "id": "25769803777-AST-30064771086",
+      "edgeType": "AST",
+      "in": "30064771086",
+      "out": "25769803777"
+    }, {
+      "id": "25769803777-AST-94489280516",
+      "edgeType": "AST",
+      "in": "94489280516",
+      "out": "25769803777"
+    }, {
+      "id": "25769803777-AST-47244640257",
+      "edgeType": "AST",
+      "in": "47244640257",
+      "out": "25769803777"
+    }, {
+      "id": "25769803777-AST-30064771094",
+      "edgeType": "AST",
+      "in": "30064771094",
+      "out": "25769803777"
+    }, {
+      "id": "47244640256-AST-25769803777",
+      "edgeType": "AST",
+      "in": "25769803777",
+      "out": "47244640256"
+    }]
+  }, {
+    "id": "94489280514",
+    "label": "LOCAL",
+    "properties": {"NAME": "file", "TYPE_FULL_NAME": "java.io.File", "COLUMN_NUMBER": "13", "GENERIC_SIGNATURE": "LFile;", "ORDER": "1", "CODE": "File file", "LINE_NUMBER": "11"},
+    "edges": [{
+      "id": "25769803777-AST-94489280514",
+      "edgeType": "AST",
+      "in": "94489280514",
+      "out": "25769803777"
+    }]
+  }, {
+    "id": "30064771080",
+    "label": "CALL",
+    "properties": {"DISPATCH_TYPE": "STATIC_DISPATCH", "NAME": "<operator>.assignment", "METHOD_FULL_NAME": "<operator>.assignment", "TYPE_FULL_NAME": "java.io.File", "COLUMN_NUMBER": "18", "ORDER": "2", "CODE": "File file = new File(\"C:\\\\data\\\\\" + fileName)", "LINE_NUMBER": "11"},
+    "edges": [{
+      "id": "30064771080-AST-68719476742",
+      "edgeType": "AST",
+      "in": "68719476742",
+      "out": "30064771080"
+    }, {
+      "id": "30064771080-AST-30064771081",
+      "edgeType": "AST",
+      "in": "30064771081",
+      "out": "30064771080"
+    }, {
+      "id": "25769803777-AST-30064771080",
+      "edgeType": "AST",
+      "in": "30064771080",
+      "out": "25769803777"
+    }]
+  }, {
+    "id": "68719476742",
+    "label": "IDENTIFIER",
+    "properties": {"NAME": "file", "TYPE_FULL_NAME": "java.io.File", "COLUMN_NUMBER": "18", "ARGUMENT_INDEX": "1", "ORDER": "1", "CODE": "file", "LINE_NUMBER": "11"},
+    "edges": [{
+      "id": "30064771080-AST-68719476742",
+      "edgeType": "AST",
+      "in": "68719476742",
+      "out": "30064771080"
+    }]
+  }, {
+    "id": "30064771081",
+    "label": "CALL",
+    "properties": {"DISPATCH_TYPE": "STATIC_DISPATCH", "NAME": "<operator>.alloc", "METHOD_FULL_NAME": "<operator>.alloc", "TYPE_FULL_NAME": "java.io.File", "COLUMN_NUMBER": "25", "ARGUMENT_INDEX": "2", "ORDER": "2", "CODE": "new File(\"C:\\\\data\\\\\" + fileName)", "LINE_NUMBER": "11"},
+    "edges": [{
+      "id": "30064771080-AST-30064771081",
+      "edgeType": "AST",
+      "in": "30064771081",
+      "out": "30064771080"
+    }]
+  }, {
+    "id": "30064771082",
+    "label": "CALL",
+    "properties": {"DISPATCH_TYPE": "STATIC_DISPATCH", "NAME": "<init>", "METHOD_FULL_NAME": "java.io.File.<init>:<unresolvedSignature>(1)", "SIGNATURE": "<unresolvedSignature>(1)", "TYPE_FULL_NAME": "void", "ORDER": "3", "CODE": "new File(\"C:\\\\data\\\\\" + fileName)", "LINE_NUMBER": "11"},
+    "edges": [{
+      "id": "30064771082-AST-68719476743",
+      "edgeType": "AST",
+      "in": "68719476743",
+      "out": "30064771082"
+    }, {
+      "id": "30064771082-AST-30064771083",
+      "edgeType": "AST",
+      "in": "30064771083",
+      "out": "30064771082"
+    }, {
+      "id": "25769803777-AST-30064771082",
+      "edgeType": "AST",
+      "in": "30064771082",
+      "out": "25769803777"
+    }]
+  }, {
+    "id": "68719476743",
+    "label": "IDENTIFIER",
+    "properties": {"NAME": "file", "TYPE_FULL_NAME": "java.io.File", "COLUMN_NUMBER": "18", "ARGUMENT_INDEX": "0", "ORDER": "1", "CODE": "file", "LINE_NUMBER": "11"},
+    "edges": [{
+      "id": "30064771082-AST-68719476743",
+      "edgeType": "AST",
+      "in": "68719476743",
+      "out": "30064771082"
+    }]
+  }, {
+    "id": "30064771083",
+    "label": "CALL",
+    "properties": {"DISPATCH_TYPE": "STATIC_DISPATCH", "NAME": "<operator>.addition", "METHOD_FULL_NAME": "<operator>.addition", "TYPE_FULL_NAME": "java.lang.String", "COLUMN_NUMBER": "34", "ARGUMENT_INDEX": "1", "ORDER": "2", "CODE": "\"C:\\\\data\\\\\" + fileName", "LINE_NUMBER": "11"},
+    "edges": [{
+      "id": "30064771083-AST-90194313217",
+      "edgeType": "AST",
+      "in": "90194313217",
+      "out": "30064771083"
+    }, {
+      "id": "30064771083-AST-68719476744",
+      "edgeType": "AST",
+      "in": "68719476744",
+      "out": "30064771083"
+    }, {
+      "id": "30064771082-AST-30064771083",
+      "edgeType": "AST",
+      "in": "30064771083",
+      "out": "30064771082"
+    }]
+  }, {
+    "id": "90194313217",
+    "label": "LITERAL",
+    "properties": {"TYPE_FULL_NAME": "java.lang.String", "COLUMN_NUMBER": "34", "ARGUMENT_INDEX": "1", "ORDER": "1", "CODE": "\"C:\\\\data\\\\\"", "LINE_NUMBER": "11"},
+    "edges": [{
+      "id": "30064771083-AST-90194313217",
+      "edgeType": "AST",
+      "in": "90194313217",
+      "out": "30064771083"
+    }]
+  }, {
+    "id": "68719476744",
+    "label": "IDENTIFIER",
+    "properties": {"NAME": "fileName", "TYPE_FULL_NAME": "ANY", "COLUMN_NUMBER": "49", "ARGUMENT_INDEX": "2", "ORDER": "2", "CODE": "fileName", "LINE_NUMBER": "11"},
+    "edges": [{
+      "id": "30064771083-AST-68719476744",
+      "edgeType": "AST",
+      "in": "68719476744",
+      "out": "30064771083"
+    }]
+  }, {
+    "id": "94489280515",
+    "label": "LOCAL",
+    "properties": {"NAME": "fis", "TYPE_FULL_NAME": "java.io.FileInputStream", "COLUMN_NUMBER": "13", "GENERIC_SIGNATURE": "LFileInputStream;", "ORDER": "4", "CODE": "FileInputStream fis", "LINE_NUMBER": "12"},
+    "edges": [{
+      "id": "25769803777-AST-94489280515",
+      "edgeType": "AST",
+      "in": "94489280515",
+      "out": "25769803777"
+    }]
+  }, {
+    "id": "30064771084",
+    "label": "CALL",
+    "properties": {"DISPATCH_TYPE": "STATIC_DISPATCH", "NAME": "<operator>.assignment", "METHOD_FULL_NAME": "<operator>.assignment", "TYPE_FULL_NAME": "java.io.FileInputStream", "COLUMN_NUMBER": "29", "ORDER": "5", "CODE": "FileInputStream fis = new FileInputStream(file)", "LINE_NUMBER": "12"},
+    "edges": [{
+      "id": "30064771084-AST-68719476745",
+      "edgeType": "AST",
+      "in": "68719476745",
+      "out": "30064771084"
+    }, {
+      "id": "30064771084-AST-30064771085",
+      "edgeType": "AST",
+      "in": "30064771085",
+      "out": "30064771084"
+    }, {
+      "id": "25769803777-AST-30064771084",
+      "edgeType": "AST",
+      "in": "30064771084",
+      "out": "25769803777"
+    }]
+  }, {
+    "id": "68719476745",
+    "label": "IDENTIFIER",
+    "properties": {"NAME": "fis", "TYPE_FULL_NAME": "java.io.FileInputStream", "COLUMN_NUMBER": "29", "ARGUMENT_INDEX": "1", "ORDER": "1", "CODE": "fis", "LINE_NUMBER": "12"},
+    "edges": [{
+      "id": "30064771084-AST-68719476745",
+      "edgeType": "AST",
+      "in": "68719476745",
+      "out": "30064771084"
+    }]
+  }, {
+    "id": "30064771085",
+    "label": "CALL",
+    "properties": {"DISPATCH_TYPE": "STATIC_DISPATCH", "NAME": "<operator>.alloc", "METHOD_FULL_NAME": "<operator>.alloc", "TYPE_FULL_NAME": "java.io.FileInputStream", "COLUMN_NUMBER": "35", "ARGUMENT_INDEX": "2", "ORDER": "2", "CODE": "new FileInputStream(file)", "LINE_NUMBER": "12"},
+    "edges": [{
+      "id": "30064771084-AST-30064771085",
+      "edgeType": "AST",
+      "in": "30064771085",
+      "out": "30064771084"
+    }]
+  }, {
+    "id": "30064771086",
+    "label": "CALL",
+    "properties": {"DISPATCH_TYPE": "STATIC_DISPATCH", "NAME": "<init>", "METHOD_FULL_NAME": "java.io.FileInputStream.<init>:<unresolvedSignature>(1)", "SIGNATURE": "<unresolvedSignature>(1)", "TYPE_FULL_NAME": "void", "ORDER": "6", "CODE": "new FileInputStream(file)", "LINE_NUMBER": "12"},
+    "edges": [{
+      "id": "30064771086-AST-68719476746",
+      "edgeType": "AST",
+      "in": "68719476746",
+      "out": "30064771086"
+    }, {
+      "id": "30064771086-AST-68719476747",
+      "edgeType": "AST",
+      "in": "68719476747",
+      "out": "30064771086"
+    }, {
+      "id": "25769803777-AST-30064771086",
+      "edgeType": "AST",
+      "in": "30064771086",
+      "out": "25769803777"
+    }]
+  }, {
+    "id": "68719476746",
+    "label": "IDENTIFIER",
+    "properties": {"NAME": "fis", "TYPE_FULL_NAME": "java.io.FileInputStream", "COLUMN_NUMBER": "29", "ARGUMENT_INDEX": "0", "ORDER": "1", "CODE": "fis", "LINE_NUMBER": "12"},
+    "edges": [{
+      "id": "30064771086-AST-68719476746",
+      "edgeType": "AST",
+      "in": "68719476746",
+      "out": "30064771086"
+    }]
+  }, {
+    "id": "68719476747",
+    "label": "IDENTIFIER",
+    "properties": {"NAME": "file", "TYPE_FULL_NAME": "java.io.File", "COLUMN_NUMBER": "55", "ARGUMENT_INDEX": "1", "ORDER": "2", "CODE": "file", "LINE_NUMBER": "12"},
+    "edges": [{
+      "id": "30064771086-AST-68719476747",
+      "edgeType": "AST",
+      "in": "68719476747",
+      "out": "30064771086"
+    }]
+  }, {
+    "id": "94489280516",
+    "label": "LOCAL",
+    "properties": {"NAME": "content", "TYPE_FULL_NAME": "int", "COLUMN_NUMBER": "13", "GENERIC_SIGNATURE": "I", "ORDER": "7", "CODE": "int content", "LINE_NUMBER": "13"},
+    "edges": [{
+      "id": "25769803777-AST-94489280516",
+      "edgeType": "AST",
+      "in": "94489280516",
+      "out": "25769803777"
+    }]
+  }, {
+    "id": "47244640257",
+    "label": "CONTROL_STRUCTURE",
+    "properties": {"CONTROL_STRUCTURE_TYPE": "WHILE", "COLUMN_NUMBER": "13", "ORDER": "8", "CODE": "while ((content = fis.read()) != -1)", "LINE_NUMBER": "14"},
+    "edges": [{
+      "id": "47244640257-AST-30064771087",
+      "edgeType": "AST",
+      "in": "30064771087",
+      "out": "47244640257"
+    }, {
+      "id": "47244640257-AST-25769803778",
+      "edgeType": "AST",
+      "in": "25769803778",
+      "out": "47244640257"
+    }, {
+      "id": "25769803777-AST-47244640257",
+      "edgeType": "AST",
+      "in": "47244640257",
+      "out": "25769803777"
+    }]
+  }, {
+    "id": "30064771087",
+    "label": "CALL",
+    "properties": {"DISPATCH_TYPE": "STATIC_DISPATCH", "NAME": "<operator>.notEquals", "METHOD_FULL_NAME": "<operator>.notEquals", "TYPE_FULL_NAME": "boolean", "COLUMN_NUMBER": "20", "ORDER": "1", "CODE": "(content = fis.read()) != -1", "LINE_NUMBER": "14"},
+    "edges": [{
+      "id": "30064771087-AST-30064771088",
+      "edgeType": "AST",
+      "in": "30064771088",
+      "out": "30064771087"
+    }, {
+      "id": "30064771087-AST-30064771090",
+      "edgeType": "AST",
+      "in": "30064771090",
+      "out": "30064771087"
+    }, {
+      "id": "47244640257-AST-30064771087",
+      "edgeType": "AST",
+      "in": "30064771087",
+      "out": "47244640257"
+    }]
+  }, {
+    "id": "30064771088",
+    "label": "CALL",
+    "properties": {"DISPATCH_TYPE": "STATIC_DISPATCH", "NAME": "<operator>.assignment", "METHOD_FULL_NAME": "<operator>.assignment", "TYPE_FULL_NAME": "int", "COLUMN_NUMBER": "21", "ARGUMENT_INDEX": "1", "ORDER": "1", "CODE": "content = fis.read()", "LINE_NUMBER": "14"},
+    "edges": [{
+      "id": "30064771088-AST-68719476748",
+      "edgeType": "AST",
+      "in": "68719476748",
+      "out": "30064771088"
+    }, {
+      "id": "30064771088-AST-30064771089",
+      "edgeType": "AST",
+      "in": "30064771089",
+      "out": "30064771088"
+    }, {
+      "id": "30064771087-AST-30064771088",
+      "edgeType": "AST",
+      "in": "30064771088",
+      "out": "30064771087"
+    }]
+  }, {
+    "id": "68719476748",
+    "label": "IDENTIFIER",
+    "properties": {"NAME": "content", "TYPE_FULL_NAME": "int", "COLUMN_NUMBER": "21", "ARGUMENT_INDEX": "1", "ORDER": "1", "CODE": "content", "LINE_NUMBER": "14"},
+    "edges": [{
+      "id": "30064771088-AST-68719476748",
+      "edgeType": "AST",
+      "in": "68719476748",
+      "out": "30064771088"
+    }]
+  }, {
+    "id": "30064771089",
+    "label": "CALL",
+    "properties": {"DISPATCH_TYPE": "DYNAMIC_DISPATCH", "NAME": "read", "METHOD_FULL_NAME": "java.io.FileInputStream.read:<unresolvedSignature>(0)", "SIGNATURE": "<unresolvedSignature>(0)", "TYPE_FULL_NAME": "int", "COLUMN_NUMBER": "31", "ARGUMENT_INDEX": "2", "ORDER": "2", "CODE": "read()", "LINE_NUMBER": "14"},
+    "edges": [{
+      "id": "30064771089-AST-68719476749",
+      "edgeType": "AST",
+      "in": "68719476749",
+      "out": "30064771089"
+    }, {
+      "id": "30064771088-AST-30064771089",
+      "edgeType": "AST",
+      "in": "30064771089",
+      "out": "30064771088"
+    }]
+  }, {
+    "id": "68719476749",
+    "label": "IDENTIFIER",
+    "properties": {"NAME": "fis", "TYPE_FULL_NAME": "java.io.FileInputStream", "COLUMN_NUMBER": "31", "ARGUMENT_INDEX": "0", "ORDER": "1", "CODE": "fis", "LINE_NUMBER": "14"},
+    "edges": [{
+      "id": "30064771089-AST-68719476749",
+      "edgeType": "AST",
+      "in": "68719476749",
+      "out": "30064771089"
+    }]
+  }, {
+    "id": "30064771090",
+    "label": "CALL",
+    "properties": {"DISPATCH_TYPE": "STATIC_DISPATCH", "NAME": "<operator>.minus", "METHOD_FULL_NAME": "<operator>.minus", "TYPE_FULL_NAME": "int", "COLUMN_NUMBER": "46", "ARGUMENT_INDEX": "2", "ORDER": "2", "CODE": "-1", "LINE_NUMBER": "14"},
+    "edges": [{
+      "id": "30064771090-AST-90194313218",
+      "edgeType": "AST",
+      "in": "90194313218",
+      "out": "30064771090"
+    }, {
+      "id": "30064771087-AST-30064771090",
+      "edgeType": "AST",
+      "in": "30064771090",
+      "out": "30064771087"
+    }]
+  }, {
+    "id": "90194313218",
+    "label": "LITERAL",
+    "properties": {"TYPE_FULL_NAME": "int", "COLUMN_NUMBER": "47", "ARGUMENT_INDEX": "1", "ORDER": "1", "CODE": "1", "LINE_NUMBER": "14"},
+    "edges": [{
+      "id": "30064771090-AST-90194313218",
+      "edgeType": "AST",
+      "in": "90194313218",
+      "out": "30064771090"
+    }]
+  }, {
+    "id": "25769803778",
+    "label": "BLOCK",
+    "properties": {"ORDER": "2", "COLUMN_NUMBER": "50", "LINE_NUMBER": "14"},
+    "edges": [{
+      "id": "25769803778-AST-30064771091",
+      "edgeType": "AST",
+      "in": "30064771091",
+      "out": "25769803778"
+    }, {
+      "id": "47244640257-AST-25769803778",
+      "edgeType": "AST",
+      "in": "25769803778",
+      "out": "47244640257"
+    }]
+  }, {
+    "id": "30064771091",
+    "label": "CALL",
+    "properties": {"DISPATCH_TYPE": "DYNAMIC_DISPATCH", "NAME": "print", "METHOD_FULL_NAME": "<unresolvedNamespace>.print:<unresolvedSignature>(1)", "SIGNATURE": "<unresolvedSignature>(1)", "TYPE_FULL_NAME": "void", "COLUMN_NUMBER": "17", "ORDER": "1", "CODE": "System.out.print((char) content)", "LINE_NUMBER": "15"},
+    "edges": [{
+      "id": "30064771091-AST-30064771092",
+      "edgeType": "AST",
+      "in": "30064771092",
+      "out": "30064771091"
+    }, {
+      "id": "30064771091-AST-30064771093",
+      "edgeType": "AST",
+      "in": "30064771093",
+      "out": "30064771091"
+    }, {
+      "id": "25769803778-AST-30064771091",
+      "edgeType": "AST",
+      "in": "30064771091",
+      "out": "25769803778"
+    }]
+  }, {
+    "id": "30064771092",
+    "label": "CALL",
+    "properties": {"DISPATCH_TYPE": "STATIC_DISPATCH", "NAME": "<operator>.fieldAccess", "METHOD_FULL_NAME": "<operator>.fieldAccess", "TYPE_FULL_NAME": "ANY", "COLUMN_NUMBER": "17", "ARGUMENT_INDEX": "0", "ORDER": "1", "CODE": "System.out", "LINE_NUMBER": "15"},
+    "edges": [{
+      "id": "30064771092-AST-68719476750",
+      "edgeType": "AST",
+      "in": "68719476750",
+      "out": "30064771092"
+    }, {
+      "id": "30064771092-AST-55834574850",
+      "edgeType": "AST",
+      "in": "55834574850",
+      "out": "30064771092"
+    }, {
+      "id": "30064771091-AST-30064771092",
+      "edgeType": "AST",
+      "in": "30064771092",
+      "out": "30064771091"
+    }]
+  }, {
+    "id": "68719476750",
+    "label": "IDENTIFIER",
+    "properties": {"NAME": "System", "TYPE_FULL_NAME": "ANY", "COLUMN_NUMBER": "17", "ARGUMENT_INDEX": "1", "ORDER": "1", "CODE": "System", "LINE_NUMBER": "15"},
+    "edges": [{
+      "id": "30064771092-AST-68719476750",
+      "edgeType": "AST",
+      "in": "68719476750",
+      "out": "30064771092"
+    }]
+  }, {
+    "id": "55834574850",
+    "label": "FIELD_IDENTIFIER",
+    "properties": {"COLUMN_NUMBER": "24", "ARGUMENT_INDEX": "2", "ORDER": "2", "CODE": "out", "LINE_NUMBER": "15", "CANONICAL_NAME": "out"},
+    "edges": [{
+      "id": "30064771092-AST-55834574850",
+      "edgeType": "AST",
+      "in": "55834574850",
+      "out": "30064771092"
+    }]
+  }, {
+    "id": "30064771093",
+    "label": "CALL",
+    "properties": {"DISPATCH_TYPE": "STATIC_DISPATCH", "NAME": "<operator>.cast", "METHOD_FULL_NAME": "<operator>.cast", "TYPE_FULL_NAME": "char", "COLUMN_NUMBER": "34", "ARGUMENT_INDEX": "1", "ORDER": "2", "CODE": "(char) content", "LINE_NUMBER": "15"},
+    "edges": [{
+      "id": "30064771093-AST-176093659136",
+      "edgeType": "AST",
+      "in": "176093659136",
+      "out": "30064771093"
+    }, {
+      "id": "30064771093-AST-68719476751",
+      "edgeType": "AST",
+      "in": "68719476751",
+      "out": "30064771093"
+    }, {
+      "id": "30064771091-AST-30064771093",
+      "edgeType": "AST",
+      "in": "30064771093",
+      "out": "30064771091"
+    }]
+  }, {
+    "id": "176093659136",
+    "label": "TYPE_REF",
+    "properties": {"TYPE_FULL_NAME": "char", "COLUMN_NUMBER": "34", "ARGUMENT_INDEX": "1", "ORDER": "1", "CODE": "char", "LINE_NUMBER": "15"},
+    "edges": [{
+      "id": "30064771093-AST-176093659136",
+      "edgeType": "AST",
+      "in": "176093659136",
+      "out": "30064771093"
+    }]
+  }, {
+    "id": "68719476751",
+    "label": "IDENTIFIER",
+    "properties": {"NAME": "content", "TYPE_FULL_NAME": "int", "COLUMN_NUMBER": "41", "ARGUMENT_INDEX": "2", "ORDER": "2", "CODE": "content", "LINE_NUMBER": "15"},
+    "edges": [{
+      "id": "30064771093-AST-68719476751",
+      "edgeType": "AST",
+      "in": "68719476751",
+      "out": "30064771093"
+    }]
+  }, {
+    "id": "30064771094",
+    "label": "CALL",
+    "properties": {"DISPATCH_TYPE": "DYNAMIC_DISPATCH", "NAME": "close", "METHOD_FULL_NAME": "java.io.FileInputStream.close:<unresolvedSignature>(0)", "SIGNATURE": "<unresolvedSignature>(0)", "TYPE_FULL_NAME": "void", "COLUMN_NUMBER": "13", "ORDER": "9", "CODE": "close()", "LINE_NUMBER": "17"},
+    "edges": [{
+      "id": "30064771094-AST-68719476752",
+      "edgeType": "AST",
+      "in": "68719476752",
+      "out": "30064771094"
+    }, {
+      "id": "25769803777-AST-30064771094",
+      "edgeType": "AST",
+      "in": "30064771094",
+      "out": "25769803777"
+    }]
+  }, {
+    "id": "68719476752",
+    "label": "IDENTIFIER",
+    "properties": {"NAME": "fis", "TYPE_FULL_NAME": "java.io.FileInputStream", "COLUMN_NUMBER": "13", "ARGUMENT_INDEX": "0", "ORDER": "1", "CODE": "fis", "LINE_NUMBER": "17"},
+    "edges": [{
+      "id": "30064771094-AST-68719476752",
+      "edgeType": "AST",
+      "in": "68719476752",
+      "out": "30064771094"
+    }]
+  }, {
+    "id": "47244640258",
+    "label": "CONTROL_STRUCTURE",
+    "properties": {"CONTROL_STRUCTURE_TYPE": "CATCH", "PARSER_TYPE_NAME": "CatchClause", "COLUMN_NUMBER": "11", "ARGUMENT_INDEX": "2", "ORDER": "2", "CODE": "catch", "LINE_NUMBER": "18"},
+    "edges": [{
+      "id": "47244640258-AST-25769803779",
+      "edgeType": "AST",
+      "in": "25769803779",
+      "out": "47244640258"
+    }, {
+      "id": "47244640256-AST-47244640258",
+      "edgeType": "AST",
+      "in": "47244640258",
+      "out": "47244640256"
+    }]
+  }, {
+    "id": "25769803779",
+    "label": "BLOCK",
+    "properties": {"ORDER": "1", "COLUMN_NUMBER": "33", "LINE_NUMBER": "18"},
+    "edges": [{
+      "id": "25769803779-AST-30064771095",
+      "edgeType": "AST",
+      "in": "30064771095",
+      "out": "25769803779"
+    }, {
+      "id": "47244640258-AST-25769803779",
+      "edgeType": "AST",
+      "in": "25769803779",
+      "out": "47244640258"
+    }]
+  }, {
+    "id": "30064771095",
+    "label": "CALL",
+    "properties": {"DISPATCH_TYPE": "DYNAMIC_DISPATCH", "NAME": "println", "METHOD_FULL_NAME": "<unresolvedNamespace>.println:<unresolvedSignature>(1)", "SIGNATURE": "<unresolvedSignature>(1)", "TYPE_FULL_NAME": "void", "COLUMN_NUMBER": "13", "ORDER": "1", "CODE": "System.out.println(\"Error reading file: \" + e.getMessage())", "LINE_NUMBER": "19"},
+    "edges": [{
+      "id": "30064771095-AST-30064771096",
+      "edgeType": "AST",
+      "in": "30064771096",
+      "out": "30064771095"
+    }, {
+      "id": "30064771095-AST-30064771097",
+      "edgeType": "AST",
+      "in": "30064771097",
+      "out": "30064771095"
+    }, {
+      "id": "25769803779-AST-30064771095",
+      "edgeType": "AST",
+      "in": "30064771095",
+      "out": "25769803779"
+    }]
+  }, {
+    "id": "30064771096",
+    "label": "CALL",
+    "properties": {"DISPATCH_TYPE": "STATIC_DISPATCH", "NAME": "<operator>.fieldAccess", "METHOD_FULL_NAME": "<operator>.fieldAccess", "TYPE_FULL_NAME": "ANY", "COLUMN_NUMBER": "13", "ARGUMENT_INDEX": "0", "ORDER": "1", "CODE": "System.out", "LINE_NUMBER": "19"},
+    "edges": [{
+      "id": "30064771096-AST-68719476753",
+      "edgeType": "AST",
+      "in": "68719476753",
+      "out": "30064771096"
+    }, {
+      "id": "30064771096-AST-55834574851",
+      "edgeType": "AST",
+      "in": "55834574851",
+      "out": "30064771096"
+    }, {
+      "id": "30064771095-AST-30064771096",
+      "edgeType": "AST",
+      "in": "30064771096",
+      "out": "30064771095"
+    }]
+  }, {
+    "id": "68719476753",
+    "label": "IDENTIFIER",
+    "properties": {"NAME": "System", "TYPE_FULL_NAME": "ANY", "COLUMN_NUMBER": "13", "ARGUMENT_INDEX": "1", "ORDER": "1", "CODE": "System", "LINE_NUMBER": "19"},
+    "edges": [{
+      "id": "30064771096-AST-68719476753",
+      "edgeType": "AST",
+      "in": "68719476753",
+      "out": "30064771096"
+    }]
+  }, {
+    "id": "55834574851",
+    "label": "FIELD_IDENTIFIER",
+    "properties": {"COLUMN_NUMBER": "20", "ARGUMENT_INDEX": "2", "ORDER": "2", "CODE": "out", "LINE_NUMBER": "19", "CANONICAL_NAME": "out"},
+    "edges": [{
+      "id": "30064771096-AST-55834574851",
+      "edgeType": "AST",
+      "in": "55834574851",
+      "out": "30064771096"
+    }]
+  }, {
+    "id": "30064771097",
+    "label": "CALL",
+    "properties": {"DISPATCH_TYPE": "STATIC_DISPATCH", "NAME": "<operator>.addition", "METHOD_FULL_NAME": "<operator>.addition", "TYPE_FULL_NAME": "java.lang.String", "COLUMN_NUMBER": "32", "ARGUMENT_INDEX": "1", "ORDER": "2", "CODE": "\"Error reading file: \" + e.getMessage()", "LINE_NUMBER": "19"},
+    "edges": [{
+      "id": "30064771097-AST-90194313219",
+      "edgeType": "AST",
+      "in": "90194313219",
+      "out": "30064771097"
+    }, {
+      "id": "30064771097-AST-30064771098",
+      "edgeType": "AST",
+      "in": "30064771098",
+      "out": "30064771097"
+    }, {
+      "id": "30064771095-AST-30064771097",
+      "edgeType": "AST",
+      "in": "30064771097",
+      "out": "30064771095"
+    }]
+  }, {
+    "id": "90194313219",
+    "label": "LITERAL",
+    "properties": {"TYPE_FULL_NAME": "java.lang.String", "COLUMN_NUMBER": "32", "ARGUMENT_INDEX": "1", "ORDER": "1", "CODE": "\"Error reading file: \"", "LINE_NUMBER": "19"},
+    "edges": [{
+      "id": "30064771097-AST-90194313219",
+      "edgeType": "AST",
+      "in": "90194313219",
+      "out": "30064771097"
+    }]
+  }, {
+    "id": "30064771098",
+    "label": "CALL",
+    "properties": {"DISPATCH_TYPE": "DYNAMIC_DISPATCH", "NAME": "getMessage", "METHOD_FULL_NAME": "<unresolvedNamespace>.getMessage:<unresolvedSignature>(0)", "SIGNATURE": "<unresolvedSignature>(0)", "TYPE_FULL_NAME": "ANY", "COLUMN_NUMBER": "57", "ARGUMENT_INDEX": "2", "ORDER": "2", "CODE": "getMessage()", "LINE_NUMBER": "19"},
+    "edges": [{
+      "id": "30064771098-AST-68719476754",
+      "edgeType": "AST",
+      "in": "68719476754",
+      "out": "30064771098"
+    }, {
+      "id": "30064771097-AST-30064771098",
+      "edgeType": "AST",
+      "in": "30064771098",
+      "out": "30064771097"
+    }]
+  }, {
+    "id": "68719476754",
+    "label": "IDENTIFIER",
+    "properties": {"NAME": "e", "TYPE_FULL_NAME": "ANY", "COLUMN_NUMBER": "57", "ARGUMENT_INDEX": "0", "ORDER": "1", "CODE": "e", "LINE_NUMBER": "19"},
+    "edges": [{
+      "id": "30064771098-AST-68719476754",
+      "edgeType": "AST",
+      "in": "68719476754",
+      "out": "30064771098"
+    }]
+  }, {
+    "id": "128849018880",
+    "label": "MODIFIER",
+    "properties": {"ORDER": "3", "COLUMN_NUMBER": "5", "MODIFIER_TYPE": "PUBLIC", "LINE_NUMBER": "6"},
+    "edges": [{
+      "id": "107374182400-AST-128849018880",
+      "edgeType": "AST",
+      "in": "128849018880",
+      "out": "107374182400"
+    }]
+  }, {
+    "id": "128849018881",
+    "label": "MODIFIER",
+    "properties": {"ORDER": "4", "COLUMN_NUMBER": "5", "MODIFIER_TYPE": "STATIC", "LINE_NUMBER": "6"},
+    "edges": [{
+      "id": "107374182400-AST-128849018881",
+      "edgeType": "AST",
+      "in": "128849018881",
+      "out": "107374182400"
+    }]
+  }, {
+    "id": "124554051584",
+    "label": "METHOD_RETURN",
+    "properties": {"COLUMN_NUMBER": "19", "ORDER": "5", "CODE": "RET", "LINE_NUMBER": "6", "EVALUATION_STRATEGY": "BY_VALUE", "TYPE_FULL_NAME": "void"},
+    "edges": [{
+      "id": "107374182400-AST-124554051584",
+      "edgeType": "AST",
+      "in": "124554051584",
+      "out": "107374182400"
+    }]
+  }, {
+    "id": "115964116992",
+    "label": "METHOD_PARAMETER_OUT",
+    "properties": {"NAME": "args", "COLUMN_NUMBER": "29", "ORDER": "1", "INDEX": "1", "CODE": "String[] args", "LINE_NUMBER": "6", "EVALUATION_STRATEGY": "BY_SHARING", "TYPE_FULL_NAME": "<unresolvedNamespace>.String[]"},
+    "edges": [{
+      "id": "107374182400-AST-115964116992",
+      "edgeType": "AST",
+      "in": "115964116992",
+      "out": "107374182400"
+    }]
+  }],
+      "CFG": [{
+    "id": "25769803776",
+    "label": "BLOCK",
+    "properties": {"ORDER": "2", "COLUMN_NUMBER": "44", "LINE_NUMBER": "6"},
+    "edges": []
+  }, {
+    "id": "30064771072",
+    "label": "CALL",
+    "properties": {"DISPATCH_TYPE": "STATIC_DISPATCH", "NAME": "<operator>.assignment", "METHOD_FULL_NAME": "<operator>.assignment", "TYPE_FULL_NAME": "java.util.Scanner", "COLUMN_NUMBER": "17", "ORDER": "2", "CODE": "Scanner scanner = new Scanner(System.in)", "LINE_NUMBER": "7"},
+    "edges": [{
+      "id": "30064771072-CFG-68719476737",
+      "edgeType": "CFG",
+      "in": "68719476737",
+      "out": "30064771072"
+    }, {
+      "id": "30064771073-CFG-30064771072",
+      "edgeType": "CFG",
+      "in": "30064771072",
+      "out": "30064771073"
+    }]
+  }, {
+    "id": "30064771074",
+    "label": "CALL",
+    "properties": {"DISPATCH_TYPE": "STATIC_DISPATCH", "NAME": "<init>", "METHOD_FULL_NAME": "java.util.Scanner.<init>:<unresolvedSignature>(1)", "SIGNATURE": "<unresolvedSignature>(1)", "TYPE_FULL_NAME": "void", "ORDER": "3", "CODE": "new Scanner(System.in)", "LINE_NUMBER": "7"},
+    "edges": [{
+      "id": "30064771074-CFG-68719476739",
+      "edgeType": "CFG",
+      "in": "68719476739",
+      "out": "30064771074"
+    }, {
+      "id": "30064771075-CFG-30064771074",
+      "edgeType": "CFG",
+      "in": "30064771074",
+      "out": "30064771075"
+    }]
+  }, {
+    "id": "30064771076",
+    "label": "CALL",
+    "properties": {"DISPATCH_TYPE": "DYNAMIC_DISPATCH", "NAME": "println", "METHOD_FULL_NAME": "<unresolvedNamespace>.println:<unresolvedSignature>(1)", "SIGNATURE": "<unresolvedSignature>(1)", "TYPE_FULL_NAME": "void", "COLUMN_NUMBER": "9", "ORDER": "4", "CODE": "System.out.println(\"Enter the file name:\")", "LINE_NUMBER": "8"},
+    "edges": [{
+      "id": "30064771076-CFG-68719476740",
+      "edgeType": "CFG",
+      "in": "68719476740",
+      "out": "30064771076"
+    }, {
+      "id": "90194313216-CFG-30064771076",
+      "edgeType": "CFG",
+      "in": "30064771076",
+      "out": "90194313216"
+    }]
+  }, {
+    "id": "30064771078",
+    "label": "CALL",
+    "properties": {"DISPATCH_TYPE": "STATIC_DISPATCH", "NAME": "<operator>.assignment", "METHOD_FULL_NAME": "<operator>.assignment", "TYPE_FULL_NAME": "ANY", "COLUMN_NUMBER": "16", "ORDER": "6", "CODE": "String fileName = scanner.nextLine()", "LINE_NUMBER": "9"},
+    "edges": [{
+      "id": "30064771078-CFG-68719476742",
+      "edgeType": "CFG",
+      "in": "68719476742",
+      "out": "30064771078"
+    }, {
+      "id": "30064771079-CFG-30064771078",
+      "edgeType": "CFG",
+      "in": "30064771078",
+      "out": "30064771079"
+    }]
+  }, {
+    "id": "47244640256",
+    "label": "CONTROL_STRUCTURE",
+    "properties": {"CONTROL_STRUCTURE_TYPE": "TRY", "PARSER_TYPE_NAME": "TryStmt", "COLUMN_NUMBER": "9", "ORDER": "7", "CODE": "try", "LINE_NUMBER": "10"},
+    "edges": []
+  }, {
+    "id": "68719476736",
+    "label": "IDENTIFIER",
+    "properties": {"NAME": "scanner", "TYPE_FULL_NAME": "java.util.Scanner", "COLUMN_NUMBER": "17", "ARGUMENT_INDEX": "1", "ORDER": "1", "CODE": "scanner", "LINE_NUMBER": "7"},
+    "edges": [{
+      "id": "68719476736-CFG-30064771073",
+      "edgeType": "CFG",
+      "in": "30064771073",
+      "out": "68719476736"
+    }, {
+      "id": "107374182400-CFG-68719476736",
+      "edgeType": "CFG",
+      "in": "68719476736",
+      "out": "107374182400"
+    }]
+  }, {
+    "id": "30064771073",
+    "label": "CALL",
+    "properties": {"DISPATCH_TYPE": "STATIC_DISPATCH", "NAME": "<operator>.alloc", "METHOD_FULL_NAME": "<operator>.alloc", "TYPE_FULL_NAME": "java.util.Scanner", "COLUMN_NUMBER": "27", "ARGUMENT_INDEX": "2", "ORDER": "2", "CODE": "new Scanner(System.in)", "LINE_NUMBER": "7"},
+    "edges": [{
+      "id": "30064771073-CFG-30064771072",
+      "edgeType": "CFG",
+      "in": "30064771072",
+      "out": "30064771073"
+    }, {
+      "id": "68719476736-CFG-30064771073",
+      "edgeType": "CFG",
+      "in": "30064771073",
+      "out": "68719476736"
+    }]
+  }, {
+    "id": "68719476737",
+    "label": "IDENTIFIER",
+    "properties": {"NAME": "scanner", "TYPE_FULL_NAME": "java.util.Scanner", "COLUMN_NUMBER": "17", "ARGUMENT_INDEX": "0", "ORDER": "1", "CODE": "scanner", "LINE_NUMBER": "7"},
+    "edges": [{
+      "id": "68719476737-CFG-68719476738",
+      "edgeType": "CFG",
+      "in": "68719476738",
+      "out": "68719476737"
+    }, {
+      "id": "30064771072-CFG-68719476737",
+      "edgeType": "CFG",
+      "in": "68719476737",
+      "out": "30064771072"
+    }]
+  }, {
+    "id": "30064771075",
+    "label": "CALL",
+    "properties": {"DISPATCH_TYPE": "STATIC_DISPATCH", "NAME": "<operator>.fieldAccess", "METHOD_FULL_NAME": "<operator>.fieldAccess", "TYPE_FULL_NAME": "ANY", "COLUMN_NUMBER": "39", "ARGUMENT_INDEX": "1", "ORDER": "2", "CODE": "System.in", "LINE_NUMBER": "7"},
+    "edges": [{
+      "id": "30064771075-CFG-30064771074",
+      "edgeType": "CFG",
+      "in": "30064771074",
+      "out": "30064771075"
+    }, {
+      "id": "55834574848-CFG-30064771075",
+      "edgeType": "CFG",
+      "in": "30064771075",
+      "out": "55834574848"
+    }]
+  }, {
+    "id": "30064771077",
+    "label": "CALL",
+    "properties": {"DISPATCH_TYPE": "STATIC_DISPATCH", "NAME": "<operator>.fieldAccess", "METHOD_FULL_NAME": "<operator>.fieldAccess", "TYPE_FULL_NAME": "ANY", "COLUMN_NUMBER": "9", "ARGUMENT_INDEX": "0", "ORDER": "1", "CODE": "System.out", "LINE_NUMBER": "8"},
+    "edges": [{
+      "id": "30064771077-CFG-90194313216",
+      "edgeType": "CFG",
+      "in": "90194313216",
+      "out": "30064771077"
+    }, {
+      "id": "55834574849-CFG-30064771077",
+      "edgeType": "CFG",
+      "in": "30064771077",
+      "out": "55834574849"
+    }]
+  }, {
+    "id": "90194313216",
+    "label": "LITERAL",
+    "properties": {"TYPE_FULL_NAME": "java.lang.String", "COLUMN_NUMBER": "28", "ARGUMENT_INDEX": "1", "ORDER": "2", "CODE": "\"Enter the file name:\"", "LINE_NUMBER": "8"},
+    "edges": [{
+      "id": "90194313216-CFG-30064771076",
+      "edgeType": "CFG",
+      "in": "30064771076",
+      "out": "90194313216"
+    }, {
+      "id": "30064771077-CFG-90194313216",
+      "edgeType": "CFG",
+      "in": "90194313216",
+      "out": "30064771077"
+    }]
+  }, {
+    "id": "68719476740",
+    "label": "IDENTIFIER",
+    "properties": {"NAME": "fileName", "TYPE_FULL_NAME": "ANY", "COLUMN_NUMBER": "16", "ARGUMENT_INDEX": "1", "ORDER": "1", "CODE": "fileName", "LINE_NUMBER": "9"},
+    "edges": [{
+      "id": "68719476740-CFG-68719476741",
+      "edgeType": "CFG",
+      "in": "68719476741",
+      "out": "68719476740"
+    }, {
+      "id": "30064771076-CFG-68719476740",
+      "edgeType": "CFG",
+      "in": "68719476740",
+      "out": "30064771076"
+    }]
+  }, {
+    "id": "30064771079",
+    "label": "CALL",
+    "properties": {"DISPATCH_TYPE": "DYNAMIC_DISPATCH", "NAME": "nextLine", "METHOD_FULL_NAME": "java.util.Scanner.nextLine:<unresolvedSignature>(0)", "SIGNATURE": "<unresolvedSignature>(0)", "TYPE_FULL_NAME": "ANY", "COLUMN_NUMBER": "27", "ARGUMENT_INDEX": "2", "ORDER": "2", "CODE": "nextLine()", "LINE_NUMBER": "9"},
+    "edges": [{
+      "id": "30064771079-CFG-30064771078",
+      "edgeType": "CFG",
+      "in": "30064771078",
+      "out": "30064771079"
+    }, {
+      "id": "68719476741-CFG-30064771079",
+      "edgeType": "CFG",
+      "in": "30064771079",
+      "out": "68719476741"
+    }]
+  }, {
+    "id": "25769803777",
+    "label": "BLOCK",
+    "properties": {"COLUMN_NUMBER": "13", "ARGUMENT_INDEX": "1", "ORDER": "1", "CODE": "try", "LINE_NUMBER": "10"},
+    "edges": []
+  }, {
+    "id": "47244640258",
+    "label": "CONTROL_STRUCTURE",
+    "properties": {"CONTROL_STRUCTURE_TYPE": "CATCH", "PARSER_TYPE_NAME": "CatchClause", "COLUMN_NUMBER": "11", "ARGUMENT_INDEX": "2", "ORDER": "2", "CODE": "catch", "LINE_NUMBER": "18"},
+    "edges": []
+  }, {
+    "id": "68719476738",
+    "label": "IDENTIFIER",
+    "properties": {"NAME": "System", "TYPE_FULL_NAME": "ANY", "COLUMN_NUMBER": "39", "ARGUMENT_INDEX": "1", "ORDER": "1", "CODE": "System", "LINE_NUMBER": "7"},
+    "edges": [{
+      "id": "68719476738-CFG-55834574848",
+      "edgeType": "CFG",
+      "in": "55834574848",
+      "out": "68719476738"
+    }, {
+      "id": "68719476737-CFG-68719476738",
+      "edgeType": "CFG",
+      "in": "68719476738",
+      "out": "68719476737"
+    }]
+  }, {
+    "id": "55834574848",
+    "label": "FIELD_IDENTIFIER",
+    "properties": {"COLUMN_NUMBER": "46", "ARGUMENT_INDEX": "2", "ORDER": "2", "CODE": "in", "LINE_NUMBER": "7", "CANONICAL_NAME": "in"},
+    "edges": [{
+      "id": "55834574848-CFG-30064771075",
+      "edgeType": "CFG",
+      "in": "30064771075",
+      "out": "55834574848"
+    }, {
+      "id": "68719476738-CFG-55834574848",
+      "edgeType": "CFG",
+      "in": "55834574848",
+      "out": "68719476738"
+    }]
+  }, {
+    "id": "68719476739",
+    "label": "IDENTIFIER",
+    "properties": {"NAME": "System", "TYPE_FULL_NAME": "ANY", "COLUMN_NUMBER": "9", "ARGUMENT_INDEX": "1", "ORDER": "1", "CODE": "System", "LINE_NUMBER": "8"},
+    "edges": [{
+      "id": "68719476739-CFG-55834574849",
+      "edgeType": "CFG",
+      "in": "55834574849",
+      "out": "68719476739"
+    }, {
+      "id": "30064771074-CFG-68719476739",
+      "edgeType": "CFG",
+      "in": "68719476739",
+      "out": "30064771074"
+    }]
+  }, {
+    "id": "55834574849",
+    "label": "FIELD_IDENTIFIER",
+    "properties": {"COLUMN_NUMBER": "16", "ARGUMENT_INDEX": "2", "ORDER": "2", "CODE": "out", "LINE_NUMBER": "8", "CANONICAL_NAME": "out"},
+    "edges": [{
+      "id": "55834574849-CFG-30064771077",
+      "edgeType": "CFG",
+      "in": "30064771077",
+      "out": "55834574849"
+    }, {
+      "id": "68719476739-CFG-55834574849",
+      "edgeType": "CFG",
+      "in": "55834574849",
+      "out": "68719476739"
+    }]
+  }, {
+    "id": "68719476741",
+    "label": "IDENTIFIER",
+    "properties": {"NAME": "scanner", "TYPE_FULL_NAME": "java.util.Scanner", "COLUMN_NUMBER": "27", "ARGUMENT_INDEX": "0", "ORDER": "1", "CODE": "scanner", "LINE_NUMBER": "9"},
+    "edges": [{
+      "id": "68719476741-CFG-30064771079",
+      "edgeType": "CFG",
+      "in": "30064771079",
+      "out": "68719476741"
+    }, {
+      "id": "68719476740-CFG-68719476741",
+      "edgeType": "CFG",
+      "in": "68719476741",
+      "out": "68719476740"
+    }]
+  }, {
+    "id": "30064771080",
+    "label": "CALL",
+    "properties": {"DISPATCH_TYPE": "STATIC_DISPATCH", "NAME": "<operator>.assignment", "METHOD_FULL_NAME": "<operator>.assignment", "TYPE_FULL_NAME": "java.io.File", "COLUMN_NUMBER": "18", "ORDER": "2", "CODE": "File file = new File(\"C:\\\\data\\\\\" + fileName)", "LINE_NUMBER": "11"},
+    "edges": [{
+      "id": "30064771080-CFG-68719476743",
+      "edgeType": "CFG",
+      "in": "68719476743",
+      "out": "30064771080"
+    }, {
+      "id": "30064771081-CFG-30064771080",
+      "edgeType": "CFG",
+      "in": "30064771080",
+      "out": "30064771081"
+    }]
+  }, {
+    "id": "30064771082",
+    "label": "CALL",
+    "properties": {"DISPATCH_TYPE": "STATIC_DISPATCH", "NAME": "<init>", "METHOD_FULL_NAME": "java.io.File.<init>:<unresolvedSignature>(1)", "SIGNATURE": "<unresolvedSignature>(1)", "TYPE_FULL_NAME": "void", "ORDER": "3", "CODE": "new File(\"C:\\\\data\\\\\" + fileName)", "LINE_NUMBER": "11"},
+    "edges": [{
+      "id": "30064771082-CFG-68719476745",
+      "edgeType": "CFG",
+      "in": "68719476745",
+      "out": "30064771082"
+    }, {
+      "id": "30064771083-CFG-30064771082",
+      "edgeType": "CFG",
+      "in": "30064771082",
+      "out": "30064771083"
+    }]
+  }, {
+    "id": "30064771084",
+    "label": "CALL",
+    "properties": {"DISPATCH_TYPE": "STATIC_DISPATCH", "NAME": "<operator>.assignment", "METHOD_FULL_NAME": "<operator>.assignment", "TYPE_FULL_NAME": "java.io.FileInputStream", "COLUMN_NUMBER": "29", "ORDER": "5", "CODE": "FileInputStream fis = new FileInputStream(file)", "LINE_NUMBER": "12"},
+    "edges": [{
+      "id": "30064771084-CFG-68719476746",
+      "edgeType": "CFG",
+      "in": "68719476746",
+      "out": "30064771084"
+    }, {
+      "id": "30064771085-CFG-30064771084",
+      "edgeType": "CFG",
+      "in": "30064771084",
+      "out": "30064771085"
+    }]
+  }, {
+    "id": "30064771086",
+    "label": "CALL",
+    "properties": {"DISPATCH_TYPE": "STATIC_DISPATCH", "NAME": "<init>", "METHOD_FULL_NAME": "java.io.FileInputStream.<init>:<unresolvedSignature>(1)", "SIGNATURE": "<unresolvedSignature>(1)", "TYPE_FULL_NAME": "void", "ORDER": "6", "CODE": "new FileInputStream(file)", "LINE_NUMBER": "12"},
+    "edges": [{
+      "id": "30064771086-CFG-68719476748",
+      "edgeType": "CFG",
+      "in": "68719476748",
+      "out": "30064771086"
+    }, {
+      "id": "68719476747-CFG-30064771086",
+      "edgeType": "CFG",
+      "in": "30064771086",
+      "out": "68719476747"
+    }]
+  }, {
+    "id": "47244640257",
+    "label": "CONTROL_STRUCTURE",
+    "properties": {"CONTROL_STRUCTURE_TYPE": "WHILE", "COLUMN_NUMBER": "13", "ORDER": "8", "CODE": "while ((content = fis.read()) != -1)", "LINE_NUMBER": "14"},
+    "edges": []
+  }, {
+    "id": "30064771094",
+    "label": "CALL",
+    "properties": {"DISPATCH_TYPE": "DYNAMIC_DISPATCH", "NAME": "close", "METHOD_FULL_NAME": "java.io.FileInputStream.close:<unresolvedSignature>(0)", "SIGNATURE": "<unresolvedSignature>(0)", "TYPE_FULL_NAME": "void", "COLUMN_NUMBER": "13", "ORDER": "9", "CODE": "close()", "LINE_NUMBER": "17"},
+    "edges": [{
+      "id": "30064771094-CFG-68719476753",
+      "edgeType": "CFG",
+      "in": "68719476753",
+      "out": "30064771094"
+    }, {
+      "id": "30064771094-CFG-124554051584",
+      "edgeType": "CFG",
+      "in": "124554051584",
+      "out": "30064771094"
+    }, {
+      "id": "68719476752-CFG-30064771094",
+      "edgeType": "CFG",
+      "in": "30064771094",
+      "out": "68719476752"
+    }]
+  }, {
+    "id": "25769803779",
+    "label": "BLOCK",
+    "properties": {"ORDER": "1", "COLUMN_NUMBER": "33", "LINE_NUMBER": "18"},
+    "edges": []
+  }, {
+    "id": "68719476742",
+    "label": "IDENTIFIER",
+    "properties": {"NAME": "file", "TYPE_FULL_NAME": "java.io.File", "COLUMN_NUMBER": "18", "ARGUMENT_INDEX": "1", "ORDER": "1", "CODE": "file", "LINE_NUMBER": "11"},
+    "edges": [{
+      "id": "68719476742-CFG-30064771081",
+      "edgeType": "CFG",
+      "in": "30064771081",
+      "out": "68719476742"
+    }, {
+      "id": "30064771078-CFG-68719476742",
+      "edgeType": "CFG",
+      "in": "68719476742",
+      "out": "30064771078"
+    }]
+  }, {
+    "id": "30064771081",
+    "label": "CALL",
+    "properties": {"DISPATCH_TYPE": "STATIC_DISPATCH", "NAME": "<operator>.alloc", "METHOD_FULL_NAME": "<operator>.alloc", "TYPE_FULL_NAME": "java.io.File", "COLUMN_NUMBER": "25", "ARGUMENT_INDEX": "2", "ORDER": "2", "CODE": "new File(\"C:\\\\data\\\\\" + fileName)", "LINE_NUMBER": "11"},
+    "edges": [{
+      "id": "30064771081-CFG-30064771080",
+      "edgeType": "CFG",
+      "in": "30064771080",
+      "out": "30064771081"
+    }, {
+      "id": "68719476742-CFG-30064771081",
+      "edgeType": "CFG",
+      "in": "30064771081",
+      "out": "68719476742"
+    }]
+  }, {
+    "id": "68719476743",
+    "label": "IDENTIFIER",
+    "properties": {"NAME": "file", "TYPE_FULL_NAME": "java.io.File", "COLUMN_NUMBER": "18", "ARGUMENT_INDEX": "0", "ORDER": "1", "CODE": "file", "LINE_NUMBER": "11"},
+    "edges": [{
+      "id": "68719476743-CFG-90194313217",
+      "edgeType": "CFG",
+      "in": "90194313217",
+      "out": "68719476743"
+    }, {
+      "id": "30064771080-CFG-68719476743",
+      "edgeType": "CFG",
+      "in": "68719476743",
+      "out": "30064771080"
+    }]
+  }, {
+    "id": "30064771083",
+    "label": "CALL",
+    "properties": {"DISPATCH_TYPE": "STATIC_DISPATCH", "NAME": "<operator>.addition", "METHOD_FULL_NAME": "<operator>.addition", "TYPE_FULL_NAME": "java.lang.String", "COLUMN_NUMBER": "34", "ARGUMENT_INDEX": "1", "ORDER": "2", "CODE": "\"C:\\\\data\\\\\" + fileName", "LINE_NUMBER": "11"},
+    "edges": [{
+      "id": "30064771083-CFG-30064771082",
+      "edgeType": "CFG",
+      "in": "30064771082",
+      "out": "30064771083"
+    }, {
+      "id": "68719476744-CFG-30064771083",
+      "edgeType": "CFG",
+      "in": "30064771083",
+      "out": "68719476744"
+    }]
+  }, {
+    "id": "68719476745",
+    "label": "IDENTIFIER",
+    "properties": {"NAME": "fis", "TYPE_FULL_NAME": "java.io.FileInputStream", "COLUMN_NUMBER": "29", "ARGUMENT_INDEX": "1", "ORDER": "1", "CODE": "fis", "LINE_NUMBER": "12"},
+    "edges": [{
+      "id": "68719476745-CFG-30064771085",
+      "edgeType": "CFG",
+      "in": "30064771085",
+      "out": "68719476745"
+    }, {
+      "id": "30064771082-CFG-68719476745",
+      "edgeType": "CFG",
+      "in": "68719476745",
+      "out": "30064771082"
+    }]
+  }, {
+    "id": "30064771085",
+    "label": "CALL",
+    "properties": {"DISPATCH_TYPE": "STATIC_DISPATCH", "NAME": "<operator>.alloc", "METHOD_FULL_NAME": "<operator>.alloc", "TYPE_FULL_NAME": "java.io.FileInputStream", "COLUMN_NUMBER": "35", "ARGUMENT_INDEX": "2", "ORDER": "2", "CODE": "new FileInputStream(file)", "LINE_NUMBER": "12"},
+    "edges": [{
+      "id": "30064771085-CFG-30064771084",
+      "edgeType": "CFG",
+      "in": "30064771084",
+      "out": "30064771085"
+    }, {
+      "id": "68719476745-CFG-30064771085",
+      "edgeType": "CFG",
+      "in": "30064771085",
+      "out": "68719476745"
+    }]
+  }, {
+    "id": "68719476746",
+    "label": "IDENTIFIER",
+    "properties": {"NAME": "fis", "TYPE_FULL_NAME": "java.io.FileInputStream", "COLUMN_NUMBER": "29", "ARGUMENT_INDEX": "0", "ORDER": "1", "CODE": "fis", "LINE_NUMBER": "12"},
+    "edges": [{
+      "id": "68719476746-CFG-68719476747",
+      "edgeType": "CFG",
+      "in": "68719476747",
+      "out": "68719476746"
+    }, {
+      "id": "30064771084-CFG-68719476746",
+      "edgeType": "CFG",
+      "in": "68719476746",
+      "out": "30064771084"
+    }]
+  }, {
+    "id": "68719476747",
+    "label": "IDENTIFIER",
+    "properties": {"NAME": "file", "TYPE_FULL_NAME": "java.io.File", "COLUMN_NUMBER": "55", "ARGUMENT_INDEX": "1", "ORDER": "2", "CODE": "file", "LINE_NUMBER": "12"},
+    "edges": [{
+      "id": "68719476747-CFG-30064771086",
+      "edgeType": "CFG",
+      "in": "30064771086",
+      "out": "68719476747"
+    }, {
+      "id": "68719476746-CFG-68719476747",
+      "edgeType": "CFG",
+      "in": "68719476747",
+      "out": "68719476746"
+    }]
+  }, {
+    "id": "30064771087",
+    "label": "CALL",
+    "properties": {"DISPATCH_TYPE": "STATIC_DISPATCH", "NAME": "<operator>.notEquals", "METHOD_FULL_NAME": "<operator>.notEquals", "TYPE_FULL_NAME": "boolean", "COLUMN_NUMBER": "20", "ORDER": "1", "CODE": "(content = fis.read()) != -1", "LINE_NUMBER": "14"},
+    "edges": [{
+      "id": "30064771087-CFG-68719476750",
+      "edgeType": "CFG",
+      "in": "68719476750",
+      "out": "30064771087"
+    }, {
+      "id": "30064771087-CFG-68719476752",
+      "edgeType": "CFG",
+      "in": "68719476752",
+      "out": "30064771087"
+    }, {
+      "id": "30064771090-CFG-30064771087",
+      "edgeType": "CFG",
+      "in": "30064771087",
+      "out": "30064771090"
+    }]
+  }, {
+    "id": "25769803778",
+    "label": "BLOCK",
+    "properties": {"ORDER": "2", "COLUMN_NUMBER": "50", "LINE_NUMBER": "14"},
+    "edges": []
+  }, {
+    "id": "68719476752",
+    "label": "IDENTIFIER",
+    "properties": {"NAME": "fis", "TYPE_FULL_NAME": "java.io.FileInputStream", "COLUMN_NUMBER": "13", "ARGUMENT_INDEX": "0", "ORDER": "1", "CODE": "fis", "LINE_NUMBER": "17"},
+    "edges": [{
+      "id": "68719476752-CFG-30064771094",
+      "edgeType": "CFG",
+      "in": "30064771094",
+      "out": "68719476752"
+    }, {
+      "id": "30064771087-CFG-68719476752",
+      "edgeType": "CFG",
+      "in": "68719476752",
+      "out": "30064771087"
+    }]
+  }, {
+    "id": "30064771095",
+    "label": "CALL",
+    "properties": {"DISPATCH_TYPE": "DYNAMIC_DISPATCH", "NAME": "println", "METHOD_FULL_NAME": "<unresolvedNamespace>.println:<unresolvedSignature>(1)", "SIGNATURE": "<unresolvedSignature>(1)", "TYPE_FULL_NAME": "void", "COLUMN_NUMBER": "13", "ORDER": "1", "CODE": "System.out.println(\"Error reading file: \" + e.getMessage())", "LINE_NUMBER": "19"},
+    "edges": [{
+      "id": "30064771095-CFG-124554051584",
+      "edgeType": "CFG",
+      "in": "124554051584",
+      "out": "30064771095"
+    }, {
+      "id": "30064771097-CFG-30064771095",
+      "edgeType": "CFG",
+      "in": "30064771095",
+      "out": "30064771097"
+    }]
+  }, {
+    "id": "90194313217",
+    "label": "LITERAL",
+    "properties": {"TYPE_FULL_NAME": "java.lang.String", "COLUMN_NUMBER": "34", "ARGUMENT_INDEX": "1", "ORDER": "1", "CODE": "\"C:\\\\data\\\\\"", "LINE_NUMBER": "11"},
+    "edges": [{
+      "id": "90194313217-CFG-68719476744",
+      "edgeType": "CFG",
+      "in": "68719476744",
+      "out": "90194313217"
+    }, {
+      "id": "68719476743-CFG-90194313217",
+      "edgeType": "CFG",
+      "in": "90194313217",
+      "out": "68719476743"
+    }]
+  }, {
+    "id": "68719476744",
+    "label": "IDENTIFIER",
+    "properties": {"NAME": "fileName", "TYPE_FULL_NAME": "ANY", "COLUMN_NUMBER": "49", "ARGUMENT_INDEX": "2", "ORDER": "2", "CODE": "fileName", "LINE_NUMBER": "11"},
+    "edges": [{
+      "id": "68719476744-CFG-30064771083",
+      "edgeType": "CFG",
+      "in": "30064771083",
+      "out": "68719476744"
+    }, {
+      "id": "90194313217-CFG-68719476744",
+      "edgeType": "CFG",
+      "in": "68719476744",
+      "out": "90194313217"
+    }]
+  }, {
+    "id": "30064771088",
+    "label": "CALL",
+    "properties": {"DISPATCH_TYPE": "STATIC_DISPATCH", "NAME": "<operator>.assignment", "METHOD_FULL_NAME": "<operator>.assignment", "TYPE_FULL_NAME": "int", "COLUMN_NUMBER": "21", "ARGUMENT_INDEX": "1", "ORDER": "1", "CODE": "content = fis.read()", "LINE_NUMBER": "14"},
+    "edges": [{
+      "id": "30064771088-CFG-90194313218",
+      "edgeType": "CFG",
+      "in": "90194313218",
+      "out": "30064771088"
+    }, {
+      "id": "30064771089-CFG-30064771088",
+      "edgeType": "CFG",
+      "in": "30064771088",
+      "out": "30064771089"
+    }]
+  }, {
+    "id": "30064771090",
+    "label": "CALL",
+    "properties": {"DISPATCH_TYPE": "STATIC_DISPATCH", "NAME": "<operator>.minus", "METHOD_FULL_NAME": "<operator>.minus", "TYPE_FULL_NAME": "int", "COLUMN_NUMBER": "46", "ARGUMENT_INDEX": "2", "ORDER": "2", "CODE": "-1", "LINE_NUMBER": "14"},
+    "edges": [{
+      "id": "30064771090-CFG-30064771087",
+      "edgeType": "CFG",
+      "in": "30064771087",
+      "out": "30064771090"
+    }, {
+      "id": "90194313218-CFG-30064771090",
+      "edgeType": "CFG",
+      "in": "30064771090",
+      "out": "90194313218"
+    }]
+  }, {
+    "id": "30064771091",
+    "label": "CALL",
+    "properties": {"DISPATCH_TYPE": "DYNAMIC_DISPATCH", "NAME": "print", "METHOD_FULL_NAME": "<unresolvedNamespace>.print:<unresolvedSignature>(1)", "SIGNATURE": "<unresolvedSignature>(1)", "TYPE_FULL_NAME": "void", "COLUMN_NUMBER": "17", "ORDER": "1", "CODE": "System.out.print((char) content)", "LINE_NUMBER": "15"},
+    "edges": [{
+      "id": "30064771091-CFG-68719476748",
+      "edgeType": "CFG",
+      "in": "68719476748",
+      "out": "30064771091"
+    }, {
+      "id": "30064771093-CFG-30064771091",
+      "edgeType": "CFG",
+      "in": "30064771091",
+      "out": "30064771093"
+    }]
+  }, {
+    "id": "30064771096",
+    "label": "CALL",
+    "properties": {"DISPATCH_TYPE": "STATIC_DISPATCH", "NAME": "<operator>.fieldAccess", "METHOD_FULL_NAME": "<operator>.fieldAccess", "TYPE_FULL_NAME": "ANY", "COLUMN_NUMBER": "13", "ARGUMENT_INDEX": "0", "ORDER": "1", "CODE": "System.out", "LINE_NUMBER": "19"},
+    "edges": [{
+      "id": "30064771096-CFG-90194313219",
+      "edgeType": "CFG",
+      "in": "90194313219",
+      "out": "30064771096"
+    }, {
+      "id": "55834574851-CFG-30064771096",
+      "edgeType": "CFG",
+      "in": "30064771096",
+      "out": "55834574851"
+    }]
+  }, {
+    "id": "30064771097",
+    "label": "CALL",
+    "properties": {"DISPATCH_TYPE": "STATIC_DISPATCH", "NAME": "<operator>.addition", "METHOD_FULL_NAME": "<operator>.addition", "TYPE_FULL_NAME": "java.lang.String", "COLUMN_NUMBER": "32", "ARGUMENT_INDEX": "1", "ORDER": "2", "CODE": "\"Error reading file: \" + e.getMessage()", "LINE_NUMBER": "19"},
+    "edges": [{
+      "id": "30064771097-CFG-30064771095",
+      "edgeType": "CFG",
+      "in": "30064771095",
+      "out": "30064771097"
+    }, {
+      "id": "30064771098-CFG-30064771097",
+      "edgeType": "CFG",
+      "in": "30064771097",
+      "out": "30064771098"
+    }]
+  }, {
+    "id": "68719476748",
+    "label": "IDENTIFIER",
+    "properties": {"NAME": "content", "TYPE_FULL_NAME": "int", "COLUMN_NUMBER": "21", "ARGUMENT_INDEX": "1", "ORDER": "1", "CODE": "content", "LINE_NUMBER": "14"},
+    "edges": [{
+      "id": "68719476748-CFG-68719476749",
+      "edgeType": "CFG",
+      "in": "68719476749",
+      "out": "68719476748"
+    }, {
+      "id": "30064771091-CFG-68719476748",
+      "edgeType": "CFG",
+      "in": "68719476748",
+      "out": "30064771091"
+    }, {
+      "id": "30064771086-CFG-68719476748",
+      "edgeType": "CFG",
+      "in": "68719476748",
+      "out": "30064771086"
+    }]
+  }, {
+    "id": "30064771089",
+    "label": "CALL",
+    "properties": {"DISPATCH_TYPE": "DYNAMIC_DISPATCH", "NAME": "read", "METHOD_FULL_NAME": "java.io.FileInputStream.read:<unresolvedSignature>(0)", "SIGNATURE": "<unresolvedSignature>(0)", "TYPE_FULL_NAME": "int", "COLUMN_NUMBER": "31", "ARGUMENT_INDEX": "2", "ORDER": "2", "CODE": "read()", "LINE_NUMBER": "14"},
+    "edges": [{
+      "id": "30064771089-CFG-30064771088",
+      "edgeType": "CFG",
+      "in": "30064771088",
+      "out": "30064771089"
+    }, {
+      "id": "68719476749-CFG-30064771089",
+      "edgeType": "CFG",
+      "in": "30064771089",
+      "out": "68719476749"
+    }]
+  }, {
+    "id": "90194313218",
+    "label": "LITERAL",
+    "properties": {"TYPE_FULL_NAME": "int", "COLUMN_NUMBER": "47", "ARGUMENT_INDEX": "1", "ORDER": "1", "CODE": "1", "LINE_NUMBER": "14"},
+    "edges": [{
+      "id": "90194313218-CFG-30064771090",
+      "edgeType": "CFG",
+      "in": "30064771090",
+      "out": "90194313218"
+    }, {
+      "id": "30064771088-CFG-90194313218",
+      "edgeType": "CFG",
+      "in": "90194313218",
+      "out": "30064771088"
+    }]
+  }, {
+    "id": "30064771092",
+    "label": "CALL",
+    "properties": {"DISPATCH_TYPE": "STATIC_DISPATCH", "NAME": "<operator>.fieldAccess", "METHOD_FULL_NAME": "<operator>.fieldAccess", "TYPE_FULL_NAME": "ANY", "COLUMN_NUMBER": "17", "ARGUMENT_INDEX": "0", "ORDER": "1", "CODE": "System.out", "LINE_NUMBER": "15"},
+    "edges": [{
+      "id": "30064771092-CFG-176093659136",
+      "edgeType": "CFG",
+      "in": "176093659136",
+      "out": "30064771092"
+    }, {
+      "id": "55834574850-CFG-30064771092",
+      "edgeType": "CFG",
+      "in": "30064771092",
+      "out": "55834574850"
+    }]
+  }, {
+    "id": "30064771093",
+    "label": "CALL",
+    "properties": {"DISPATCH_TYPE": "STATIC_DISPATCH", "NAME": "<operator>.cast", "METHOD_FULL_NAME": "<operator>.cast", "TYPE_FULL_NAME": "char", "COLUMN_NUMBER": "34", "ARGUMENT_INDEX": "1", "ORDER": "2", "CODE": "(char) content", "LINE_NUMBER": "15"},
+    "edges": [{
+      "id": "30064771093-CFG-30064771091",
+      "edgeType": "CFG",
+      "in": "30064771091",
+      "out": "30064771093"
+    }, {
+      "id": "68719476751-CFG-30064771093",
+      "edgeType": "CFG",
+      "in": "30064771093",
+      "out": "68719476751"
+    }]
+  }, {
+    "id": "68719476753",
+    "label": "IDENTIFIER",
+    "properties": {"NAME": "System", "TYPE_FULL_NAME": "ANY", "COLUMN_NUMBER": "13", "ARGUMENT_INDEX": "1", "ORDER": "1", "CODE": "System", "LINE_NUMBER": "19"},
+    "edges": [{
+      "id": "68719476753-CFG-55834574851",
+      "edgeType": "CFG",
+      "in": "55834574851",
+      "out": "68719476753"
+    }, {
+      "id": "30064771094-CFG-68719476753",
+      "edgeType": "CFG",
+      "in": "68719476753",
+      "out": "30064771094"
+    }]
+  }, {
+    "id": "55834574851",
+    "label": "FIELD_IDENTIFIER",
+    "properties": {"COLUMN_NUMBER": "20", "ARGUMENT_INDEX": "2", "ORDER": "2", "CODE": "out", "LINE_NUMBER": "19", "CANONICAL_NAME": "out"},
+    "edges": [{
+      "id": "55834574851-CFG-30064771096",
+      "edgeType": "CFG",
+      "in": "30064771096",
+      "out": "55834574851"
+    }, {
+      "id": "68719476753-CFG-55834574851",
+      "edgeType": "CFG",
+      "in": "55834574851",
+      "out": "68719476753"
+    }]
+  }, {
+    "id": "90194313219",
+    "label": "LITERAL",
+    "properties": {"TYPE_FULL_NAME": "java.lang.String", "COLUMN_NUMBER": "32", "ARGUMENT_INDEX": "1", "ORDER": "1", "CODE": "\"Error reading file: \"", "LINE_NUMBER": "19"},
+    "edges": [{
+      "id": "90194313219-CFG-68719476754",
+      "edgeType": "CFG",
+      "in": "68719476754",
+      "out": "90194313219"
+    }, {
+      "id": "30064771096-CFG-90194313219",
+      "edgeType": "CFG",
+      "in": "90194313219",
+      "out": "30064771096"
+    }]
+  }, {
+    "id": "30064771098",
+    "label": "CALL",
+    "properties": {"DISPATCH_TYPE": "DYNAMIC_DISPATCH", "NAME": "getMessage", "METHOD_FULL_NAME": "<unresolvedNamespace>.getMessage:<unresolvedSignature>(0)", "SIGNATURE": "<unresolvedSignature>(0)", "TYPE_FULL_NAME": "ANY", "COLUMN_NUMBER": "57", "ARGUMENT_INDEX": "2", "ORDER": "2", "CODE": "getMessage()", "LINE_NUMBER": "19"},
+    "edges": [{
+      "id": "30064771098-CFG-30064771097",
+      "edgeType": "CFG",
+      "in": "30064771097",
+      "out": "30064771098"
+    }, {
+      "id": "68719476754-CFG-30064771098",
+      "edgeType": "CFG",
+      "in": "30064771098",
+      "out": "68719476754"
+    }]
+  }, {
+    "id": "68719476749",
+    "label": "IDENTIFIER",
+    "properties": {"NAME": "fis", "TYPE_FULL_NAME": "java.io.FileInputStream", "COLUMN_NUMBER": "31", "ARGUMENT_INDEX": "0", "ORDER": "1", "CODE": "fis", "LINE_NUMBER": "14"},
+    "edges": [{
+      "id": "68719476749-CFG-30064771089",
+      "edgeType": "CFG",
+      "in": "30064771089",
+      "out": "68719476749"
+    }, {
+      "id": "68719476748-CFG-68719476749",
+      "edgeType": "CFG",
+      "in": "68719476749",
+      "out": "68719476748"
+    }]
+  }, {
+    "id": "68719476750",
+    "label": "IDENTIFIER",
+    "properties": {"NAME": "System", "TYPE_FULL_NAME": "ANY", "COLUMN_NUMBER": "17", "ARGUMENT_INDEX": "1", "ORDER": "1", "CODE": "System", "LINE_NUMBER": "15"},
+    "edges": [{
+      "id": "68719476750-CFG-55834574850",
+      "edgeType": "CFG",
+      "in": "55834574850",
+      "out": "68719476750"
+    }, {
+      "id": "30064771087-CFG-68719476750",
+      "edgeType": "CFG",
+      "in": "68719476750",
+      "out": "30064771087"
+    }]
+  }, {
+    "id": "55834574850",
+    "label": "FIELD_IDENTIFIER",
+    "properties": {"COLUMN_NUMBER": "24", "ARGUMENT_INDEX": "2", "ORDER": "2", "CODE": "out", "LINE_NUMBER": "15", "CANONICAL_NAME": "out"},
+    "edges": [{
+      "id": "55834574850-CFG-30064771092",
+      "edgeType": "CFG",
+      "in": "30064771092",
+      "out": "55834574850"
+    }, {
+      "id": "68719476750-CFG-55834574850",
+      "edgeType": "CFG",
+      "in": "55834574850",
+      "out": "68719476750"
+    }]
+  }, {
+    "id": "176093659136",
+    "label": "TYPE_REF",
+    "properties": {"TYPE_FULL_NAME": "char", "COLUMN_NUMBER": "34", "ARGUMENT_INDEX": "1", "ORDER": "1", "CODE": "char", "LINE_NUMBER": "15"},
+    "edges": [{
+      "id": "176093659136-CFG-68719476751",
+      "edgeType": "CFG",
+      "in": "68719476751",
+      "out": "176093659136"
+    }, {
+      "id": "30064771092-CFG-176093659136",
+      "edgeType": "CFG",
+      "in": "176093659136",
+      "out": "30064771092"
+    }]
+  }, {
+    "id": "68719476751",
+    "label": "IDENTIFIER",
+    "properties": {"NAME": "content", "TYPE_FULL_NAME": "int", "COLUMN_NUMBER": "41", "ARGUMENT_INDEX": "2", "ORDER": "2", "CODE": "content", "LINE_NUMBER": "15"},
+    "edges": [{
+      "id": "68719476751-CFG-30064771093",
+      "edgeType": "CFG",
+      "in": "30064771093",
+      "out": "68719476751"
+    }, {
+      "id": "176093659136-CFG-68719476751",
+      "edgeType": "CFG",
+      "in": "68719476751",
+      "out": "176093659136"
+    }]
+  }, {
+    "id": "68719476754",
+    "label": "IDENTIFIER",
+    "properties": {"NAME": "e", "TYPE_FULL_NAME": "ANY", "COLUMN_NUMBER": "57", "ARGUMENT_INDEX": "0", "ORDER": "1", "CODE": "e", "LINE_NUMBER": "19"},
+    "edges": [{
+      "id": "68719476754-CFG-30064771098",
+      "edgeType": "CFG",
+      "in": "30064771098",
+      "out": "68719476754"
+    }, {
+      "id": "90194313219-CFG-68719476754",
+      "edgeType": "CFG",
+      "in": "68719476754",
+      "out": "90194313219"
+    }]
+  }],
+      "PDG": [{
+    "id": "30064771089",
+    "label": "CALL",
+    "properties": {"DISPATCH_TYPE": "DYNAMIC_DISPATCH", "NAME": "read", "METHOD_FULL_NAME": "java.io.FileInputStream.read:<unresolvedSignature>(0)", "SIGNATURE": "<unresolvedSignature>(0)", "TYPE_FULL_NAME": "int", "COLUMN_NUMBER": "31", "ARGUMENT_INDEX": "2", "ORDER": "2", "CODE": "read()", "LINE_NUMBER": "14"},
+    "edges": [{
+      "id": "30064771089-REACHING_DEF-68719476748",
+      "edgeType": "REACHING_DEF",
+      "in": "68719476748",
+      "out": "30064771089"
+    }, {
+      "id": "30064771089-REACHING_DEF-30064771088",
+      "edgeType": "REACHING_DEF",
+      "in": "30064771088",
+      "out": "30064771089"
+    }, {
+      "id": "30064771089-REACHING_DEF-124554051584",
+      "edgeType": "REACHING_DEF",
+      "in": "124554051584",
+      "out": "30064771089"
+    }, {
+      "id": "68719476749-REACHING_DEF-30064771089",
+      "edgeType": "REACHING_DEF",
+      "in": "30064771089",
+      "out": "68719476749"
+    }]
+  }, {
+    "id": "68719476748",
+    "label": "IDENTIFIER",
+    "properties": {"NAME": "content", "TYPE_FULL_NAME": "int", "COLUMN_NUMBER": "21", "ARGUMENT_INDEX": "1", "ORDER": "1", "CODE": "content", "LINE_NUMBER": "14"},
+    "edges": [{
+      "id": "68719476748-REACHING_DEF-68719476751",
+      "edgeType": "REACHING_DEF",
+      "in": "68719476751",
+      "out": "68719476748"
+    }, {
+      "id": "68719476748-REACHING_DEF-30064771088",
+      "edgeType": "REACHING_DEF",
+      "in": "30064771088",
+      "out": "68719476748"
+    }, {
+      "id": "68719476748-REACHING_DEF-124554051584",
+      "edgeType": "REACHING_DEF",
+      "in": "124554051584",
+      "out": "68719476748"
+    }, {
+      "id": "30064771089-REACHING_DEF-68719476748",
+      "edgeType": "REACHING_DEF",
+      "in": "68719476748",
+      "out": "30064771089"
+    }]
+  }, {
+    "id": "68719476751",
+    "label": "IDENTIFIER",
+    "properties": {"NAME": "content", "TYPE_FULL_NAME": "int", "COLUMN_NUMBER": "41", "ARGUMENT_INDEX": "2", "ORDER": "2", "CODE": "content", "LINE_NUMBER": "15"},
+    "edges": [{
+      "id": "68719476751-REACHING_DEF-30064771093",
+      "edgeType": "REACHING_DEF",
+      "in": "30064771093",
+      "out": "68719476751"
+    }, {
+      "id": "107374182400-REACHING_DEF-68719476751",
+      "edgeType": "REACHING_DEF",
+      "in": "68719476751",
+      "out": "107374182400"
+    }, {
+      "id": "68719476748-REACHING_DEF-68719476751",
+      "edgeType": "REACHING_DEF",
+      "in": "68719476751",
+      "out": "68719476748"
+    }]
+  }, {
+    "id": "30064771079",
+    "label": "CALL",
+    "properties": {"DISPATCH_TYPE": "DYNAMIC_DISPATCH", "NAME": "nextLine", "METHOD_FULL_NAME": "java.util.Scanner.nextLine:<unresolvedSignature>(0)", "SIGNATURE": "<unresolvedSignature>(0)", "TYPE_FULL_NAME": "ANY", "COLUMN_NUMBER": "27", "ARGUMENT_INDEX": "2", "ORDER": "2", "CODE": "nextLine()", "LINE_NUMBER": "9"},
+    "edges": [{
+      "id": "30064771079-REACHING_DEF-68719476740",
+      "edgeType": "REACHING_DEF",
+      "in": "68719476740",
+      "out": "30064771079"
+    }, {
+      "id": "30064771079-REACHING_DEF-30064771078",
+      "edgeType": "REACHING_DEF",
+      "in": "30064771078",
+      "out": "30064771079"
+    }, {
+      "id": "30064771079-REACHING_DEF-124554051584",
+      "edgeType": "REACHING_DEF",
+      "in": "124554051584",
+      "out": "30064771079"
+    }, {
+      "id": "68719476741-REACHING_DEF-30064771079",
+      "edgeType": "REACHING_DEF",
+      "in": "30064771079",
+      "out": "68719476741"
+    }]
+  }, {
+    "id": "68719476740",
+    "label": "IDENTIFIER",
+    "properties": {"NAME": "fileName", "TYPE_FULL_NAME": "ANY", "COLUMN_NUMBER": "16", "ARGUMENT_INDEX": "1", "ORDER": "1", "CODE": "fileName", "LINE_NUMBER": "9"},
+    "edges": [{
+      "id": "68719476740-REACHING_DEF-68719476744",
+      "edgeType": "REACHING_DEF",
+      "in": "68719476744",
+      "out": "68719476740"
+    }, {
+      "id": "68719476740-REACHING_DEF-30064771078",
+      "edgeType": "REACHING_DEF",
+      "in": "30064771078",
+      "out": "68719476740"
+    }, {
+      "id": "30064771079-REACHING_DEF-68719476740",
+      "edgeType": "REACHING_DEF",
+      "in": "68719476740",
+      "out": "30064771079"
+    }]
+  }, {
+    "id": "30064771083",
+    "label": "CALL",
+    "properties": {"DISPATCH_TYPE": "STATIC_DISPATCH", "NAME": "<operator>.addition", "METHOD_FULL_NAME": "<operator>.addition", "TYPE_FULL_NAME": "java.lang.String", "COLUMN_NUMBER": "34", "ARGUMENT_INDEX": "1", "ORDER": "2", "CODE": "\"C:\\\\data\\\\\" + fileName", "LINE_NUMBER": "11"},
+    "edges": [{
+      "id": "30064771083-REACHING_DEF-68719476743",
+      "edgeType": "REACHING_DEF",
+      "in": "68719476743",
+      "out": "30064771083"
+    }, {
+      "id": "30064771083-REACHING_DEF-30064771082",
+      "edgeType": "REACHING_DEF",
+      "in": "30064771082",
+      "out": "30064771083"
+    }, {
+      "id": "30064771083-REACHING_DEF-124554051584",
+      "edgeType": "REACHING_DEF",
+      "in": "124554051584",
+      "out": "30064771083"
+    }, {
+      "id": "68719476743-REACHING_DEF-30064771083",
+      "edgeType": "REACHING_DEF",
+      "in": "30064771083",
+      "out": "68719476743"
+    }, {
+      "id": "90194313217-REACHING_DEF-30064771083",
+      "edgeType": "REACHING_DEF",
+      "in": "30064771083",
+      "out": "90194313217"
+    }, {
+      "id": "68719476744-REACHING_DEF-30064771083",
+      "edgeType": "REACHING_DEF",
+      "in": "30064771083",
+      "out": "68719476744"
+    }]
+  }, {
+    "id": "68719476743",
+    "label": "IDENTIFIER",
+    "properties": {"NAME": "file", "TYPE_FULL_NAME": "java.io.File", "COLUMN_NUMBER": "18", "ARGUMENT_INDEX": "0", "ORDER": "1", "CODE": "file", "LINE_NUMBER": "11"},
+    "edges": [{
+      "id": "68719476743-REACHING_DEF-30064771083",
+      "edgeType": "REACHING_DEF",
+      "in": "30064771083",
+      "out": "68719476743"
+    }, {
+      "id": "68719476743-REACHING_DEF-30064771082",
+      "edgeType": "REACHING_DEF",
+      "in": "30064771082",
+      "out": "68719476743"
+    }, {
+      "id": "68719476743-REACHING_DEF-68719476747",
+      "edgeType": "REACHING_DEF",
+      "in": "68719476747",
+      "out": "68719476743"
+    }, {
+      "id": "107374182400-REACHING_DEF-68719476743",
+      "edgeType": "REACHING_DEF",
+      "in": "68719476743",
+      "out": "107374182400"
+    }, {
+      "id": "68719476742-REACHING_DEF-68719476743",
+      "edgeType": "REACHING_DEF",
+      "in": "68719476743",
+      "out": "68719476742"
+    }, {
+      "id": "30064771083-REACHING_DEF-68719476743",
+      "edgeType": "REACHING_DEF",
+      "in": "68719476743",
+      "out": "30064771083"
+    }]
+  }, {
+    "id": "68719476744",
+    "label": "IDENTIFIER",
+    "properties": {"NAME": "fileName", "TYPE_FULL_NAME": "ANY", "COLUMN_NUMBER": "49", "ARGUMENT_INDEX": "2", "ORDER": "2", "CODE": "fileName", "LINE_NUMBER": "11"},
+    "edges": [{
+      "id": "68719476744-REACHING_DEF-30064771083",
+      "edgeType": "REACHING_DEF",
+      "in": "30064771083",
+      "out": "68719476744"
+    }, {
+      "id": "68719476744-REACHING_DEF-124554051584",
+      "edgeType": "REACHING_DEF",
+      "in": "124554051584",
+      "out": "68719476744"
+    }, {
+      "id": "107374182400-REACHING_DEF-68719476744",
+      "edgeType": "REACHING_DEF",
+      "in": "68719476744",
+      "out": "107374182400"
+    }, {
+      "id": "68719476740-REACHING_DEF-68719476744",
+      "edgeType": "REACHING_DEF",
+      "in": "68719476744",
+      "out": "68719476740"
+    }]
+  }, {
+    "id": "68719476747",
+    "label": "IDENTIFIER",
+    "properties": {"NAME": "file", "TYPE_FULL_NAME": "java.io.File", "COLUMN_NUMBER": "55", "ARGUMENT_INDEX": "1", "ORDER": "2", "CODE": "file", "LINE_NUMBER": "12"},
+    "edges": [{
+      "id": "68719476747-REACHING_DEF-68719476746",
+      "edgeType": "REACHING_DEF",
+      "in": "68719476746",
+      "out": "68719476747"
+    }, {
+      "id": "68719476747-REACHING_DEF-30064771086",
+      "edgeType": "REACHING_DEF",
+      "in": "30064771086",
+      "out": "68719476747"
+    }, {
+      "id": "68719476747-REACHING_DEF-124554051584",
+      "edgeType": "REACHING_DEF",
+      "in": "124554051584",
+      "out": "68719476747"
+    }, {
+      "id": "107374182400-REACHING_DEF-68719476747",
+      "edgeType": "REACHING_DEF",
+      "in": "68719476747",
+      "out": "107374182400"
+    }, {
+      "id": "68719476743-REACHING_DEF-68719476747",
+      "edgeType": "REACHING_DEF",
+      "in": "68719476747",
+      "out": "68719476743"
+    }, {
+      "id": "68719476746-REACHING_DEF-68719476747",
+      "edgeType": "REACHING_DEF",
+      "in": "68719476747",
+      "out": "68719476746"
+    }]
+  }, {
+    "id": "68719476746",
+    "label": "IDENTIFIER",
+    "properties": {"NAME": "fis", "TYPE_FULL_NAME": "java.io.FileInputStream", "COLUMN_NUMBER": "29", "ARGUMENT_INDEX": "0", "ORDER": "1", "CODE": "fis", "LINE_NUMBER": "12"},
+    "edges": [{
+      "id": "68719476746-REACHING_DEF-68719476749",
+      "edgeType": "REACHING_DEF",
+      "in": "68719476749",
+      "out": "68719476746"
+    }, {
+      "id": "68719476746-REACHING_DEF-68719476747",
+      "edgeType": "REACHING_DEF",
+      "in": "68719476747",
+      "out": "68719476746"
+    }, {
+      "id": "68719476746-REACHING_DEF-30064771086",
+      "edgeType": "REACHING_DEF",
+      "in": "30064771086",
+      "out": "68719476746"
+    }, {
+      "id": "107374182400-REACHING_DEF-68719476746",
+      "edgeType": "REACHING_DEF",
+      "in": "68719476746",
+      "out": "107374182400"
+    }, {
+      "id": "68719476745-REACHING_DEF-68719476746",
+      "edgeType": "REACHING_DEF",
+      "in": "68719476746",
+      "out": "68719476745"
+    }, {
+      "id": "68719476747-REACHING_DEF-68719476746",
+      "edgeType": "REACHING_DEF",
+      "in": "68719476746",
+      "out": "68719476747"
+    }]
+  }, {
+    "id": "68719476749",
+    "label": "IDENTIFIER",
+    "properties": {"NAME": "fis", "TYPE_FULL_NAME": "java.io.FileInputStream", "COLUMN_NUMBER": "31", "ARGUMENT_INDEX": "0", "ORDER": "1", "CODE": "fis", "LINE_NUMBER": "14"},
+    "edges": [{
+      "id": "68719476749-REACHING_DEF-30064771089",
+      "edgeType": "REACHING_DEF",
+      "in": "30064771089",
+      "out": "68719476749"
+    }, {
+      "id": "68719476749-REACHING_DEF-68719476752",
+      "edgeType": "REACHING_DEF",
+      "in": "68719476752",
+      "out": "68719476749"
+    }, {
+      "id": "107374182400-REACHING_DEF-68719476749",
+      "edgeType": "REACHING_DEF",
+      "in": "68719476749",
+      "out": "107374182400"
+    }, {
+      "id": "68719476746-REACHING_DEF-68719476749",
+      "edgeType": "REACHING_DEF",
+      "in": "68719476749",
+      "out": "68719476746"
+    }]
+  }, {
+    "id": "68719476752",
+    "label": "IDENTIFIER",
+    "properties": {"NAME": "fis", "TYPE_FULL_NAME": "java.io.FileInputStream", "COLUMN_NUMBER": "13", "ARGUMENT_INDEX": "0", "ORDER": "1", "CODE": "fis", "LINE_NUMBER": "17"},
+    "edges": [{
+      "id": "68719476752-REACHING_DEF-30064771094",
+      "edgeType": "REACHING_DEF",
+      "in": "30064771094",
+      "out": "68719476752"
+    }, {
+      "id": "68719476752-REACHING_DEF-124554051584",
+      "edgeType": "REACHING_DEF",
+      "in": "124554051584",
+      "out": "68719476752"
+    }, {
+      "id": "107374182400-REACHING_DEF-68719476752",
+      "edgeType": "REACHING_DEF",
+      "in": "68719476752",
+      "out": "107374182400"
+    }, {
+      "id": "68719476749-REACHING_DEF-68719476752",
+      "edgeType": "REACHING_DEF",
+      "in": "68719476752",
+      "out": "68719476749"
+    }]
+  }]
+    }, {
+      "function": "PathTraversalVulnerability.<init>:void()",
+      "file": "",
+      "id": "107374182401",
+      "AST": [{
+    "id": "111669149697",
+    "label": "METHOD_PARAMETER_IN",
+    "properties": {"DYNAMIC_TYPE_HINT_FULL_NAME": "IndexedSeq(PathTraversalVulnerability)", "NAME": "this", "COLUMN_NUMBER": "1", "ORDER": "0", "INDEX": "0", "CODE": "this", "LINE_NUMBER": "5", "EVALUATION_STRATEGY": "BY_SHARING", "TYPE_FULL_NAME": "PathTraversalVulnerability"},
+    "edges": [{
+      "id": "107374182401-AST-111669149697",
+      "edgeType": "AST",
+      "in": "111669149697",
+      "out": "107374182401"
+    }]
+  }, {
+    "id": "25769803780",
+    "label": "BLOCK",
+    "properties": {"ORDER": "2", "COLUMN_NUMBER": "1", "LINE_NUMBER": "5", "TYPE_FULL_NAME": "ANY"},
+    "edges": [{
+      "id": "107374182401-AST-25769803780",
+      "edgeType": "AST",
+      "in": "25769803780",
+      "out": "107374182401"
+    }]
+  }, {
+    "id": "128849018882",
+    "label": "MODIFIER",
+    "properties": {"ORDER": "3", "COLUMN_NUMBER": "1", "MODIFIER_TYPE": "CONSTRUCTOR", "LINE_NUMBER": "5"},
+    "edges": [{
+      "id": "107374182401-AST-128849018882",
+      "edgeType": "AST",
+      "in": "128849018882",
+      "out": "107374182401"
+    }]
+  }, {
+    "id": "128849018883",
+    "label": "MODIFIER",
+    "properties": {"ORDER": "4", "COLUMN_NUMBER": "1", "MODIFIER_TYPE": "PUBLIC", "LINE_NUMBER": "5"},
+    "edges": [{
+      "id": "107374182401-AST-128849018883",
+      "edgeType": "AST",
+      "in": "128849018883",
+      "out": "107374182401"
+    }]
+  }, {
+    "id": "124554051585",
+    "label": "METHOD_RETURN",
+    "properties": {"COLUMN_NUMBER": "1", "ORDER": "5", "CODE": "RET", "LINE_NUMBER": "5", "EVALUATION_STRATEGY": "BY_VALUE", "TYPE_FULL_NAME": "void"},
+    "edges": [{
+      "id": "107374182401-AST-124554051585",
+      "edgeType": "AST",
+      "in": "124554051585",
+      "out": "107374182401"
+    }]
+  }, {
+    "id": "115964116993",
+    "label": "METHOD_PARAMETER_OUT",
+    "properties": {"NAME": "this", "COLUMN_NUMBER": "1", "ORDER": "0", "INDEX": "0", "CODE": "this", "LINE_NUMBER": "5", "EVALUATION_STRATEGY": "BY_SHARING", "TYPE_FULL_NAME": "PathTraversalVulnerability"},
+    "edges": [{
+      "id": "107374182401-AST-115964116993",
+      "edgeType": "AST",
+      "in": "115964116993",
+      "out": "107374182401"
+    }]
+  }],
+      "CFG": [{
+    "id": "25769803780",
+    "label": "BLOCK",
+    "properties": {"ORDER": "2", "COLUMN_NUMBER": "1", "LINE_NUMBER": "5", "TYPE_FULL_NAME": "ANY"},
+    "edges": []
+  }],
+      "PDG": []
+    }, {
+      "function": "<unresolvedNamespace>.print:<unresolvedSignature>(1)",
+      "file": "<unknown>",
+      "id": "107374182402",
+      "AST": [{
+    "id": "111669149698",
+    "label": "METHOD_PARAMETER_IN",
+    "properties": {"NAME": "p0", "CODE": "p0", "ORDER": "0", "INDEX": "0", "EVALUATION_STRATEGY": "BY_VALUE", "TYPE_FULL_NAME": "ANY"},
+    "edges": [{
+      "id": "107374182402-AST-111669149698",
+      "edgeType": "AST",
+      "in": "111669149698",
+      "out": "107374182402"
+    }]
+  }, {
+    "id": "111669149699",
+    "label": "METHOD_PARAMETER_IN",
+    "properties": {"NAME": "p1", "CODE": "p1", "ORDER": "1", "INDEX": "1", "EVALUATION_STRATEGY": "BY_VALUE", "TYPE_FULL_NAME": "ANY"},
+    "edges": [{
+      "id": "107374182402-AST-111669149699",
+      "edgeType": "AST",
+      "in": "111669149699",
+      "out": "107374182402"
+    }]
+  }, {
+    "id": "25769803781",
+    "label": "BLOCK",
+    "properties": {"ORDER": "1", "ARGUMENT_INDEX": "1", "TYPE_FULL_NAME": "ANY"},
+    "edges": [{
+      "id": "107374182402-AST-25769803781",
+      "edgeType": "AST",
+      "in": "25769803781",
+      "out": "107374182402"
+    }]
+  }, {
+    "id": "124554051586",
+    "label": "METHOD_RETURN",
+    "properties": {"ORDER": "2", "CODE": "RET", "TYPE_FULL_NAME": "ANY", "EVALUATION_STRATEGY": "BY_VALUE"},
+    "edges": [{
+      "id": "107374182402-AST-124554051586",
+      "edgeType": "AST",
+      "in": "124554051586",
+      "out": "107374182402"
+    }]
+  }, {
+    "id": "115964116994",
+    "label": "METHOD_PARAMETER_OUT",
+    "properties": {"NAME": "p0", "CODE": "p0", "ORDER": "0", "INDEX": "0", "EVALUATION_STRATEGY": "BY_VALUE", "TYPE_FULL_NAME": "ANY"},
+    "edges": [{
+      "id": "107374182402-AST-115964116994",
+      "edgeType": "AST",
+      "in": "115964116994",
+      "out": "107374182402"
+    }]
+  }, {
+    "id": "115964116995",
+    "label": "METHOD_PARAMETER_OUT",
+    "properties": {"NAME": "p1", "CODE": "p1", "ORDER": "1", "INDEX": "1", "EVALUATION_STRATEGY": "BY_VALUE", "TYPE_FULL_NAME": "ANY"},
+    "edges": [{
+      "id": "107374182402-AST-115964116995",
+      "edgeType": "AST",
+      "in": "115964116995",
+      "out": "107374182402"
+    }]
+  }],
+      "CFG": [{
+    "id": "25769803781",
+    "label": "BLOCK",
+    "properties": {"ORDER": "1", "ARGUMENT_INDEX": "1", "TYPE_FULL_NAME": "ANY"},
+    "edges": []
+  }],
+      "PDG": []
+    }, {
+      "function": "<operator>.fieldAccess",
+      "file": "<unknown>",
+      "id": "107374182403",
+      "AST": [{
+    "id": "111669149700",
+    "label": "METHOD_PARAMETER_IN",
+    "properties": {"NAME": "p1", "CODE": "p1", "ORDER": "1", "INDEX": "1", "EVALUATION_STRATEGY": "BY_VALUE", "TYPE_FULL_NAME": "ANY"},
+    "edges": [{
+      "id": "107374182403-AST-111669149700",
+      "edgeType": "AST",
+      "in": "111669149700",
+      "out": "107374182403"
+    }]
+  }, {
+    "id": "111669149701",
+    "label": "METHOD_PARAMETER_IN",
+    "properties": {"NAME": "p2", "CODE": "p2", "ORDER": "2", "INDEX": "2", "EVALUATION_STRATEGY": "BY_VALUE", "TYPE_FULL_NAME": "ANY"},
+    "edges": [{
+      "id": "107374182403-AST-111669149701",
+      "edgeType": "AST",
+      "in": "111669149701",
+      "out": "107374182403"
+    }]
+  }, {
+    "id": "25769803782",
+    "label": "BLOCK",
+    "properties": {"ORDER": "1", "ARGUMENT_INDEX": "1", "TYPE_FULL_NAME": "ANY"},
+    "edges": [{
+      "id": "107374182403-AST-25769803782",
+      "edgeType": "AST",
+      "in": "25769803782",
+      "out": "107374182403"
+    }]
+  }, {
+    "id": "124554051587",
+    "label": "METHOD_RETURN",
+    "properties": {"ORDER": "2", "CODE": "RET", "TYPE_FULL_NAME": "ANY", "EVALUATION_STRATEGY": "BY_VALUE"},
+    "edges": [{
+      "id": "107374182403-AST-124554051587",
+      "edgeType": "AST",
+      "in": "124554051587",
+      "out": "107374182403"
+    }]
+  }, {
+    "id": "115964116996",
+    "label": "METHOD_PARAMETER_OUT",
+    "properties": {"NAME": "p1", "CODE": "p1", "ORDER": "1", "INDEX": "1", "EVALUATION_STRATEGY": "BY_VALUE", "TYPE_FULL_NAME": "ANY"},
+    "edges": [{
+      "id": "107374182403-AST-115964116996",
+      "edgeType": "AST",
+      "in": "115964116996",
+      "out": "107374182403"
+    }]
+  }, {
+    "id": "115964116997",
+    "label": "METHOD_PARAMETER_OUT",
+    "properties": {"NAME": "p2", "CODE": "p2", "ORDER": "2", "INDEX": "2", "EVALUATION_STRATEGY": "BY_VALUE", "TYPE_FULL_NAME": "ANY"},
+    "edges": [{
+      "id": "107374182403-AST-115964116997",
+      "edgeType": "AST",
+      "in": "115964116997",
+      "out": "107374182403"
+    }]
+  }],
+      "CFG": [{
+    "id": "25769803782",
+    "label": "BLOCK",
+    "properties": {"ORDER": "1", "ARGUMENT_INDEX": "1", "TYPE_FULL_NAME": "ANY"},
+    "edges": []
+  }],
+      "PDG": []
+    }, {
+      "function": "<operator>.notEquals",
+      "file": "<unknown>",
+      "id": "107374182404",
+      "AST": [{
+    "id": "111669149702",
+    "label": "METHOD_PARAMETER_IN",
+    "properties": {"NAME": "p1", "CODE": "p1", "ORDER": "1", "INDEX": "1", "EVALUATION_STRATEGY": "BY_VALUE", "TYPE_FULL_NAME": "ANY"},
+    "edges": [{
+      "id": "107374182404-AST-111669149702",
+      "edgeType": "AST",
+      "in": "111669149702",
+      "out": "107374182404"
+    }]
+  }, {
+    "id": "111669149703",
+    "label": "METHOD_PARAMETER_IN",
+    "properties": {"NAME": "p2", "CODE": "p2", "ORDER": "2", "INDEX": "2", "EVALUATION_STRATEGY": "BY_VALUE", "TYPE_FULL_NAME": "ANY"},
+    "edges": [{
+      "id": "107374182404-AST-111669149703",
+      "edgeType": "AST",
+      "in": "111669149703",
+      "out": "107374182404"
+    }]
+  }, {
+    "id": "25769803783",
+    "label": "BLOCK",
+    "properties": {"ORDER": "1", "ARGUMENT_INDEX": "1", "TYPE_FULL_NAME": "ANY"},
+    "edges": [{
+      "id": "107374182404-AST-25769803783",
+      "edgeType": "AST",
+      "in": "25769803783",
+      "out": "107374182404"
+    }]
+  }, {
+    "id": "124554051588",
+    "label": "METHOD_RETURN",
+    "properties": {"ORDER": "2", "CODE": "RET", "TYPE_FULL_NAME": "ANY", "EVALUATION_STRATEGY": "BY_VALUE"},
+    "edges": [{
+      "id": "107374182404-AST-124554051588",
+      "edgeType": "AST",
+      "in": "124554051588",
+      "out": "107374182404"
+    }]
+  }, {
+    "id": "115964116998",
+    "label": "METHOD_PARAMETER_OUT",
+    "properties": {"NAME": "p1", "CODE": "p1", "ORDER": "1", "INDEX": "1", "EVALUATION_STRATEGY": "BY_VALUE", "TYPE_FULL_NAME": "ANY"},
+    "edges": [{
+      "id": "107374182404-AST-115964116998",
+      "edgeType": "AST",
+      "in": "115964116998",
+      "out": "107374182404"
+    }]
+  }, {
+    "id": "115964116999",
+    "label": "METHOD_PARAMETER_OUT",
+    "properties": {"NAME": "p2", "CODE": "p2", "ORDER": "2", "INDEX": "2", "EVALUATION_STRATEGY": "BY_VALUE", "TYPE_FULL_NAME": "ANY"},
+    "edges": [{
+      "id": "107374182404-AST-115964116999",
+      "edgeType": "AST",
+      "in": "115964116999",
+      "out": "107374182404"
+    }]
+  }],
+      "CFG": [{
+    "id": "25769803783",
+    "label": "BLOCK",
+    "properties": {"ORDER": "1", "ARGUMENT_INDEX": "1", "TYPE_FULL_NAME": "ANY"},
+    "edges": []
+  }],
+      "PDG": []
+    }, {
+      "function": "<unresolvedNamespace>.getMessage:<unresolvedSignature>(0)",
+      "file": "<unknown>",
+      "id": "107374182405",
+      "AST": [{
+    "id": "111669149704",
+    "label": "METHOD_PARAMETER_IN",
+    "properties": {"NAME": "p0", "CODE": "p0", "ORDER": "0", "INDEX": "0", "EVALUATION_STRATEGY": "BY_VALUE", "TYPE_FULL_NAME": "ANY"},
+    "edges": [{
+      "id": "107374182405-AST-111669149704",
+      "edgeType": "AST",
+      "in": "111669149704",
+      "out": "107374182405"
+    }]
+  }, {
+    "id": "25769803784",
+    "label": "BLOCK",
+    "properties": {"ORDER": "1", "ARGUMENT_INDEX": "1", "TYPE_FULL_NAME": "ANY"},
+    "edges": [{
+      "id": "107374182405-AST-25769803784",
+      "edgeType": "AST",
+      "in": "25769803784",
+      "out": "107374182405"
+    }]
+  }, {
+    "id": "124554051589",
+    "label": "METHOD_RETURN",
+    "properties": {"ORDER": "2", "CODE": "RET", "TYPE_FULL_NAME": "ANY", "EVALUATION_STRATEGY": "BY_VALUE"},
+    "edges": [{
+      "id": "107374182405-AST-124554051589",
+      "edgeType": "AST",
+      "in": "124554051589",
+      "out": "107374182405"
+    }]
+  }, {
+    "id": "115964117000",
+    "label": "METHOD_PARAMETER_OUT",
+    "properties": {"NAME": "p0", "CODE": "p0", "ORDER": "0", "INDEX": "0", "EVALUATION_STRATEGY": "BY_VALUE", "TYPE_FULL_NAME": "ANY"},
+    "edges": [{
+      "id": "107374182405-AST-115964117000",
+      "edgeType": "AST",
+      "in": "115964117000",
+      "out": "107374182405"
+    }]
+  }],
+      "CFG": [{
+    "id": "25769803784",
+    "label": "BLOCK",
+    "properties": {"ORDER": "1", "ARGUMENT_INDEX": "1", "TYPE_FULL_NAME": "ANY"},
+    "edges": []
+  }],
+      "PDG": []
+    }, {
+      "function": "java.io.FileInputStream.<init>:<unresolvedSignature>(1)",
+      "file": "<unknown>",
+      "id": "107374182406",
+      "AST": [{
+    "id": "111669149705",
+    "label": "METHOD_PARAMETER_IN",
+    "properties": {"NAME": "p0", "CODE": "p0", "ORDER": "0", "INDEX": "0", "EVALUATION_STRATEGY": "BY_VALUE", "TYPE_FULL_NAME": "ANY"},
+    "edges": [{
+      "id": "107374182406-AST-111669149705",
+      "edgeType": "AST",
+      "in": "111669149705",
+      "out": "107374182406"
+    }]
+  }, {
+    "id": "111669149706",
+    "label": "METHOD_PARAMETER_IN",
+    "properties": {"NAME": "p1", "CODE": "p1", "ORDER": "1", "INDEX": "1", "EVALUATION_STRATEGY": "BY_VALUE", "TYPE_FULL_NAME": "ANY"},
+    "edges": [{
+      "id": "107374182406-AST-111669149706",
+      "edgeType": "AST",
+      "in": "111669149706",
+      "out": "107374182406"
+    }]
+  }, {
+    "id": "25769803785",
+    "label": "BLOCK",
+    "properties": {"ORDER": "1", "ARGUMENT_INDEX": "1", "TYPE_FULL_NAME": "ANY"},
+    "edges": [{
+      "id": "107374182406-AST-25769803785",
+      "edgeType": "AST",
+      "in": "25769803785",
+      "out": "107374182406"
+    }]
+  }, {
+    "id": "124554051590",
+    "label": "METHOD_RETURN",
+    "properties": {"ORDER": "2", "CODE": "RET", "TYPE_FULL_NAME": "ANY", "EVALUATION_STRATEGY": "BY_VALUE"},
+    "edges": [{
+      "id": "107374182406-AST-124554051590",
+      "edgeType": "AST",
+      "in": "124554051590",
+      "out": "107374182406"
+    }]
+  }, {
+    "id": "115964117001",
+    "label": "METHOD_PARAMETER_OUT",
+    "properties": {"NAME": "p0", "CODE": "p0", "ORDER": "0", "INDEX": "0", "EVALUATION_STRATEGY": "BY_VALUE", "TYPE_FULL_NAME": "ANY"},
+    "edges": [{
+      "id": "107374182406-AST-115964117001",
+      "edgeType": "AST",
+      "in": "115964117001",
+      "out": "107374182406"
+    }]
+  }, {
+    "id": "115964117002",
+    "label": "METHOD_PARAMETER_OUT",
+    "properties": {"NAME": "p1", "CODE": "p1", "ORDER": "1", "INDEX": "1", "EVALUATION_STRATEGY": "BY_VALUE", "TYPE_FULL_NAME": "ANY"},
+    "edges": [{
+      "id": "107374182406-AST-115964117002",
+      "edgeType": "AST",
+      "in": "115964117002",
+      "out": "107374182406"
+    }]
+  }],
+      "CFG": [{
+    "id": "25769803785",
+    "label": "BLOCK",
+    "properties": {"ORDER": "1", "ARGUMENT_INDEX": "1", "TYPE_FULL_NAME": "ANY"},
+    "edges": []
+  }],
+      "PDG": []
+    }, {
+      "function": "<operator>.addition",
+      "file": "<unknown>",
+      "id": "107374182407",
+      "AST": [{
+    "id": "111669149707",
+    "label": "METHOD_PARAMETER_IN",
+    "properties": {"NAME": "p1", "CODE": "p1", "ORDER": "1", "INDEX": "1", "EVALUATION_STRATEGY": "BY_VALUE", "TYPE_FULL_NAME": "ANY"},
+    "edges": [{
+      "id": "107374182407-AST-111669149707",
+      "edgeType": "AST",
+      "in": "111669149707",
+      "out": "107374182407"
+    }]
+  }, {
+    "id": "111669149708",
+    "label": "METHOD_PARAMETER_IN",
+    "properties": {"NAME": "p2", "CODE": "p2", "ORDER": "2", "INDEX": "2", "EVALUATION_STRATEGY": "BY_VALUE", "TYPE_FULL_NAME": "ANY"},
+    "edges": [{
+      "id": "107374182407-AST-111669149708",
+      "edgeType": "AST",
+      "in": "111669149708",
+      "out": "107374182407"
+    }]
+  }, {
+    "id": "25769803786",
+    "label": "BLOCK",
+    "properties": {"ORDER": "1", "ARGUMENT_INDEX": "1", "TYPE_FULL_NAME": "ANY"},
+    "edges": [{
+      "id": "107374182407-AST-25769803786",
+      "edgeType": "AST",
+      "in": "25769803786",
+      "out": "107374182407"
+    }]
+  }, {
+    "id": "124554051591",
+    "label": "METHOD_RETURN",
+    "properties": {"ORDER": "2", "CODE": "RET", "TYPE_FULL_NAME": "ANY", "EVALUATION_STRATEGY": "BY_VALUE"},
+    "edges": [{
+      "id": "107374182407-AST-124554051591",
+      "edgeType": "AST",
+      "in": "124554051591",
+      "out": "107374182407"
+    }]
+  }, {
+    "id": "115964117003",
+    "label": "METHOD_PARAMETER_OUT",
+    "properties": {"NAME": "p1", "CODE": "p1", "ORDER": "1", "INDEX": "1", "EVALUATION_STRATEGY": "BY_VALUE", "TYPE_FULL_NAME": "ANY"},
+    "edges": [{
+      "id": "107374182407-AST-115964117003",
+      "edgeType": "AST",
+      "in": "115964117003",
+      "out": "107374182407"
+    }]
+  }, {
+    "id": "115964117004",
+    "label": "METHOD_PARAMETER_OUT",
+    "properties": {"NAME": "p2", "CODE": "p2", "ORDER": "2", "INDEX": "2", "EVALUATION_STRATEGY": "BY_VALUE", "TYPE_FULL_NAME": "ANY"},
+    "edges": [{
+      "id": "107374182407-AST-115964117004",
+      "edgeType": "AST",
+      "in": "115964117004",
+      "out": "107374182407"
+    }]
+  }],
+      "CFG": [{
+    "id": "25769803786",
+    "label": "BLOCK",
+    "properties": {"ORDER": "1", "ARGUMENT_INDEX": "1", "TYPE_FULL_NAME": "ANY"},
+    "edges": []
+  }],
+      "PDG": []
+    }, {
+      "function": "java.io.File.<init>:<unresolvedSignature>(1)",
+      "file": "<unknown>",
+      "id": "107374182408",
+      "AST": [{
+    "id": "111669149709",
+    "label": "METHOD_PARAMETER_IN",
+    "properties": {"NAME": "p0", "CODE": "p0", "ORDER": "0", "INDEX": "0", "EVALUATION_STRATEGY": "BY_VALUE", "TYPE_FULL_NAME": "ANY"},
+    "edges": [{
+      "id": "107374182408-AST-111669149709",
+      "edgeType": "AST",
+      "in": "111669149709",
+      "out": "107374182408"
+    }]
+  }, {
+    "id": "111669149710",
+    "label": "METHOD_PARAMETER_IN",
+    "properties": {"NAME": "p1", "CODE": "p1", "ORDER": "1", "INDEX": "1", "EVALUATION_STRATEGY": "BY_VALUE", "TYPE_FULL_NAME": "ANY"},
+    "edges": [{
+      "id": "107374182408-AST-111669149710",
+      "edgeType": "AST",
+      "in": "111669149710",
+      "out": "107374182408"
+    }]
+  }, {
+    "id": "25769803787",
+    "label": "BLOCK",
+    "properties": {"ORDER": "1", "ARGUMENT_INDEX": "1", "TYPE_FULL_NAME": "ANY"},
+    "edges": [{
+      "id": "107374182408-AST-25769803787",
+      "edgeType": "AST",
+      "in": "25769803787",
+      "out": "107374182408"
+    }]
+  }, {
+    "id": "124554051592",
+    "label": "METHOD_RETURN",
+    "properties": {"ORDER": "2", "CODE": "RET", "TYPE_FULL_NAME": "ANY", "EVALUATION_STRATEGY": "BY_VALUE"},
+    "edges": [{
+      "id": "107374182408-AST-124554051592",
+      "edgeType": "AST",
+      "in": "124554051592",
+      "out": "107374182408"
+    }]
+  }, {
+    "id": "115964117005",
+    "label": "METHOD_PARAMETER_OUT",
+    "properties": {"NAME": "p0", "CODE": "p0", "ORDER": "0", "INDEX": "0", "EVALUATION_STRATEGY": "BY_VALUE", "TYPE_FULL_NAME": "ANY"},
+    "edges": [{
+      "id": "107374182408-AST-115964117005",
+      "edgeType": "AST",
+      "in": "115964117005",
+      "out": "107374182408"
+    }]
+  }, {
+    "id": "115964117006",
+    "label": "METHOD_PARAMETER_OUT",
+    "properties": {"NAME": "p1", "CODE": "p1", "ORDER": "1", "INDEX": "1", "EVALUATION_STRATEGY": "BY_VALUE", "TYPE_FULL_NAME": "ANY"},
+    "edges": [{
+      "id": "107374182408-AST-115964117006",
+      "edgeType": "AST",
+      "in": "115964117006",
+      "out": "107374182408"
+    }]
+  }],
+      "CFG": [{
+    "id": "25769803787",
+    "label": "BLOCK",
+    "properties": {"ORDER": "1", "ARGUMENT_INDEX": "1", "TYPE_FULL_NAME": "ANY"},
+    "edges": []
+  }],
+      "PDG": []
+    }, {
+      "function": "<operator>.alloc",
+      "file": "<unknown>",
+      "id": "107374182409",
+      "AST": [{
+    "id": "111669149711",
+    "label": "METHOD_PARAMETER_IN",
+    "properties": {"NAME": "p0", "CODE": "p0", "ORDER": "0", "INDEX": "0", "EVALUATION_STRATEGY": "BY_VALUE", "TYPE_FULL_NAME": "ANY"},
+    "edges": [{
+      "id": "107374182409-AST-111669149711",
+      "edgeType": "AST",
+      "in": "111669149711",
+      "out": "107374182409"
+    }]
+  }, {
+    "id": "25769803788",
+    "label": "BLOCK",
+    "properties": {"ORDER": "1", "ARGUMENT_INDEX": "1", "TYPE_FULL_NAME": "ANY"},
+    "edges": [{
+      "id": "107374182409-AST-25769803788",
+      "edgeType": "AST",
+      "in": "25769803788",
+      "out": "107374182409"
+    }]
+  }, {
+    "id": "124554051593",
+    "label": "METHOD_RETURN",
+    "properties": {"ORDER": "2", "CODE": "RET", "TYPE_FULL_NAME": "ANY", "EVALUATION_STRATEGY": "BY_VALUE"},
+    "edges": [{
+      "id": "107374182409-AST-124554051593",
+      "edgeType": "AST",
+      "in": "124554051593",
+      "out": "107374182409"
+    }]
+  }, {
+    "id": "115964117007",
+    "label": "METHOD_PARAMETER_OUT",
+    "properties": {"NAME": "p0", "CODE": "p0", "ORDER": "0", "INDEX": "0", "EVALUATION_STRATEGY": "BY_VALUE", "TYPE_FULL_NAME": "ANY"},
+    "edges": [{
+      "id": "107374182409-AST-115964117007",
+      "edgeType": "AST",
+      "in": "115964117007",
+      "out": "107374182409"
+    }]
+  }],
+      "CFG": [{
+    "id": "25769803788",
+    "label": "BLOCK",
+    "properties": {"ORDER": "1", "ARGUMENT_INDEX": "1", "TYPE_FULL_NAME": "ANY"},
+    "edges": []
+  }],
+      "PDG": []
+    }, {
+      "function": "<unresolvedNamespace>.println:<unresolvedSignature>(1)",
+      "file": "<unknown>",
+      "id": "107374182410",
+      "AST": [{
+    "id": "111669149712",
+    "label": "METHOD_PARAMETER_IN",
+    "properties": {"NAME": "p0", "CODE": "p0", "ORDER": "0", "INDEX": "0", "EVALUATION_STRATEGY": "BY_VALUE", "TYPE_FULL_NAME": "ANY"},
+    "edges": [{
+      "id": "107374182410-AST-111669149712",
+      "edgeType": "AST",
+      "in": "111669149712",
+      "out": "107374182410"
+    }]
+  }, {
+    "id": "111669149713",
+    "label": "METHOD_PARAMETER_IN",
+    "properties": {"NAME": "p1", "CODE": "p1", "ORDER": "1", "INDEX": "1", "EVALUATION_STRATEGY": "BY_VALUE", "TYPE_FULL_NAME": "ANY"},
+    "edges": [{
+      "id": "107374182410-AST-111669149713",
+      "edgeType": "AST",
+      "in": "111669149713",
+      "out": "107374182410"
+    }]
+  }, {
+    "id": "25769803789",
+    "label": "BLOCK",
+    "properties": {"ORDER": "1", "ARGUMENT_INDEX": "1", "TYPE_FULL_NAME": "ANY"},
+    "edges": [{
+      "id": "107374182410-AST-25769803789",
+      "edgeType": "AST",
+      "in": "25769803789",
+      "out": "107374182410"
+    }]
+  }, {
+    "id": "124554051594",
+    "label": "METHOD_RETURN",
+    "properties": {"ORDER": "2", "CODE": "RET", "TYPE_FULL_NAME": "ANY", "EVALUATION_STRATEGY": "BY_VALUE"},
+    "edges": [{
+      "id": "107374182410-AST-124554051594",
+      "edgeType": "AST",
+      "in": "124554051594",
+      "out": "107374182410"
+    }]
+  }, {
+    "id": "115964117008",
+    "label": "METHOD_PARAMETER_OUT",
+    "properties": {"NAME": "p0", "CODE": "p0", "ORDER": "0", "INDEX": "0", "EVALUATION_STRATEGY": "BY_VALUE", "TYPE_FULL_NAME": "ANY"},
+    "edges": [{
+      "id": "107374182410-AST-115964117008",
+      "edgeType": "AST",
+      "in": "115964117008",
+      "out": "107374182410"
+    }]
+  }, {
+    "id": "115964117009",
+    "label": "METHOD_PARAMETER_OUT",
+    "properties": {"NAME": "p1", "CODE": "p1", "ORDER": "1", "INDEX": "1", "EVALUATION_STRATEGY": "BY_VALUE", "TYPE_FULL_NAME": "ANY"},
+    "edges": [{
+      "id": "107374182410-AST-115964117009",
+      "edgeType": "AST",
+      "in": "115964117009",
+      "out": "107374182410"
+    }]
+  }],
+      "CFG": [{
+    "id": "25769803789",
+    "label": "BLOCK",
+    "properties": {"ORDER": "1", "ARGUMENT_INDEX": "1", "TYPE_FULL_NAME": "ANY"},
+    "edges": []
+  }],
+      "PDG": []
+    }, {
+      "function": "<operator>.cast",
+      "file": "<unknown>",
+      "id": "107374182411",
+      "AST": [{
+    "id": "111669149714",
+    "label": "METHOD_PARAMETER_IN",
+    "properties": {"NAME": "p1", "CODE": "p1", "ORDER": "1", "INDEX": "1", "EVALUATION_STRATEGY": "BY_VALUE", "TYPE_FULL_NAME": "ANY"},
+    "edges": [{
+      "id": "107374182411-AST-111669149714",
+      "edgeType": "AST",
+      "in": "111669149714",
+      "out": "107374182411"
+    }]
+  }, {
+    "id": "111669149715",
+    "label": "METHOD_PARAMETER_IN",
+    "properties": {"NAME": "p2", "CODE": "p2", "ORDER": "2", "INDEX": "2", "EVALUATION_STRATEGY": "BY_VALUE", "TYPE_FULL_NAME": "ANY"},
+    "edges": [{
+      "id": "107374182411-AST-111669149715",
+      "edgeType": "AST",
+      "in": "111669149715",
+      "out": "107374182411"
+    }]
+  }, {
+    "id": "25769803790",
+    "label": "BLOCK",
+    "properties": {"ORDER": "1", "ARGUMENT_INDEX": "1", "TYPE_FULL_NAME": "ANY"},
+    "edges": [{
+      "id": "107374182411-AST-25769803790",
+      "edgeType": "AST",
+      "in": "25769803790",
+      "out": "107374182411"
+    }]
+  }, {
+    "id": "124554051595",
+    "label": "METHOD_RETURN",
+    "properties": {"ORDER": "2", "CODE": "RET", "TYPE_FULL_NAME": "ANY", "EVALUATION_STRATEGY": "BY_VALUE"},
+    "edges": [{
+      "id": "107374182411-AST-124554051595",
+      "edgeType": "AST",
+      "in": "124554051595",
+      "out": "107374182411"
+    }]
+  }, {
+    "id": "115964117010",
+    "label": "METHOD_PARAMETER_OUT",
+    "properties": {"NAME": "p1", "CODE": "p1", "ORDER": "1", "INDEX": "1", "EVALUATION_STRATEGY": "BY_VALUE", "TYPE_FULL_NAME": "ANY"},
+    "edges": [{
+      "id": "107374182411-AST-115964117010",
+      "edgeType": "AST",
+      "in": "115964117010",
+      "out": "107374182411"
+    }]
+  }, {
+    "id": "115964117011",
+    "label": "METHOD_PARAMETER_OUT",
+    "properties": {"NAME": "p2", "CODE": "p2", "ORDER": "2", "INDEX": "2", "EVALUATION_STRATEGY": "BY_VALUE", "TYPE_FULL_NAME": "ANY"},
+    "edges": [{
+      "id": "107374182411-AST-115964117011",
+      "edgeType": "AST",
+      "in": "115964117011",
+      "out": "107374182411"
+    }]
+  }],
+      "CFG": [{
+    "id": "25769803790",
+    "label": "BLOCK",
+    "properties": {"ORDER": "1", "ARGUMENT_INDEX": "1", "TYPE_FULL_NAME": "ANY"},
+    "edges": []
+  }],
+      "PDG": []
+    }, {
+      "function": "java.util.Scanner.nextLine:<unresolvedSignature>(0)",
+      "file": "<unknown>",
+      "id": "107374182412",
+      "AST": [{
+    "id": "111669149716",
+    "label": "METHOD_PARAMETER_IN",
+    "properties": {"NAME": "p0", "CODE": "p0", "ORDER": "0", "INDEX": "0", "EVALUATION_STRATEGY": "BY_VALUE", "TYPE_FULL_NAME": "ANY"},
+    "edges": [{
+      "id": "107374182412-AST-111669149716",
+      "edgeType": "AST",
+      "in": "111669149716",
+      "out": "107374182412"
+    }]
+  }, {
+    "id": "25769803791",
+    "label": "BLOCK",
+    "properties": {"ORDER": "1", "ARGUMENT_INDEX": "1", "TYPE_FULL_NAME": "ANY"},
+    "edges": [{
+      "id": "107374182412-AST-25769803791",
+      "edgeType": "AST",
+      "in": "25769803791",
+      "out": "107374182412"
+    }]
+  }, {
+    "id": "124554051596",
+    "label": "METHOD_RETURN",
+    "properties": {"ORDER": "2", "CODE": "RET", "TYPE_FULL_NAME": "ANY", "EVALUATION_STRATEGY": "BY_VALUE"},
+    "edges": [{
+      "id": "107374182412-AST-124554051596",
+      "edgeType": "AST",
+      "in": "124554051596",
+      "out": "107374182412"
+    }]
+  }, {
+    "id": "115964117012",
+    "label": "METHOD_PARAMETER_OUT",
+    "properties": {"NAME": "p0", "CODE": "p0", "ORDER": "0", "INDEX": "0", "EVALUATION_STRATEGY": "BY_VALUE", "TYPE_FULL_NAME": "ANY"},
+    "edges": [{
+      "id": "107374182412-AST-115964117012",
+      "edgeType": "AST",
+      "in": "115964117012",
+      "out": "107374182412"
+    }]
+  }],
+      "CFG": [{
+    "id": "25769803791",
+    "label": "BLOCK",
+    "properties": {"ORDER": "1", "ARGUMENT_INDEX": "1", "TYPE_FULL_NAME": "ANY"},
+    "edges": []
+  }],
+      "PDG": []
+    }, {
+      "function": "java.io.FileInputStream.read:<unresolvedSignature>(0)",
+      "file": "<unknown>",
+      "id": "107374182413",
+      "AST": [{
+    "id": "111669149717",
+    "label": "METHOD_PARAMETER_IN",
+    "properties": {"NAME": "p0", "CODE": "p0", "ORDER": "0", "INDEX": "0", "EVALUATION_STRATEGY": "BY_VALUE", "TYPE_FULL_NAME": "ANY"},
+    "edges": [{
+      "id": "107374182413-AST-111669149717",
+      "edgeType": "AST",
+      "in": "111669149717",
+      "out": "107374182413"
+    }]
+  }, {
+    "id": "25769803792",
+    "label": "BLOCK",
+    "properties": {"ORDER": "1", "ARGUMENT_INDEX": "1", "TYPE_FULL_NAME": "ANY"},
+    "edges": [{
+      "id": "107374182413-AST-25769803792",
+      "edgeType": "AST",
+      "in": "25769803792",
+      "out": "107374182413"
+    }]
+  }, {
+    "id": "124554051597",
+    "label": "METHOD_RETURN",
+    "properties": {"ORDER": "2", "CODE": "RET", "TYPE_FULL_NAME": "ANY", "EVALUATION_STRATEGY": "BY_VALUE"},
+    "edges": [{
+      "id": "107374182413-AST-124554051597",
+      "edgeType": "AST",
+      "in": "124554051597",
+      "out": "107374182413"
+    }]
+  }, {
+    "id": "115964117013",
+    "label": "METHOD_PARAMETER_OUT",
+    "properties": {"NAME": "p0", "CODE": "p0", "ORDER": "0", "INDEX": "0", "EVALUATION_STRATEGY": "BY_VALUE", "TYPE_FULL_NAME": "ANY"},
+    "edges": [{
+      "id": "107374182413-AST-115964117013",
+      "edgeType": "AST",
+      "in": "115964117013",
+      "out": "107374182413"
+    }]
+  }],
+      "CFG": [{
+    "id": "25769803792",
+    "label": "BLOCK",
+    "properties": {"ORDER": "1", "ARGUMENT_INDEX": "1", "TYPE_FULL_NAME": "ANY"},
+    "edges": []
+  }],
+      "PDG": []
+    }, {
+      "function": "java.util.Scanner.<init>:<unresolvedSignature>(1)",
+      "file": "<unknown>",
+      "id": "107374182414",
+      "AST": [{
+    "id": "111669149718",
+    "label": "METHOD_PARAMETER_IN",
+    "properties": {"NAME": "p0", "CODE": "p0", "ORDER": "0", "INDEX": "0", "EVALUATION_STRATEGY": "BY_VALUE", "TYPE_FULL_NAME": "ANY"},
+    "edges": [{
+      "id": "107374182414-AST-111669149718",
+      "edgeType": "AST",
+      "in": "111669149718",
+      "out": "107374182414"
+    }]
+  }, {
+    "id": "111669149719",
+    "label": "METHOD_PARAMETER_IN",
+    "properties": {"NAME": "p1", "CODE": "p1", "ORDER": "1", "INDEX": "1", "EVALUATION_STRATEGY": "BY_VALUE", "TYPE_FULL_NAME": "ANY"},
+    "edges": [{
+      "id": "107374182414-AST-111669149719",
+      "edgeType": "AST",
+      "in": "111669149719",
+      "out": "107374182414"
+    }]
+  }, {
+    "id": "25769803793",
+    "label": "BLOCK",
+    "properties": {"ORDER": "1", "ARGUMENT_INDEX": "1", "TYPE_FULL_NAME": "ANY"},
+    "edges": [{
+      "id": "107374182414-AST-25769803793",
+      "edgeType": "AST",
+      "in": "25769803793",
+      "out": "107374182414"
+    }]
+  }, {
+    "id": "124554051598",
+    "label": "METHOD_RETURN",
+    "properties": {"ORDER": "2", "CODE": "RET", "TYPE_FULL_NAME": "ANY", "EVALUATION_STRATEGY": "BY_VALUE"},
+    "edges": [{
+      "id": "107374182414-AST-124554051598",
+      "edgeType": "AST",
+      "in": "124554051598",
+      "out": "107374182414"
+    }]
+  }, {
+    "id": "115964117014",
+    "label": "METHOD_PARAMETER_OUT",
+    "properties": {"NAME": "p0", "CODE": "p0", "ORDER": "0", "INDEX": "0", "EVALUATION_STRATEGY": "BY_VALUE", "TYPE_FULL_NAME": "ANY"},
+    "edges": [{
+      "id": "107374182414-AST-115964117014",
+      "edgeType": "AST",
+      "in": "115964117014",
+      "out": "107374182414"
+    }]
+  }, {
+    "id": "115964117015",
+    "label": "METHOD_PARAMETER_OUT",
+    "properties": {"NAME": "p1", "CODE": "p1", "ORDER": "1", "INDEX": "1", "EVALUATION_STRATEGY": "BY_VALUE", "TYPE_FULL_NAME": "ANY"},
+    "edges": [{
+      "id": "107374182414-AST-115964117015",
+      "edgeType": "AST",
+      "in": "115964117015",
+      "out": "107374182414"
+    }]
+  }],
+      "CFG": [{
+    "id": "25769803793",
+    "label": "BLOCK",
+    "properties": {"ORDER": "1", "ARGUMENT_INDEX": "1", "TYPE_FULL_NAME": "ANY"},
+    "edges": []
+  }],
+      "PDG": []
+    }, {
+      "function": "java.io.FileInputStream.close:<unresolvedSignature>(0)",
+      "file": "<unknown>",
+      "id": "107374182415",
+      "AST": [{
+    "id": "111669149720",
+    "label": "METHOD_PARAMETER_IN",
+    "properties": {"NAME": "p0", "CODE": "p0", "ORDER": "0", "INDEX": "0", "EVALUATION_STRATEGY": "BY_VALUE", "TYPE_FULL_NAME": "ANY"},
+    "edges": [{
+      "id": "107374182415-AST-111669149720",
+      "edgeType": "AST",
+      "in": "111669149720",
+      "out": "107374182415"
+    }]
+  }, {
+    "id": "25769803794",
+    "label": "BLOCK",
+    "properties": {"ORDER": "1", "ARGUMENT_INDEX": "1", "TYPE_FULL_NAME": "ANY"},
+    "edges": [{
+      "id": "107374182415-AST-25769803794",
+      "edgeType": "AST",
+      "in": "25769803794",
+      "out": "107374182415"
+    }]
+  }, {
+    "id": "124554051599",
+    "label": "METHOD_RETURN",
+    "properties": {"ORDER": "2", "CODE": "RET", "TYPE_FULL_NAME": "ANY", "EVALUATION_STRATEGY": "BY_VALUE"},
+    "edges": [{
+      "id": "107374182415-AST-124554051599",
+      "edgeType": "AST",
+      "in": "124554051599",
+      "out": "107374182415"
+    }]
+  }, {
+    "id": "115964117016",
+    "label": "METHOD_PARAMETER_OUT",
+    "properties": {"NAME": "p0", "CODE": "p0", "ORDER": "0", "INDEX": "0", "EVALUATION_STRATEGY": "BY_VALUE", "TYPE_FULL_NAME": "ANY"},
+    "edges": [{
+      "id": "107374182415-AST-115964117016",
+      "edgeType": "AST",
+      "in": "115964117016",
+      "out": "107374182415"
+    }]
+  }],
+      "CFG": [{
+    "id": "25769803794",
+    "label": "BLOCK",
+    "properties": {"ORDER": "1", "ARGUMENT_INDEX": "1", "TYPE_FULL_NAME": "ANY"},
+    "edges": []
+  }],
+      "PDG": []
+    }, {
+      "function": "<operator>.minus",
+      "file": "<unknown>",
+      "id": "107374182416",
+      "AST": [{
+    "id": "111669149721",
+    "label": "METHOD_PARAMETER_IN",
+    "properties": {"NAME": "p1", "CODE": "p1", "ORDER": "1", "INDEX": "1", "EVALUATION_STRATEGY": "BY_VALUE", "TYPE_FULL_NAME": "ANY"},
+    "edges": [{
+      "id": "107374182416-AST-111669149721",
+      "edgeType": "AST",
+      "in": "111669149721",
+      "out": "107374182416"
+    }]
+  }, {
+    "id": "25769803795",
+    "label": "BLOCK",
+    "properties": {"ORDER": "1", "ARGUMENT_INDEX": "1", "TYPE_FULL_NAME": "ANY"},
+    "edges": [{
+      "id": "107374182416-AST-25769803795",
+      "edgeType": "AST",
+      "in": "25769803795",
+      "out": "107374182416"
+    }]
+  }, {
+    "id": "124554051600",
+    "label": "METHOD_RETURN",
+    "properties": {"ORDER": "2", "CODE": "RET", "TYPE_FULL_NAME": "ANY", "EVALUATION_STRATEGY": "BY_VALUE"},
+    "edges": [{
+      "id": "107374182416-AST-124554051600",
+      "edgeType": "AST",
+      "in": "124554051600",
+      "out": "107374182416"
+    }]
+  }, {
+    "id": "115964117017",
+    "label": "METHOD_PARAMETER_OUT",
+    "properties": {"NAME": "p1", "CODE": "p1", "ORDER": "1", "INDEX": "1", "EVALUATION_STRATEGY": "BY_VALUE", "TYPE_FULL_NAME": "ANY"},
+    "edges": [{
+      "id": "107374182416-AST-115964117017",
+      "edgeType": "AST",
+      "in": "115964117017",
+      "out": "107374182416"
+    }]
+  }],
+      "CFG": [{
+    "id": "25769803795",
+    "label": "BLOCK",
+    "properties": {"ORDER": "1", "ARGUMENT_INDEX": "1", "TYPE_FULL_NAME": "ANY"},
+    "edges": []
+  }],
+      "PDG": []
+    }, {
+      "function": "<operator>.assignment",
+      "file": "<unknown>",
+      "id": "107374182417",
+      "AST": [{
+    "id": "111669149722",
+    "label": "METHOD_PARAMETER_IN",
+    "properties": {"NAME": "p1", "CODE": "p1", "ORDER": "1", "INDEX": "1", "EVALUATION_STRATEGY": "BY_VALUE", "TYPE_FULL_NAME": "ANY"},
+    "edges": [{
+      "id": "107374182417-AST-111669149722",
+      "edgeType": "AST",
+      "in": "111669149722",
+      "out": "107374182417"
+    }]
+  }, {
+    "id": "111669149723",
+    "label": "METHOD_PARAMETER_IN",
+    "properties": {"NAME": "p2", "CODE": "p2", "ORDER": "2", "INDEX": "2", "EVALUATION_STRATEGY": "BY_VALUE", "TYPE_FULL_NAME": "ANY"},
+    "edges": [{
+      "id": "107374182417-AST-111669149723",
+      "edgeType": "AST",
+      "in": "111669149723",
+      "out": "107374182417"
+    }]
+  }, {
+    "id": "25769803796",
+    "label": "BLOCK",
+    "properties": {"ORDER": "1", "ARGUMENT_INDEX": "1", "TYPE_FULL_NAME": "ANY"},
+    "edges": [{
+      "id": "107374182417-AST-25769803796",
+      "edgeType": "AST",
+      "in": "25769803796",
+      "out": "107374182417"
+    }]
+  }, {
+    "id": "124554051601",
+    "label": "METHOD_RETURN",
+    "properties": {"ORDER": "2", "CODE": "RET", "TYPE_FULL_NAME": "ANY", "EVALUATION_STRATEGY": "BY_VALUE"},
+    "edges": [{
+      "id": "107374182417-AST-124554051601",
+      "edgeType": "AST",
+      "in": "124554051601",
+      "out": "107374182417"
+    }]
+  }, {
+    "id": "115964117018",
+    "label": "METHOD_PARAMETER_OUT",
+    "properties": {"NAME": "p1", "CODE": "p1", "ORDER": "1", "INDEX": "1", "EVALUATION_STRATEGY": "BY_VALUE", "TYPE_FULL_NAME": "ANY"},
+    "edges": [{
+      "id": "107374182417-AST-115964117018",
+      "edgeType": "AST",
+      "in": "115964117018",
+      "out": "107374182417"
+    }]
+  }, {
+    "id": "115964117019",
+    "label": "METHOD_PARAMETER_OUT",
+    "properties": {"NAME": "p2", "CODE": "p2", "ORDER": "2", "INDEX": "2", "EVALUATION_STRATEGY": "BY_VALUE", "TYPE_FULL_NAME": "ANY"},
+    "edges": [{
+      "id": "107374182417-AST-115964117019",
+      "edgeType": "AST",
+      "in": "115964117019",
+      "out": "107374182417"
+    }]
+  }],
+      "CFG": [{
+    "id": "25769803796",
+    "label": "BLOCK",
+    "properties": {"ORDER": "1", "ARGUMENT_INDEX": "1", "TYPE_FULL_NAME": "ANY"},
+    "edges": []
+  }],
+      "PDG": []
+    }]}
